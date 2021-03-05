@@ -23,6 +23,31 @@
          </td>
          </th>
      </table>
-        <script src="simplecallculator.js"></script>
+        <script>
+            function plus(){
+                let a=Number(document.getElementById("a")).value;
+                let b=Number(document.getElementById("b")).value;
+                let sum=a+b;
+                document.write(sum)
+            }
+            function subtr(){
+                let a=document.getElementById("a").value;
+                let b=document.getElementById("b").value;
+                let sub=Number(a-b);
+                document.write(sub)
+            }
+            function multi(){
+                let a=document.getElementById("a").value;
+                let b=document.getElementById("b").value;
+                let multi=Number(a*b);
+                document.write(multi)
+            }
+            function divi(){
+                let a=document.getElementById("a").value;
+                let b=document.getElementById("b").value;
+                let divi=Number(a/b);
+                document.write(divi)
+            }
+        </script>
 </body>
 </html>

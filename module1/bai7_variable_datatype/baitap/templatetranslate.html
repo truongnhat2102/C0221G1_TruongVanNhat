@@ -12,7 +12,14 @@
     </form>
 
     <button type="button" onclick="template()">tranfer</button>
-    <script src="templatetranslate.js"></script>
+    <script>
+        function template() {
+            let a= Number(document.getElementById('value1').value);
+            let b=(a/5)*9+32;
+            document.write(b);
+
+        }
+    </script>
 </div>
 
 </body>

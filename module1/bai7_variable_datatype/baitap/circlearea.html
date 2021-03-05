@@ -15,7 +15,14 @@
     </table>
 
     <button type="button" onclick="area()">area</button>
-    <script src="circlearea.js"></script>
+    <script>
+        function area() {
+            let r=Number(document.getElementById("value1").value);
+            let a=r*r*3.14;
+            document.write("area="+a);
+
+        }
+    </script>
 </div>
 
 </body>
