@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" placeholder="enter number" id="a">
+    <input type="text" placeholder="enter number" id="b">
+    <button type="button" onclick="check()">click me to check</button>
+    <script>
+        function check() {
+            let a=parseInt(document.getElementById("a").value)
+            let b=parseInt(document.getElementById("b").value)
+            if ((a+b)<4){
+                alert("below")
+            }
+            else{
+                alert("over")
+            }
+
+        }
+    </script>
+</body>
+</html>

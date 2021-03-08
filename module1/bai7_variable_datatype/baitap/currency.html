@@ -29,34 +29,36 @@
             </th>
             <th>
                 <button type="button" onclick="convert()">convert</button>
-                <script>
-                    function convert() {
-                        let amount=document.getElementById("v1").value;
-                        var from=document.getElementById("from").value;
-                        var to=document.getElementById("to").value;
-                        var result=0;
-                        if (from=="vn" && to=="usd"){
-                            result=amount/23000;
-                            document.write("result: "+result+"USD");
-                        }
-                        else if (from=="vn" && to=="vn"){
-                            result=amount;
-                            document.write("result: "+result+"VND");
-                        }
-                        else if (from=="usd" && to=="vn"){
-                            result=amount*23000;
-                            document.write("result: "+result+"VND");
-                        }
-                        else if (from=="usd" && to=="usd"){
-                            result=amount;
-                            document.write("result: "+result+"USD");
-                        }
 
-                    }
-                </script>
             </th>
         </tr>
     </table>
+    <p style="color: red;margin-left: 100px;" id="result"></p>
+    <script>
+        function convert() {
+            let amount=document.getElementById("v1").value;
+            var from=document.getElementById("from").value;
+            var to=document.getElementById("to").value;
+            var result=0;
+            if (from=="vn" && to=="usd"){
+                result=amount/23000;
+                document.getElementById("result").innerHTML="result=" + result
+            }
+            else if (from=="vn" && to=="vn"){
+                result=amount;
+                document.getElementById("ketQua").innerHTML="result=" + result
+            }
+            else if (from=="usd" && to=="vn"){
+                result=amount*23000;
+                document.getElementById("result").innerHTML="result=" + result
+            }
+            else if (from=="usd" && to=="usd"){
+                result=amount;
+                document.getElementById("result").innerHTML="result=" + result
+            }
+
+        }
+    </script>
 
 </body>
 </html>

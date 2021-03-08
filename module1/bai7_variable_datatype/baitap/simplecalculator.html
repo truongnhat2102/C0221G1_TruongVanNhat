@@ -23,30 +23,31 @@
          </td>
          </th>
      </table>
+        <p id="ketQua"></p>
         <script>
             function plus(){
-                let a=Number(document.getElementById("a")).value;
-                let b=Number(document.getElementById("b")).value;
-                let sum=a+b;
-                document.write(sum)
+                let a=parseInt(document.getElementById("a")).value;
+                let b=parseInt(document.getElementById("b")).value;
+                let sum=parseInt(a+b);
+                document.getElementById("ketQua").innerHTML="result=" + sum
             }
             function subtr(){
                 let a=document.getElementById("a").value;
                 let b=document.getElementById("b").value;
                 let sub=Number(a-b);
-                document.write(sub)
+                document.getElementById("ketQua").innerHTML="result=" + sub
             }
             function multi(){
                 let a=document.getElementById("a").value;
                 let b=document.getElementById("b").value;
                 let multi=Number(a*b);
-                document.write(multi)
+                document.getElementById("ketQua").innerHTML="result=" + multi
             }
             function divi(){
                 let a=document.getElementById("a").value;
                 let b=document.getElementById("b").value;
                 let divi=Number(a/b);
-                document.write(divi)
+                document.getElementById("ketQua").innerHTML="result=" + divi
             }
         </script>
 </body>

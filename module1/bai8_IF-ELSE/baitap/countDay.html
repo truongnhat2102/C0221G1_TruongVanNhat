@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="number" placeholder="month" id="month">
+    <button type="button" onclick="getDay()">check</button>
+    <p id="result"></p>
+    <script>
+        function getDay() {
+            let month=parseInt(document.getElementById("month").value)
+            if (month==1 || month==3 || month==5 || month==7 || month==8 || month==10 || month==12){
+                document.getElementById("result").innerHTML=month + " have 31 days"
+            }
+            else if (month==4 || month==6 || month==9 || month==11){
+                document.getElementById("result").innerHTML=month + " have 30 days"
+            }
+            else if(month==2){
+                document.getElementById("result").innerHTML="February have 28days or 29 days"
+            }
+            else{
+                document.getElementById("result").innerHTML= "please enter again"
+            }
+
+        }
+    </script>
+</body>
+</html>

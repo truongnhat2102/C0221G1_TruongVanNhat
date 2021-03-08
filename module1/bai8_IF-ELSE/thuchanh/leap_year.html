@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>
+    <input type="number" placeholder="enter year" id="year">
+    <button type="button" onclick="check()">check</button>
+</label>
+<script>
+    function check() {
+        let ipyear=parseInt(document.getElementById("year").value);
+        if (ipyear%4==0){
+            if (ipyear%100==0){
+                if (ipyear%400==0){
+                   alert(ipyear+" is leap year")
+                }
+                else {
+                    alert(ipyear+" is not leap year")
+                }
+            }
+            else {
+                alert(ipyear+" is leap year")
+            }
+        }
+        else {
+            alert(ipyear+" is not leap year")
+        }
+
+
+    }
+</script>
+
+</body>
+</html>
