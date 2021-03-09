@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let year=prompt('enter year to born: ');
+        if (isNaN(year)){
+            alert('reload page again')
+        }
+        else {
+            let age=2021-year
+            if (0<age && age<120){
+                alert('you r '+age+'year(s) old')
+            }
+            else if (age<0){
+                alert('you will born in '+year)
+            }
+            else {
+                alert('you maybe died')
+            }
+        }
+    </script>
+</body>
+</html>

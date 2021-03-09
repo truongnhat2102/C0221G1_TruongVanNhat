@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let sales=prompt('rank sales:')
+        let commission=0;
+        if (sales=='bad'){
+            commission=10;
+        }
+        else if (sales=='normal'){
+            commission=15;
+        }
+        else if (sales=='good'){
+            commission=20;
+        }
+        else if (sales=='exellent'){
+            commission=25;
+        }
+        else {
+            alert('enter again')
+        }
+        alert('commission is '+commission+'%')
+    </script>
+</body>
+</html>

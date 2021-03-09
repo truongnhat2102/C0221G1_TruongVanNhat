@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let salary=parseInt(prompt('enter salary to use:'));
+        let tax=0;
+        if (salary<5000000){
+           tax=salary*0.05;
+        }
+        else if (salary<10000000){
+            tax=salary*0.1;
+        }
+        else if (salary<18000000){
+            tax=salary*0.15;
+        }
+        else if (salary<32000000){
+            tax=salary*0.2;
+        }
+        else if (salary<52000000){
+            tax=salary*0.25;
+        }
+        else if (salary<80000000){
+            tax=salary*0.3;
+        }
+        else {
+            tax=salary*0.35
+        }
+        alert(tax)
+    </script>
+</body>
+</html>

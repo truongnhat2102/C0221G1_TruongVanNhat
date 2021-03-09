@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a=parseInt(prompt('enter edge of triangle: '));
+        let b=parseInt(prompt('enter edge of triagnle: '));
+        let c=parseInt(prompt('enter edge of triangle: '));
+        if (a>0 && b>0 && c>0){
+            if (a+b >c && a+c>b && c+b>b){
+                alert(a+','+b+','+c+' are 3 edges of a triangle')
+            }
+            else {
+                alert(a+','+b+','+c+' are not 3 edges of a triangle')
+            }
+        }
+        else {
+            alert('enter a,b,c again')
+        }
+    </script>
+</body>
+</html>

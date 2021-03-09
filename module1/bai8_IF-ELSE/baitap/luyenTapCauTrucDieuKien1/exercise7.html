@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let time=parseInt(prompt('enter time to call:'));
+        let tax=25000;
+        if (time<50){
+            tax=tax+time*600;
+        }
+        else if (time<200){
+            tax=tax+50*600+(time-50)*400
+        }
+        else {
+            tax=tax+50*600+200*400+(time-200)*200
+        }
+        alert('total:'+tax)
+    </script>
+</body>
+</html>

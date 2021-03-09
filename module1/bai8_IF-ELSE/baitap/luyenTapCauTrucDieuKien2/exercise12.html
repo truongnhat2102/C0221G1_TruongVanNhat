@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let loan=parseFloat(prompt('enter first loan: '));
+        let rate=parseFloat(prompt('enter interest rate:'));
+        let month=parseInt(prompt('enter month you will pay'));
+        let total=loan+(loan*rate);
+        if (month==1){
+            alert(total)
+        }
+        else {
+            for (let i=2; i<=month;i++){
+                total=total+(total*rate)
+            }
+            alert(total)
+        }
+
+    </script>
+</body>
+</html>

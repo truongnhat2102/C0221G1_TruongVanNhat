@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a=parseFloat(prompt('enter a: '));
+        let b=parseFloat(prompt('enter b: '));
+        let c=parseFloat(prompt('enter c: '));
+        let delta=(b*b)-(4*a*c)
+        if (delta>0){
+            alert('x1='+((-b+ Math.sqrt(delta))/(2*a)))
+            alert('x2='+((-b- Math.sqrt(delta))/(2*a)))
+        }
+        else if (delta==0){
+            alert('x1=x2='+(-b/(2*a)))
+        }
+        else {
+            alert('the equation has no solution')
+        }
+    </script>
+</body>
+</html>
