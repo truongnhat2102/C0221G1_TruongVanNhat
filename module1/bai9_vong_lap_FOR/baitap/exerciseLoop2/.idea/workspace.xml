@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2b10de27-571c-4b21-9433-69695fabfec2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/baitap.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerciseLoop1/.idea/exerciseLoop1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerciseLoop1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerciseLoop1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerciseLoop1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerciseLoop1/exercise1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerciseLoop1/exercise2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerciseLoop1/exercise3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerciseLoop1/exercise4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerciseLoop1/exercise5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerciseLoop1/exercise6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerciseLoop1/exercise7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exerciseLoop1/exercise8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/exerciseLoop2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../makeMultiplicationTable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../primeNumber.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thuchanh/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thuchanh/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thuchanh/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thuchanh/.idea/thuchanh.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thuchanh/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thuchanh/doWhile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thuchanh/useFor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../thuchanh/useWhile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai8_IF-ELSE/baitap/DoYouLoveMe.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai8_IF-ELSE/baitap/DoYouLoveMe.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1pYfJqA9l1RkiIGKKQGZ5onYDxy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exerciseLoop1/exercise3.html" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b10de27-571c-4b21-9433-69695fabfec2" name="Default Changelist" comment="" />
+      <created>1615364874478</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615364874478</updated>
+      <workItem from="1615364875665" duration="2202000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="898" y="188" key="FileChooserDialogImpl" timestamp="1615364932487">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="898" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1615364932487" />
+  </component>
+</project>

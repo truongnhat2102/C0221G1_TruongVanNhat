@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let num=prompt('enter amount of fibonacci number: ');
+    let num=20;
+    let a=1,b=0,fiboNum;
+    while(num>=1){
+        fiboNum=a;
+        a=a+b;
+        b=fiboNum;
+        document.write(fiboNum);
+        document.write('<br>');
+        num--;
+    }
+</script>
+</body>
+</html>

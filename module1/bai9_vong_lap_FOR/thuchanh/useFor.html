@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="number" placeholder="enter a number"><br>
+    <button type="button" onclick="Sum()">sum from 1 to a number you enter</button>
+    <p id="result"></p>
+    <script>
+        function Sum() {
+            let num=parseInt(document.getElementById('number').value);
+            let sum=0;
+            for (let i=0; i<=num; i++){
+                sum+=i
+            }
+            document.getElementById('result').innerHTML='result: '+sum;
+        }
+    </script>
+</body>
+</html>

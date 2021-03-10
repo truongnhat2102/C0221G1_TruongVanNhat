@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let num=20;
+        let a=1,b=0,fiboNum;
+        let sum=0;
+        while(num>=1){
+            fiboNum=a;
+            a=a+b;
+            b=fiboNum;
+            sum=sum+fiboNum;
+            num--;
+        }
+        document.write(sum)
+    </script>
+</body>
+</html>

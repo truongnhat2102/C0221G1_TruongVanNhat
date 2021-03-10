@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let num=20;
+        let a=1,b=0,fiboNum;
+        while(num>=1){
+            fiboNum=a;
+            a=a+b;
+            b=fiboNum;
+            if (fiboNum%5==0){
+                break;
+            }
+            num--;
+        }
+        document.write(fiboNum);
+    </script>
+</body>
+</html>
