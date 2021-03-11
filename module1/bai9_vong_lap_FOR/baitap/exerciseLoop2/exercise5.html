@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let loan=parseFloat(prompt('loan: '));
+        let rate=parseFloat(prompt('rate: '));
+        let month=parseInt(prompt('month: '))
+        let total=loan+loan*rate;
+        for (let i=1; i<=month; i++){
+            total=total+total*rate;
+        }
+        alert(total);
+    </script>
+</body>
+</html>

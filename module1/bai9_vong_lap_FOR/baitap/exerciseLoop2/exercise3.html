@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>
+        <script>
+            let height=prompt('enter height: ');
+            for (let i=1; i<=height; i++){
+                for (let j=1; j<=i; j++){
+                    document.write('*');
+                }
+                document.write('<br>');
+            }
+            document.write('<br>');
+
+            for (let i=height; i>=1; i--){
+                for (let j=i; j>=1; j--){
+                    document.write('*');
+                }
+                document.write('<br>');
+            }
+            document.write('<br>');
+
+            for (let i=1; i<=height; i++){
+                for (let n=(height-i); n>0; n--){
+                    document.write('&nbsp;&nbsp;');
+                }
+                for (let j=1; j<=i; j++){
+                    document.write('*');
+                }
+                document.write('<br>');
+            }
+            document.write('<br>');
+
+            for (let i=1; i<=height; i++){
+                for (let j=0; j<=i; j++){
+                    document.write('&nbsp;&nbsp;');
+                }
+                for (let j=(height-i); j>=0; j--){
+                    document.write('*');
+                }
+                document.write('<br>');
+            }
+        </script>
+    </p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let height=prompt('enter height: ');
+        let width=prompt('enter width: ')
+        for (let top=1; top<=width; top++){
+            document.write('*')
+        }
+        document.write('<br>')
+        for(let i=1;i<=height-2;i++){
+            for (let j=1; j<=width; j++){
+                if (j!=1&&j!=width){
+                    document.write('&nbsp;&nbsp;')
+                }
+                else {
+                    document.write('*')
+                }
+            }
+            document.write('<br>')
+        }
+        for (let bot=1; bot<=width; bot++){
+            document.write('*')
+        }
+    </script>
+</body>
+</html>

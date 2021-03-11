@@ -5,12 +5,20 @@
     <title>Title</title>
 </head>
 <body>
-    <button type="button" onclick="play()">
+<button type="button" onclick="play()">play</button>
     <script>
         function play() {
-            let num=prompt('enter a number: ');
-            while ()
-
+            let min = parseInt(prompt("min"));
+            let max = parseInt(prompt("max"));
+            let radom = Math.floor(Math.random() * (max - min) ) + min;
+            while (true) {
+                let num = parseInt(prompt("enter your number :"));
+                if ( num == radom) {
+                    alert("congratulation ");
+                }else {
+                    alert("you r wrong. let's try again ")
+                }
+            }
         }
     </script>
 </body>
