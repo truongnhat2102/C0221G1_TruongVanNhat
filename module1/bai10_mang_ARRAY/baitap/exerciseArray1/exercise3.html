@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let n=parseInt(prompt('enter n numbers'));
+        let a=[];
+        let max;
+        let index;
+        let ave=0;
+        let sum=0
+        for (let i=0;i<n;i++){
+            a[i]=parseInt(prompt(''));
+            max=a[0];
+            if (a[i]>max){
+                max=a[i];
+                index=i;
+            }
+            sum=sum+a[i];
+            ave=sum/n;
+        }
+        alert('max: '+max+' index: '+index+'\n'+'average: '+ave)
+    </script>
+</body>
+</html>

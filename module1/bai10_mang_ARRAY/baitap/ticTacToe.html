@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table{
+            width: 500px; height: 500px;
+        }
+        tr,td{
+            border: black solid 1px;
+            border-collapse: collapse;
+           }
+    </style>
+</head>
+<body>
+    <p id="caroBoard"></p>
+    <input type="button" value="tic" onclick="tic()">
+    <script>
+        let b = document.getElementById("carogame");
+
+        let board = [];
+        let data = "";
+        document.write('<table>')
+        for (let i = 0; i < 3; i++) {
+            document.write('<tr>');
+            for(let j=0; j<3; j++){
+                document.write('<td>');
+                document.write('</td>');
+            }
+            document.write('</tr>');
+        }
+        for (let i = 0; i < 5; i++) {
+            data += "<br/>";
+            for (let j = 0; j < 5; j++) {
+                data += board[i][j] + "&nbsp;&nbsp;";
+            }
+        }
+        document.write('</table>')
+        data += "<br/><br/><input type='button' value='tic' onclick='tic()'>
+        b.innerHTML = data;
+        function tic() {
+            let positionX = prompt("X: ");
+            let positionY = prompt("Y: ");
+            data = "";
+            board[positionX][positionY] = "x";
+            for (let i = 0; i < 5; i++) {
+                data += "<br/>";
+                for (let j = 0; j < 5; j++) {
+                    data += board[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp;";
+                }
+            }
+            data += "<br/><br/><input type='button' value='tic' onclick='tic()'>"
+            b.innerHTML = "<hr/>" + data;
+        }
+    </script>
+
+</body>
+</html>

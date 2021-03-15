@@ -6,12 +6,11 @@
 </head>
 <body>
     <script>
-        let height=parseInt(prompt('enter height '));
-        for (let i=0; i<height; i++){
-            for (let j=1;j<=height+i-1;j++) {
-
-            }
+        let myColor=[]
+        for (let i=0; i<5; i++){
+            myColor[i]=[prompt('enter your colors')];
         }
+        document.write(myColor.sort().join());
     </script>
 </body>
 </html>

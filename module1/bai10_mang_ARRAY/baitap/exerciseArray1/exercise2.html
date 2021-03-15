@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a=[];
+        let max;
+        let index;
+        for (let i=0;i<10;i++){
+            a[i]=parseInt(prompt(''));
+            max=a[0];
+            if (a[i]>max){
+                max=a[i];
+                index=i;
+            }
+        }
+        alert('max: '+max+' index: '+index)
+    </script>
+</body>
+</html>

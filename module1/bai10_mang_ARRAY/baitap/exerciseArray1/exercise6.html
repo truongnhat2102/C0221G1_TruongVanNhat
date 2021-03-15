@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a=[];
+        for (let i=0; i<10; i++){
+            a[i]=parseInt(prompt(''));
+        }
+        let v=parseInt(prompt(''));
+        let count=0;
+        for (let j=0; j<10; j++){
+            if (a[j]==v){
+                count++
+                break;
+            }
+            else {
+                continue;
+            }
+        }
+        if (count==1){
+            alert(v+' is in the array');
+        }
+        else {
+            alert(v+' is not in the array');
+        }
+    </script>
+</body>
+</html>
