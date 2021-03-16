@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function findMin(num1,num2,num3) {
+            if (num1>num2 && num2>num3){
+                return num3;
+            }
+            else if (num1<num2 && num2<num3){
+                return num1;
+            }
+        return num2;
+        }
+        let num1=parseInt(prompt(''));
+        let num2=parseInt(prompt(''));
+        let num3=parseInt(prompt(''));
+        alert(findMin(num1,num2,num3));
+    </script>
+</body>
+</html>

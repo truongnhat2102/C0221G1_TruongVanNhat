@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function find(name) {
+            let a="Polaris,Aldebaran,Deneb,Vega,Altair,Dubhe,Regulus".split(',');
+            let b='Ursa Minor,Tarurus,Cygnus,Lyra,Aquila,Ursa Major,Leo'.split(',');
+            let count=0;
+            for (let i=0; i<a.length; i++){
+                if (name==a[i]){
+                    return b[i];
+                }
+                else if (count==a.length){
+                    return 'please enter name of star';
+                }
+                else {
+                    count++;
+                }
+            }
+        }
+        let name=prompt('');
+        alert(find(name));
+
+    </script>
+</body>
+</html>

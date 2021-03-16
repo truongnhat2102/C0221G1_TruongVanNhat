@@ -6,11 +6,25 @@
 </head>
 <body>
     <script>
-        let height=parseInt(prompt('enter height '));
+        let height=parseInt(prompt(''));
         for (let i=0; i<height; i++){
-            for (let j=1;j<=height+i-1;j++) {
-
+            for (let j=0; j<(2*height); j++ ){
+                if (i!=(height-1)){
+                    if (j == (height-i)){
+                        document.write('*');
+                    }
+                    else if (j == (height+i)){
+                        document.write('*');
+                    }
+                    else {
+                        document.write('&nbsp;&nbsp;');
+                    }
+                }
+                else{
+                    document.write('*');
+                }
             }
+            document.write('<br>');
         }
     </script>
 </body>

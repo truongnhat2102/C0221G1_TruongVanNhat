@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let num=prompt('').split('');
+        let Num='0123456789';
+        let nUm='zero one two three four five six seven eight nine'.split(' ');
+        let nuM=[];
+        for (let i=0; i<num.length; i++){
+            if (Num.indexOf(num[i])!=-1){
+                nuM.push(nUm[Num.indexOf(num[i])]);
+            }
+        }
+        alert(nuM.join(' '));
+    </script>
+</body>
+</html>

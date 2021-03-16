@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let vowel=['o', 'u', 'i', 'a', 'e','O', 'U', 'I', 'A', 'E'];
+        let char=prompt('enter a character: ');
+        for (let i=0; i<vowel.length; i++){
+            if (char.indexOf(vowel[i]) != -1){
+                alert(char+' is a vowel character');
+                break;
+            }
+            else if (i==vowel.length-1){
+                alert(char+' is not vowel character');
+            }
+        }
+    </script>
+</body>
+</html>
