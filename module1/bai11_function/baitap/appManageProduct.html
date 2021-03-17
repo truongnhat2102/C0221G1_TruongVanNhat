@@ -2,9 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Manage Product</title>
 </head>
 <body>
-    
+    <h1>MANAGE PRODUCTS</h1>
+    <h2>Add New Product</h2>
+    <p>
+        <input type="text" id="enter">
+        <input type="button" onclick="add()" value="add">
+    </p>
+    <h2>Display All Product</h2>
+<p id="di5play"></p>
+    <script>
+        // document.write('<input type="text" id="enter">');
+        // document.write('<input type="button" onclick="add(enter)" value="add">');
+        let a=[];
+        function display(){
+            let tableString='<table >';
+            for (let i=0; i<a.length; i++){
+                tableString+='<tr>';
+                tableString+='<td>'+(i+1)+'</td>';
+                tableString+='<td>'+a[i]+'</td>';
+                tableString+='<td>'+'<input type="button" onclick="edit(' + i + ')" value="edit">'+'</td>';
+                tableString+='<td>'+'<input type="button" onclick="del3te(' + i + ')" value="delete" >'+'</td>';
+                tableString+='</tr>';
+            }
+            tableString+='</table>';
+            document.getElementById('di5play').innerHTML= tableString;
+        }
+        function add() {
+            let str=document.getElementById('enter').value;
+            a.push(str);
+            display();
+        }
+        function del3te(i) {
+            // let check=confirm('do you want to delete? ');
+            // if (check==true){
+            //     a.splice(i,1);
+            //     display();
+            // }
+            // else {
+            //     break;
+            // }
+            a.splice(i,1);
+             display();
+        }
+        function edit(i){
+            let b= prompt('enter: ');
+            a[i]=b;
+            display();
+        }
+    </script>
 </body>
 </html>

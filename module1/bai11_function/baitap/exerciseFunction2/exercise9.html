@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check(a,number) {
+        let count=0;
+        for (let i=0; i<a.length; i++){
+            if (a[i]==number){
+                count++;
+            }
+            // else {
+            //     return -1;
+            // }
+        }
+        return count;
+    }
+    let arr=prompt('').split('');
+    let num=parseInt(prompt(''));
+    alert(check(arr,num));
+</script>
+</body>
+</html>

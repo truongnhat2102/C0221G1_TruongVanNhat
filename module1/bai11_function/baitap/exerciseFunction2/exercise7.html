@@ -5,6 +5,22 @@
     <title>Title</title>
 </head>
 <body>
-
+    <script>
+        function swap(num1,num2) {
+            let a=[];
+            a.push(num1);
+            a.push(num2);
+            for (let i=0; i<a.length; i++){
+                let virNum=a[0];
+                a[0]=a[1];
+                a[1]=virNum;
+            }
+            alert('num1 '+a[1]);
+            alert('num2 '+a[0]);
+        }
+        let num1=parseInt(prompt('num1'));
+        let num2=parseInt(prompt('num2'));
+        swap(num1,num2)
+    </script>
 </body>
 </html>
