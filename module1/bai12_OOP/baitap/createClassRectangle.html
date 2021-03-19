@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;">
+    <script>
+        class Rectangle(x,y,width,height) {
+            constructor(){
+                this.x=x;
+                this.y=y;
+                this.width= width;
+                this.height= height;
+            }
+            set Width() {
+                width=prompt('enter width: ');
+                this.width=width;
+                return width;
+            }
+            set Height() {
+                height=prompt('enter height: ');
+                this.height=height;
+                return height;
+            }
+            area(width,height) {
+                return this.width*this.height;
+            }
+            peremeter(width,height){
+                return (this.width+this.height)*2;
+
+            }
+            function createRectangle() {
+                let ctx = document.getElementById("myCanvas").getContext('2d');
+                let rectangle= new Rectangle( x,y, width, height);
+                ctx.beginPath();
+                ctx.rect( rectangle.x , rectangle.y , rectangle.setWidth() , rectangle.setHeight());
+                ctx.stroke();
+            }
+
+        }
+        let rectangle= new Rectangle(100,100,0,0)
+        let area=rectangle.area();
+        let peremeter=rectangle.peremeter();
+        rectangle.createRectangle();
+        alert('area: '+area +'\n peremeter: '+peremeter);
+    </script>
+</canvas>
+</body>
+</html>

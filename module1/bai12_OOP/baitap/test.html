@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="vehinh" height="500px" width="500px" style="border: 1px solid chartreuse"></canvas>
+<script>
+    class Hinhchunhat {
+        constructor(chieuDai,chieuRong) {
+            this._chieuDai = chieuDai;
+            this._chieuRong = chieuRong;
+        }
+        get chieuDai() {
+            return this._chieuDai;
+        }
+        set chieuDai(value) {
+            this._chieuDai = value;
+        }
+        get chieuRong() {
+            return this._chieuRong;
+        }
+        set chieuRong(value) {
+            this._chieuRong = value;
+        }
+        chuVi(){
+            return (this._chieuDai+this._chieuRong) * 2 ;
+        }
+        dienTich(){
+            return (this._chieuRong* this._chieuDai);
+        }
+        ve() {
+            let canvas = document.getElementById("vehinh");
+            let ctx = canvas.getContext ("2d");
+            ctx.fillStyle = "red" ;
+            ctx.fillRect(100,100,300,300)
+        }
+    }
+    let width1 = parseInt(prompt("Nhap chieu dai"));
+    let height1 = parseInt(prompt("Nhap chieu rong"));
+    let hinhchunhat = new Hinhchunhat(width1, height1 )
+    alert("hình chử nhật có chiều dài là " + hinhchunhat.chieuDai + " chiều rông " + hinhchunhat.chieuRong+ " chu vi " + hinhchunhat.chuVi() + " dien tich " + hinhchunhat.dienTich());
+    hinhchunhat.ve();
+</script>
+</body>
+</html>

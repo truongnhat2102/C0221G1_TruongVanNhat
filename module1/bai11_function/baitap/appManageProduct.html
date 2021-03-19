@@ -10,6 +10,7 @@
     <p>
         <input type="text" id="enter">
         <input type="button" onclick="add()" value="add">
+        <input type="button" onclick="searchProduct()" value="search">
     </p>
     <h2>Display All Product</h2>
 <p id="di5play"></p>
@@ -17,12 +18,13 @@
         // document.write('<input type="text" id="enter">');
         // document.write('<input type="button" onclick="add(enter)" value="add">');
         let a=[];
-        function display(){
+        display(a)
+        function display(listArr){
             let tableString='<table >';
-            for (let i=0; i<a.length; i++){
+            for (let i=0; i<listArr.length; i++){
                 tableString+='<tr>';
                 tableString+='<td>'+(i+1)+'</td>';
-                tableString+='<td>'+a[i]+'</td>';
+                tableString+='<td>'+listArr[i]+'</td>';
                 tableString+='<td>'+'<input type="button" onclick="edit(' + i + ')" value="edit">'+'</td>';
                 tableString+='<td>'+'<input type="button" onclick="del3te(' + i + ')" value="delete" >'+'</td>';
                 tableString+='</tr>';
@@ -33,7 +35,7 @@
         function add() {
             let str=document.getElementById('enter').value;
             a.push(str);
-            display();
+            display(a);
         }
         function del3te(i) {
             // let check=confirm('do you want to delete? ');
@@ -45,12 +47,22 @@
             //     break;
             // }
             a.splice(i,1);
-             display();
+             display(a);
         }
         function edit(i){
             let b= prompt('enter: ');
             a[i]=b;
-            display();
+            display(a);
+        }
+        function searchProduct() {
+            let arrSearch =[];
+            let inputSearch = document.getElementById('enter').value;
+            for (let i = 0; i <a.length ; i++) {
+                if(a[i].includes(inputSearch)){
+                    arrSearch.push(a[i])
+                }
+            }
+            display(arrSearch)
         }
     </script>
 </body>

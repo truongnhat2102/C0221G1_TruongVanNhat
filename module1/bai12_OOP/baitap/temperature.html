@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class temperature{
+            constructor(temp1){
+                this.temp=temp1;
+            }
+            DoK(){
+                return (this.temp+273);
+            }
+            DoF(){
+                return ((this.temp * 9 / 5) + 32);
+            }
+        }
+        let temp2=parseInt(prompt(''));
+        let temperature1=new temperature(temp2);
+        alert(temperature1.DoK()+'\n'+temperature1.DoF());
+    </script>
+</body>
+</html>
