@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="applee"></p>
+<button onclick="eating()">AdamEAT</button>
+<p id="humann"></p>
+<button onclick="eating1()">EvaEAT</button>
+<p id="human1"></p>
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = weight;
+        }
+        getWeight() {
+            return this.weight;
+        }
+        decrease() {
+            if (this.weight > 0) {
+                this.weight--;
+            }
+        }
+        check() {
+            if (this.weight > 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+    class Human {
+        constructor(name, gender, weight1) {
+            this.name = name;
+            this.gender = gender;
+            this.weight1 = weight1;
+        }
+        say() {
+            return "Hello word ";
+        }
+        eat(apple) {
+            if (apple.getWeight() > 0) {
+                apple.decrease();
+                this.weight1++;
+            }
+        }
+    }
+    let apple = new Apple(10);
+    let adam = new Human("", "", 70);
+    document.getElementById('applee').innerText = "Can nang qua tao la : " + apple.weight;
+    document.getElementById('humann').innerText = "Can nang cua be Adam la : " + adam.weight1;
+    let eva = new Human("", "", 55);
+    // document.getElementById('applee').innerText = "Can nang qua tao la : " + apple.weight;
+    document.getElementById('human1').innerText = "Can nang cua be Eva la : " + eva.weight1;
+    console.log(adam.say());
+    if (apple.check()) {
+        function eating() {
+            adam.eat(apple);
+            document.getElementById('applee').innerText = "Can nang qua tao la : " + apple.weight;
+            document.getElementById('humann').innerText = "Can nang cua be Adam la : " + adam.weight1;
+        }
+        function eating1() {
+            eva.eat(apple);
+            document.getElementById('applee').innerText = "Can nang qua tao la : " + apple.weight;
+            document.getElementById('human1').innerText = "Can nang cua be Eva la : " + eva.weight1;
+        }
+    }
+</script>
+</body>
+</html>

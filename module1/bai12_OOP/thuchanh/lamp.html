@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="pic_bulboff.gif" id="lamp" onclick="switchButton()">
+<p id="result"></p>
+<p id="battery"></p>
+    <script>
+        class Button {
+            constructor(status) {
+                this.status = status;
+            }
+
+            turnOff_turnOn() {
+                this.status = !this.status;
+            }
+        }
+
+        class Lamp {
+            constructor(button, status) {
+                this.button = button;
+                this.status = status;
+            }
+
+            switch() {
+                if (this.button.status) {
+                    document.getElementById("lamp").src = "pic_bulbon.gif";
+                    document.getElementById("result").innerText = "light is on";
+                } else {
+                    document.getElementById("lamp").src = "pic_bulboff.gif";
+                    document.getElementById("result").innerText = "lght is off";
+                }
+            }
+        }
+        class Battery{
+            constructor(button, status, energy) {
+                this.button=button;
+                this.stattus=status;
+                this.energy=energy;
+            }
+            decreaseEnergy(){
+                let i=100;
+                if (this.button.status){
+                    i--;
+                    document.getElementById('batterty').innerText='you just have'+i;
+                }
+            }
+        }
+
+        let button = new Button(false);
+        let lamp = new Lamp(button, false);
+        let battery=new Battery(button, false, 100)
+        function switchButton() {
+            button.turnOff_turnOn();
+            lamp.switch();
+            battery.decreaseEnergy();
+        }
+    </script>
+</body>
+</html>

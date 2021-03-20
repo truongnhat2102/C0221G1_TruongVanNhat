@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>MENU</h2>
+<p id="menu"></p>
+<h3>ORDER</h3>
+<input type="text" placeholder="enter product" id="enter">
+<input type="button" onclick="add()" value="add">
+<p id="result"></p>
+<input type="button" onclick="bill()" value="total" >
+<p id="total"></p>
+<input type="reset">
+    <script>
+        let product=['cafe', 'orange juice', 'carot juice', 'tomato juice', 'water', 'coconut juice'];
+        let price=['15000', '16000', '17000', '18000', '8000', '20000']
+        let custom=[];
+        display1();
+        function display1() {
+            let table = '<table>';
+            for (let i=0; i<product.length; i++){
+                table+='<tr>';
+                table+='<td>'+product[i]+'</td>';
+                table+='<td>'+price[i]+'</td>';
+                table+='</tr>';
+            }
+            table+='</table>';
+            document.getElementById('menu').innerHTML=table;
+        }
+        function display2() {
+            let table = '<table>';
+            for (let i=0; i<custom.length; i++){
+                table+='<tr>';
+                table+='<td>'+custom[i]+'</td>';
+                table+='<td><input type="number" placeholder="enter amount" id="amount"></td>'
+                table+='<td><input type="button" value="edit" onclick="edit(' + i + ')"></td>';
+                table+='<td><input type="button" value="delete" onclick="delet3(' + i + ')"></td>';
+                table+='</tr>';
+            }
+            table+='</table>';
+            document.getElementById('result').innerHTML=table;
+        }
+        function add() {
+            let a=document.getElementById('enter').value;
+            if (product.indexOf(a) == -1){
+                alert('sorry, we dont have '+a+'\nenter again');
+            }
+            // else if (custom.indexOf(a)!=-1){
+            //     alert('we had '+a+);
+            // }
+            else {
+                custom.push(a);
+                display2(custom);
+            }
+
+        }
+        function delet3(i) {
+            custom.splice(i,1);
+            display(custom);
+        }
+        function edit(i){
+            let b= prompt('enter: ');
+            if (product.indexOf(b) == -1){
+                alert('sorry, we dont have '+a+'\nenter again');
+            }
+                // else if (custom.indexOf(a)!=-1){
+                //     alert('we had '+a+);
+            // }
+            else {
+                custom[i]=b;
+                display2(custom);
+            }
+
+        }
+        function bill() {
+            let money=0;
+            let amount=document.getElementById('amount').value;
+            for (let i=0;i<custom.length; i++){
+                money+=(amount*price[product.indexOf(custom[i])]);
+            }
+            document.getElementById('total').innerHTML=money;
+        }
+    </script>
+</body>
+</html>
