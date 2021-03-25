@@ -6,8 +6,15 @@
 </head>
 <body>
     <script>
-        let enter=prompt('enter name: ').split(' ');
-
+        let ten = 'tRuong    TaN   HAI '.toLowerCase().split(" ");
+        let result = [];
+        for (let i = 0; i < ten.length; i++) {
+            ten[i] = ten[i].charAt(0).toUpperCase() + ten[i].slice(1);
+            if (ten[i].length > 0) {
+                result.push(ten[i]);
+            }
+        }
+        alert(result.join(" "))
     </script>
 </body>
 </html>

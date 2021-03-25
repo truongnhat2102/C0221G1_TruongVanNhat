@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+    <script>
+        let m=parseInt(prompt('enter m:'));
+        let n=parseInt(prompt('enter n:'));
+        let a=1;
+        let sum=0;
+        let table='<table>';
+        for (let i=1;i<=m;i++){
+            table+='<tr>';
+            for (let j=1; j<=n; j++){
+                table+='<td>'+a+'</td>';
+                if (a%2===0){
+                    sum+=a;
+                }
+                a++;
+            }
+            table+='</tr>';
+        }
+        table+='</table>';
+        document.getElementById('result').innerHTML=table;
+        alert(sum);
+    </script>
+</body>
+</html>

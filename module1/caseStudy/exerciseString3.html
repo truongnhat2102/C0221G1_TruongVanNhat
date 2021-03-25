@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a1="aabcc".split('');
+        let a2="adcaa".split('');
+        let b='';
+        for (let i=0; i<a1.length; i++){
+            for (let j=0; j<a2.length; j++){
+                if (a1[i]==a2[j]){
+                    b += a2.splice(j,1);
+                    break;
+                }
+            }
+        }
+        // alert(a2);
+        alert(b);
+
+    </script>
+</body>
+</html>

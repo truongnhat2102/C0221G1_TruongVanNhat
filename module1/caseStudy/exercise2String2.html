@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let amount=parseInt(prompt('enter amount of prime number:'));
+        let arr=['2'];
+        let count=0;
+        for (let i=3; i<100; i++){
+            let check=true;
+            for (let j=2; j<i; j++){
+                if ((i%j) === 0){
+                    check=false;
+                    break;
+                }
+            }
+            if (count<(amount-1)){
+                if (check===true){
+                    arr.push(i);
+                    count++;
+                }
+            }
+        }
+        alert(arr);
+    </script>
+</body>
+</html>

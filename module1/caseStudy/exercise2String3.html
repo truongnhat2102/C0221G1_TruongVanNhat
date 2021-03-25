@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a=prompt('enter number ').split('');
+        let max=a[0];
+        let min=a[0];
+        for (let i=0; i<a.length; i++){
+            if (a[i+1]>max){
+                max=a[i+1];
+            }
+            if (a[i+1]<min){
+                min=a[i+1];
+            }
+        }
+        alert('max: '+max+'\nmin: '+min);
+    </script>
+</body>
+</html>

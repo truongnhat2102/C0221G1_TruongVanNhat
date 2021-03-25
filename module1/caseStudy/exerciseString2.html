@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a=prompt('enter:');
+        let word='qwertyuiopasdfghjklzxcvbnm'.split('');
+        let count=0;
+        for (let i=0;i<word.length;i++){
+            if (a.indexOf(word[i])!==-1){
+                count++;
+            }
+        }
+        alert(count);
+    </script>
+</body>
+</html>
