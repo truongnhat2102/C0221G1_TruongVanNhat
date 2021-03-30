@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let str=prompt('enter string').split('');
+
+        if (check(str)>0){
+            alert(check(str));
+        }
+        else {
+            alert('the Strings is not contain upper char');
+        }
+        function check(str) {
+            let count=0;
+            for (let i=0; i<str.length; i++){
+                if (str[i]!==str[i].toLowerCase()){
+                    count++;
+                }
+            }
+            return count;
+
+        }
+    </script>
+</body>
+</html>

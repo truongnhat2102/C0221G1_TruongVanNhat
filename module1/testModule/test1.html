@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arr=[];
+        for (let i=0; i<20; i++){
+            arr[i]=parseInt(prompt('enter 20 numbers:'));
+        }
+        // for (let i=0; i<=20; i++){
+        //     arr[i]=i;
+        // }
+        let result=0;
+        let sum1=0;
+        let even='( ';
+        let sum2=0;
+        let odd='( ';
+        for (let i=0; i<arr.length; i++){
+            if (arr[i]%2==0){
+                sum1+=arr[i];
+                even+=arr[i]+'+'
+            }
+            else if (arr[i]%2!=0){
+                sum2+=arr[i];
+                odd+=arr[i]+'+'
+            }
+        }
+        result=(sum1-sum2);
+        document.writeln(arr);
+        document.writeln(even+')'+'-'+odd+') ='+result);
+    </script>
+</body>
+</html>

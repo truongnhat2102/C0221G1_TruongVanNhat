@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>PHONE</h1>
+<input type="button" onclick="add()" value="ADD">
+<p id="result"></p>
+    <script>
+        class Phone{
+            constructor(id, name, productOf, price) {
+                this.id=id;
+                this.name=name;
+                this.productOf=productOf;
+                this.price=price
+            }
+            setId(id){
+                this.id=id;
+            }
+            getId(){
+                return this.id;
+            }
+            setName(name){
+                this.name=name;
+            }
+            getName(){
+                return this.name;
+            }
+            setProductOf(productOf){
+                this.productOf=productOf;
+            }
+            getProductOf(){
+                return this.productOf;
+            }
+            setPrice(price){
+                this.price=price;
+            }
+            getPrice(){
+                return this.price;
+            }
+        }
+        let listPhone=[];
+        let phone1= new Phone(1,'nokia 1080', 'nokia', 100000 );
+        let phone2= new Phone(4,'nokia 1080', 'nokia', 100000 );
+        let phone3= new Phone(8,'nokia 1080', 'nokia', 100000 );
+        listPhone.push(phone1,phone2,phone3);
+        listPhone.sort()
+        display(listPhone);
+        function display(list) {
+            let tablestr ='<table style="border: solid 3px black;">\n' +
+            '<tr>\n' +
+                    '<th>stt</th>\n'+
+                    '<th>id</th>\n' +
+                    '<th>name</th>\n'+
+                    '<th>product of</th>\n'+
+                    '<th>price</th>\n'+
+            '</tr>';
+            for (let i=0; i<list.length; i++){
+                tablestr +='<tr>\n'+
+                        '<th>'+(i+1)+'</th>\n'+
+                        '<th>'+list[i].getId()+'</th>\n'+
+                        '<th>'+list[i].getName()+'</th>\n'+
+                        '<th>'+list[i].getProductOf()+'</th>\n'+
+                        '<th>'+list[i].getPrice()+'</th>\n'+
+                '<tr>\n';
+            }
+            tablestr += '</table>';
+            document.getElementById('result').innerHTML=tablestr;
+            display(listPhone);
+        }
+        function add() {
+            let id=prompt('enter ID:');
+            let name=prompt('enter name:');
+            let productOf=prompt('enter product of:');
+            let price=prompt('enter price:');
+            if (isNaN(price)){
+                do {
+                    price=prompt('enter again: ');
+                }while (isNaN(price));
+            }
+            let phone= new Phone(id, name, productOf, price);
+            listPhone.push(phone);
+            display(listPhone);
+        }
+    </script>
+</body>
+</html>
