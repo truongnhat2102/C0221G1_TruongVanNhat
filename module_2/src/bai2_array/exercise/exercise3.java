@@ -12,8 +12,9 @@ public class exercise3 {
             arr1[i] = i;
             arr2[i] = i + 6;
         }
+        System.out.println();
         for (int j = 0; j < arr1.length + arr2.length; j++) {
-            System.out.println(concat(arr1, arr2)[j]);
+            System.out.print(concat(arr1, arr2)[j]+" ");
         }
     }
 
