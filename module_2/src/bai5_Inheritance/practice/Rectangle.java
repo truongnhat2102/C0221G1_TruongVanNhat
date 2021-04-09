@@ -1,6 +1,8 @@
 package bai5_Inheritance.practice;
 
-public class Rectangle extends Shape {
+import bai6_abstract_class_andInterface.exercise.exercise2.Colorable;
+
+public class Rectangle extends Shape implements Colorable {
     double width = 1.0;
     double height = 1.0;
 
@@ -12,13 +14,12 @@ public class Rectangle extends Shape {
         this.height = height;
     }
 
-    Rectangle(double width, double heigth, String color, boolean filled) {
+    public Rectangle(double width, double heigth, String color, boolean filled) {
         super(color, filled);
         this.width = width;
         this.height = heigth;
 
     }
-
 
     protected double getWidth() {
         return width;
@@ -54,7 +55,9 @@ public class Rectangle extends Shape {
                 '}';
         return s;
     }
-
+    public void howToColor() {
+        System.out.println("Color all four sides");
+    }
 }
 
 class RectangleTest {

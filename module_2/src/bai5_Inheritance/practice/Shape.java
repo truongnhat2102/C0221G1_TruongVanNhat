@@ -1,6 +1,9 @@
 package bai5_Inheritance.practice;
 
-public class Shape {
+import bai6_abstract_class_andInterface.exercise.exercise1.Resizeable;
+import bai6_abstract_class_andInterface.exercise.exercise2.Colorable;
+
+public class Shape implements Resizeable {
     protected String color;
     protected boolean filled;
 
@@ -35,6 +38,11 @@ public class Shape {
                 "color of " + color +
                 ", filled /not filled" + filled;
     }
+
+    public void reSize(double percent) {
+    }
+
+
 }
 class ShapeTest {
     public static void main(String[] args) {

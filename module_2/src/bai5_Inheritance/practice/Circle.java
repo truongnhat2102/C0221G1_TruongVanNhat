@@ -16,19 +16,19 @@ public class Circle extends Shape {
         this.radius = v;
     }
 
-    double getRadius() {
+    public double getRadius() {
         return radius;
     }
 
-    void setRadius(double radius) {
+    protected void setRadius(double radius) {
         this.radius = radius;
     }
 
-    double getArea() {
+    public double getArea() {
         return radius * radius * Math.PI;
     }
 
-    double getPerimeter() {
+    public double getPerimeter() {
         return radius * 2 * Math.PI;
     }
 
