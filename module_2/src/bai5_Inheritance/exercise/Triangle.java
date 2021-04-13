@@ -5,12 +5,18 @@ import bai5_Inheritance.practice.Shape;
 import java.util.Scanner;
 
 public class Triangle extends Shape {
-    double side1 = 1.0;
-    double side2 = 1.0;
-    double side3 = 1.0;
+    protected double side1 = 1.0;
+    protected double side2 = 1.0;
+    protected double side3 = 1.0;
 
     public Triangle(double side1, double side2, double side3, String blue, boolean b) {
         super(blue,true);
+        setSide1(side1);
+        setSide2(side2);
+        setSide3(side3);
+    }
+
+    public Triangle(double side1, double side2, double side3) {
         setSide1(side1);
         setSide2(side2);
         setSide3(side3);
