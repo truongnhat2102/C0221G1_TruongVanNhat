@@ -37,7 +37,7 @@ public class ProductManager {
                 System.out.println("are you sure?\n1.sure\n2.no");
                 int confirm = sc.nextInt();
                 if (confirm == 1) {
-                    products.remove(products.get(j).getId());
+                    products.remove(products.get(j));
                 }
             }
         }
@@ -77,11 +77,12 @@ public class ProductManager {
 
     void findByName() {
         System.out.println("enter name to find: ");
+        sc.nextLine();
         String i = sc.nextLine();
         for (int j = 0; j < products.size(); j++) {
-            if (i.compareTo(products.get(j).getName()) == 0) {
+            if (products.get(j).getName().contains(i)) {
                 System.out.println(products.get(j));
-                System.out.println("do you want to do:\n1.delete\n2.edit\3.exit");
+                System.out.println("do you want to do:\n1.delete\n2.edit\n3.exit");
                 switch (sc.nextInt()) {
                     case 1:
                         products.remove(j);

@@ -1,13 +1,16 @@
-package bai12_java_collection_framework.exercise.postorder;
+package bai12_java_collection_framework.exercise.preorder;
 
-public class Postorder<E extends Comparable<E>> extends AbstractTree<E> {
+import bai12_java_collection_framework.exercise.postorder.AbstractTree;
+import bai12_java_collection_framework.exercise.preorder.TreeNode;
+
+public class Preorder<E extends Comparable<E>> extends AbstractTree<E> {
     protected TreeNode<E> root;
     protected int size = 0;
 
-    public Postorder() {
+    public Preorder() {
     }
 
-    public Postorder(E[] objects) {
+    public Preorder(E[] objects) {
         for (int i = 0; i < objects.length; i++)
             insert(objects[i]);
     }
@@ -50,9 +53,10 @@ public class Postorder<E extends Comparable<E>> extends AbstractTree<E> {
 
     protected void postorder(TreeNode<E> root) {
         if (root == null) return;
+        System.out.println(root.element + " ");
         postorder(root.left);
         postorder(root.right);
-        System.out.println(root.element + " ");
+
 
     }
 }

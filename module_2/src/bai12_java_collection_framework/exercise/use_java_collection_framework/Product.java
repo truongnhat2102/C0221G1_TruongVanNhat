@@ -31,9 +31,9 @@ public class Product {
 
     @Override
     public String toString() {
-        return "[" +
+        return "" +
                 "id: " + id +
                 ", name: " + name +
-                ", price: " + price + "]";
+                ", price: " + price ;
     }
 }

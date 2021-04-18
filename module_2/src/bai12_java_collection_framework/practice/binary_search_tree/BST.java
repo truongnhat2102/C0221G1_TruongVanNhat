@@ -1,13 +1,13 @@
-package bai12_java_collection_framework.exercise.postorder;
+package bai12_java_collection_framework.practice.binary_search_tree;
 
-public class Postorder<E extends Comparable<E>> extends AbstractTree<E> {
+public class BST<E extends Comparable<E>> extends AbstractTree<E> {
     protected TreeNode<E> root;
     protected int size = 0;
 
-    public Postorder() {
+    public BST() {
     }
 
-    public Postorder(E[] objects) {
+    public BST(E[] objects) {
         for (int i = 0; i < objects.length; i++)
             insert(objects[i]);
     }
@@ -46,13 +46,14 @@ public class Postorder<E extends Comparable<E>> extends AbstractTree<E> {
         return size;
     }
     @Override
-    public void postorder() { postorder(root); }
+    public void inorder() {
+        inorder(root);
+    }
 
-    protected void postorder(TreeNode<E> root) {
+    protected void inorder(TreeNode<E> root) {
         if (root == null) return;
-        postorder(root.left);
-        postorder(root.right);
+        inorder(root.left);
         System.out.println(root.element + " ");
-
+        inorder(root.right);
     }
 }
