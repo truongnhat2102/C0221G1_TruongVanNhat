@@ -1,8 +1,8 @@
-package bai13_searching_algorithms.exercise.find_max_length_by_recursion;
+package bai14_sorting_algorithms.practice.bubble_sort;
 
 import java.util.Scanner;
 
-public class MaxLength {
+public class BubbleSortByStep {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter list size:");
