@@ -25,9 +25,9 @@ public class IllegalTriangleException extends Throwable {
                 check();
                 break;
             } catch (IllegalTriangleException e) {
-                System.out.println("enter again");
+                System.out.println("enter");
             } catch (Exception e){
-                System.out.println("enter again");
+                System.out.println("enter");
             }
         }
     }
