@@ -25,7 +25,7 @@ public class CopyFileText {
 //    }
 
     public static void main(String[] args) throws IOException {
-        File source = new File("D:\\C0221G1_TruongVanNhat\\module_2\\src\\bai16_io_text_file\\exercise\\copy_file_text\\test6.txt");
+        File source = new File("D:\\C0221G1_TruongVanNhat\\module_2\\src\\bai16_io_text_file\\exercise\\copy_file_text\\test1.txt");
         File dest = new File("D:\\C0221G1_TruongVanNhat\\module_2\\src\\bai16_io_text_file\\exercise\\copy_file_text\\test2.txt");
 
         try {
