@@ -1,6 +1,6 @@
 package furama_resort.models;
 
-abstract class Services {
+public abstract class Services {
     private String id;
     //    public static String ID_REGEX="^[]";
     private String name;
@@ -69,7 +69,7 @@ abstract class Services {
         this.rentType = rentType;
     }
 
-    void showInfor() {
+    public void showInfor() {
         System.out.println(toString());
     }
 

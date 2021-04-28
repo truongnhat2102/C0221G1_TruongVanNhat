@@ -6,7 +6,7 @@ public class House extends Services {
     private String floors;
 
     @Override
-    void showInfor() {
+    public void showInfor() {
         super.showInfor();
     }
 

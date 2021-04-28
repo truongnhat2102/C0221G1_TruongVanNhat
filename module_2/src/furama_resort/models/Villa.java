@@ -9,7 +9,7 @@ public class Villa extends House {
     }
 
     @Override
-    void showInfor() {
+    public void showInfor() {
         super.showInfor();
     }
 

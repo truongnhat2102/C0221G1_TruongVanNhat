@@ -4,7 +4,7 @@ public class Room extends Services {
     private String freeService;
 
     @Override
-    void showInfor() {
+    public void showInfor() {
         super.showInfor();
     }
 
