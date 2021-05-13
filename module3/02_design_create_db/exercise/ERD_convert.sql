@@ -1,30 +1,30 @@
 create database if not exists product_management;
-create table phieu_xuat(
-idPX int not null primary key,
-dateOfPX date null);
+create table bill(
+id_PX int not null primary key,
+date_of_PX date null);
 
-create table phieu_nhap(
-idPN int not null primary key,
-dateOfPN date null);
+create table receipt(
+id_PN int not null primary key,
+date_of_PN date null);
 
 create table supply(
-idSupply int not null auto_increment primary key,
-nameSupply varchar(250) null,
-idPX int not null,
-idPN int not null,
-foreign key(idPX) references phieu_xuat(idPX),
-foreign key(idPN) references phieu_nhap(idPN));
+id_supply int not null auto_increment primary key,
+name_supply varchar(250) null,
+id_PX int not null,
+id_PN int not null,
+foreign key(id_PX) references bill(id_PX),
+foreign key(id_PN) references receipt(id_PN));
 
 create table manufacture(
-idManufacture int not null auto_increment primary key,
-nameManufacture varchar(250) null,
-addressmanufacture varchar(250) null,
-phoneManufacture int null);
+id_manufacture int not null auto_increment primary key,
+name_manufacture varchar(250) null,
+address_manufacture varchar(250) null,
+phone_manufacture int null);
 
 create table Orders(
-idOrder int not null auto_increment primary key,
-dateOfOrder date null,
-idSupply int not null,
-idManufacture int not null,
-foreign key(idSupply) references supply(idSupply),
-foreign key(idManufacture) references manufacture(idManufacture));
+id_order int not null auto_increment primary key,
+date_of_order date null,
+id_supply int not null,
+id_manufacture int not null,
+foreign key(id_supply) references supply(id_supply),
+foreign key(id_manufacture) references manufacture(id_manufacture));

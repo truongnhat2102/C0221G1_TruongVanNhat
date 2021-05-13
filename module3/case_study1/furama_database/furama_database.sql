@@ -1,93 +1,93 @@
 create database if not exists furama_resort;
 create table positionn(
-idPosition int not null auto_increment primary key,
-namePosition varchar(250) null);
+id_position int not null auto_increment primary key,
+name_position varchar(250) null);
 
 create table education(
-idEducation int not null auto_increment primary key,
-nameEducation varchar(250) null);
+id_education int not null auto_increment primary key,
+name_education varchar(250) null);
 
 create table part(
-idPart int not null auto_increment primary key,
-namePart varchar(250) null);
+id_part int not null auto_increment primary key,
+name_part varchar(250) null);
 
 create table employee(
-idEmployee int not null auto_increment primary key,
-nameEmployee int null,
-idPosition int not null,
-foreign key (idPosition) references positionn(idPosition),
-idEducation int not null,
-foreign key (idEducation) references education(idEducation),
-idPart int not null,
-foreign key (idPart) references part(idPart),
-dateOfBirth date null,
-idPerson varchar(45) null,
+id_employee int not null auto_increment primary key,
+name_employee int null,
+id_position int not null,
+foreign key (id_position) references positionn(id_position),
+id_education int not null,
+foreign key (id_education) references education(id_education),
+id_part int not null,
+foreign key (id_part) references part(id_part),
+date_of_birth date null,
+id_person varchar(45) null,
 salary varchar(45) null,
 phone varchar(45) null,
 email varchar(45) null,
 address varchar(45) null);
 
-create table service_go_with(
-idServiceGoWith int not null auto_increment primary key,
-nameServiceGoWith varchar(45) null,
-priceServiceGoWith int null,
-unitServiceGoWith int null,
-amountServiceGoWith int null);
+create table extra_service(
+id_extra_service int not null auto_increment primary key,
+name_extra_service varchar(45) null,
+price_extra_service int null,
+unit_extra_service int null,
+amount_extra_service int null);
 
 create table type_of_customer(
-idTypeOfCustomer int not null auto_increment primary key,
-nameTypeOfCustomer varchar(45) null);
+id_type_customer int not null auto_increment primary key,
+name_type_customer varchar(45) null);
 
 create table customer(
-idCustomer int not null auto_increment primary key,
-idTypeOfCustomer int not null,
-foreign key(idTypeOfCustomer) references type_of_customer(idTypeOfCustomer),
-nameCustomer varchar(45) null,
-dateOfBorth date null,
-idPerson varchar(45),
+id_customer int not null auto_increment primary key,
+id_type_customer int not null,
+foreign key(id_type_customer) references type_of_customer(id_type_customer),
+name_customer varchar(45) null,
+date_of_birth date null,
+id_person varchar(45),
 phone varchar(45),
 email varchar(45),
 address varchar(45));
 
 create table type_of_rent(
-idTypeOfRent int not null auto_increment primary key,
-nameTypeOfRent varchar(45),
+id_type_rent int not null auto_increment primary key,
+name_type_rent varchar(45),
 price varchar(45));
 
 create table type_of_service(
-idTypeOfService int not null auto_increment primary key,
-nameTypeOfService varchar(45));
+id_type_service int not null auto_increment primary key,
+name_type_service varchar(45));
 
 create table service(
-idService int not null auto_increment primary key,
-nameService varchar(45),
-areaService int,
-floorService int,
-maxPeopleService varchar(45),
-priceService varchar(45),
-idTypeOfRent int not null,
-foreign key(idTypeOfRent) references type_of_rent(idTypeOfRent),
-idTypeOfService int not null,
-foreign key(idTypeOfService) references type_of_service(idTypeOfService),
-statusService varchar(45));
+id_service int not null auto_increment primary key,
+name_service varchar(45),
+area_service int,
+floor_service int,
+max_people_service varchar(45),
+price_service varchar(45),
+id_type_rent int not null,
+foreign key(id_type_rent) references type_of_rent(id_type_rent),
+id_type_service int not null,
+foreign key(id_type_service) references type_of_service(id_type_service),
+status_service varchar(45));
 
 create table contract(
-idContract int not null auto_increment primary key,
-idEmployee int not null,
-foreign key (idEmployee) references employee(idEmployee),
-idCustomer int not null,
-foreign key (idCustomer) references customer(idCustomer),
-idService int not null,
-foreign key (idService) references service(idService),
-dateOfContact date null,
-dateOfEnd date null,
+id_contract int not null auto_increment primary key,
+id_employee int not null,
+foreign key (id_employee) references employee(id_employee),
+id_customer int not null,
+foreign key (id_customer) references customer(id_customer),
+id_service int not null,
+foreign key (id_service) references service(id_service),
+date_contact date null,
+date_end date null,
 deposit int null,
 total int null);
 
 create table contract_detail(
-idContractDetail int not null auto_increment primary key,
-idContract int not null,
-foreign key(idContract) references contract(idContract),
-idServiceGoWith int not null,
-foreign key(idServiceGoWith) references service_go_with(idServiceGoWith),
-amountContractDetail int);
+id_contract_detail int not null auto_increment primary key,
+id_contract int not null,
+foreign key(id_contract) references contract(id_contract),
+id_extra_service int not null,
+foreign key(id_extra_service) references service_go_with(id_extra_service),
+amount_contract_detail int);

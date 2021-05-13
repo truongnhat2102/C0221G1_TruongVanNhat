@@ -5,7 +5,7 @@ drop table students_management.`students`;
 create table students_management.`students`(
 `id` int not null auto_increment,
 `name` varchar(255) not null,
-`dateOfBirth` date null,
+`date_of_birth` date null,
 primary key (id));
 
 select * from students_management.`students`;
