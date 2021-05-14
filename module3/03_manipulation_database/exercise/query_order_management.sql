@@ -26,4 +26,27 @@ values(1,1,"3"),
 (2,3,"3");
 
 select id_order, date_of_order, total_price_of_orders
-from Orders
+from Orders;
+
+select * 
+from customer
+join Orders on Orders.id_customer = customer.id_customer;
+
+select customer.name_customer, product.name_product, Orders.id_order
+from customer
+join Orders on Orders.id_customer = customer.id_customer
+join order_detail on Orders.id_order = order_detail.id_order
+join product on order_detail.id_product = product.id_product;
+
+select name_customer
+from customer
+left join Orders on customer.id_customer = Orders.id_customer
+where Orders.id_order is null; 
+
+select Orders.id_order, Orders.date_of_order, sum(product.price_product*order_detail.QTY_order) as total_price_of_orders
+from customer
+join Orders on Orders.id_customer = customer.id_customer
+join order_detail on Orders.id_order = order_detail.id_order
+join product on order_detail.id_product = product.id_product
+group by Orders.id_order
+order by Orders.id_order;
