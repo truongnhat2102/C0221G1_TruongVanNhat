@@ -8,7 +8,7 @@ create table Orders(
 id_order int not null auto_increment primary key,
 id_customer int not null,
 foreign key (id_customer) references customer(id_customer),
-date_of_order date null,
+date_of_order date not null,
 total_price_of_orders int null);
 
 create table product(
