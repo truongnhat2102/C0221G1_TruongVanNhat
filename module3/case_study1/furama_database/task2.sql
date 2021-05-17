@@ -8,7 +8,7 @@ where (employee.name_employee like "H%" or employee.name_employee like 'T%' or e
 -- task3
 select *
 from customer
-where (year(curdate())-year(customer.date_of_birth)) >=18 and (year(curdate())-year(customer.date_of_birth)) <=50 and customer.address = ("danang" or "quangtri");
+where (year(curdate())-year(customer.date_of_birth)) >=18 and (year(curdate())-year(customer.date_of_birth)) <=50 and customer.address = "danang" or customer.address = "quangtri";
 
 -- task 4
 select *, count(id_customer) as times_booking
@@ -19,30 +19,33 @@ group by id_customer
 order by times_booking;
 
 -- task5
-select customer.id_customer, customer.name_customer, name_type_customer, contract.id_contract, name_service, date_contract, sum(service.price_service+extra_service.amount_extra_service*extra_service.price_extra_service) as total_price
+select customer.id_customer, customer.name_customer, name_type_customer, contract.id_contract, name_service, date_contract, sum(service.price_service + extra_service.amount_extra_service * extra_service.price_extra_service) as total_price
 from customer
 left join type_of_customer on customer.id_type_customer = type_of_customer.id_type_customer
 left join contract on customer.id_customer = contract.id_customer
 left join service on service.id_service = contract.id_service
 left join contract_detail on contract_detail.id_contract = contract.id_contract
-left join extra_service on extra_service.id_extra_service = contract_detail.id_extra_service;
+left join extra_service on extra_service.id_extra_service = contract_detail.id_extra_service
+group by customer.id_customer;
 
--- task6 (vi du lieu truyen vao cua e khong co Dịch vụ chưa từng được Khách hàng thực hiện đặt nen em lam nguoc lai nha)
+-- task6 
 select service.name_service, area_service, price_service, name_type_service
 from service
 left join type_of_service on service.id_type_service = type_of_service.id_type_service
 join contract on service.id_service = contract.id_service
-where month(date_contract) = ('01' or '02' or '03') and contract.id_contract is not null;
+where month(date_contract) = '01' or month(date_contract) = '02' or month(date_contract) = '03' 
+and contract.date_contract = '2019' and contract.id_contract is not null;
 
 -- task7
 select service.id_service, name_service, area_service, max_people_service, price_service, name_type_service
 from service
 join type_of_service on service.id_type_service = type_of_service.id_type_service
 join contract on contract.id_service = service.id_service
-where year(contract.date_contract) <> '2021' and year(contract.date_contract) like '2020';
+where year(contract.date_contract) <> '2019' and year(contract.date_contract) like '2018';
 
 -- task8
-select customer.name_customer
+select name_customer
+from customer
 group by name_customer;
 
 
@@ -68,7 +71,7 @@ right join contract_detail on contract_detail.id_extra_service = extra_service.i
 right join contract on contract.id_contract = contract_detail.id_contract
 right join customer on customer.id_customer = contract.id_customer
 right join type_of_customer on type_of_customer.id_type_customer = customer.id_type_customer
-where (type_of_customer.name_type_customer like 'Diamond') and (customer.address like 'Dannang' or customer.address like 'Ha Noi');
+where (type_of_customer.name_type_customer like 'Diamond') and (customer.address like 'Vinh' or customer.address like 'Quang Ngai');
 
 -- task 12
 select contract.id_contract, employee.name_employee, customer.name_customer, customer.phone, service.name_service, extra_service.amount_extra_service
@@ -78,9 +81,9 @@ join customer on customer.id_customer = contract.id_customer
 join service on service.id_service = contract.id_service
 join contract_detail on contract_detail.id_contract = contract.id_contract
 join extra_service on extra_service.id_extra_service = contract_detail.id_extra_service
-where (month(contract.date_contract) not in ('01', '02', '03'))
-and (month(contract.date_contract) in ('12', '11', '10', '09', '08','07', '05'))
-and year(contract.date_contract) like '2021'
+where (month(contract.date_contract) not in ('10', '11', '12'))
+and (month(contract.date_contract) in ('01', '02', '03', '04', '05','06'))
+and year(contract.date_contract) like '2019'
 group by customer.name_customer;
 
 -- task13
@@ -88,7 +91,8 @@ select extra_service.*, count(contract_detail.id_extra_service) as count_extra_s
 from extra_service
 join contract_detail on contract_detail.id_extra_service = extra_service.id_extra_service
 group by(id_extra_service)
-having max(count_extra_service);
+order by count_extra_service desc
+limit 1;
 
 -- task14
 select extra_service.*, count(contract_detail.id_extra_service) as count_extra_service
@@ -101,15 +105,63 @@ having count_extra_service like '1';
 select employee.*, count(contract.id_contract) as amount_contract
 from employee
 right join contract on contract.id_employee = employee.id_employee
-where year(date_contract) like '2021' or id_contract is null
+where year(date_contract) like '2018' or year(date_contract) like '2019' or id_contract is null
 group by employee.id_employee
-having amount_contract < 3;
+having amount_contract <= 3;
 
 -- task16
-delete employee.* 
-from employee
-right join contract on contract.id_employee = employee.id_contract
-where (year(current_date())-year(date_contract)) = 5
+SET SQL_SAFE_UPDATES = 0;
+delete from employee
+where employee.id_employee not in (
+select contract.id_employee
+from contract 
+where (year(now()) - year(date_contract)) < 5 );
+select employee.*
+from employee;
+
+-- task17
+SET SQL_SAFE_UPDATES = 0;
+update customer
+set customer.id_type_customer = 1
+where customer.id_type_customer = 2 and customer.id_customer in (
+select contract.id_customer
+from contract
+inner join contract_detail on contract.id_contract = contract_detail.id_contract
+inner join service on contract.id_service = service.id_service
+inner join extra_service on extra_service.id_extra_service = contract_detail.id_extra_service
+where year(contract.date_contract) like '2019'
+group by contract.id_customer
+having sum(service.price_service + extra_service.amount_extra_service * extra_service.price_extra_service) >= 12000000);
+select *
+from customer
+join type_of_customer on type_of_customer.id_type_customer = customer.id_type_customer;
+
+-- task18
+delete from customer
+where id_customer in (
+select contract.id_customer
+from contract
+where (year(now()) - year(date_contract)) > 5);
+
+-- task19
+update extra_service
+set extra_service.price_extra_service = (extra_service.price_extra_service * 2)
+where id_extra_service in (
+select contract_detail.id_extra_service
+from contract_detail
+group by (id_extra_service)
+having count(contract_detail.id_extra_service) > 10);
+select extra_service.*
+from extra_service;
+
+-- task20
+select id_customer as id, name_customer as name, email, phone, date_of_birth, address
+from customer
+union
+select id_employee, name_employee, email, phone, date_of_birth, address
+from employee;
+
+-- task21
 
 
 

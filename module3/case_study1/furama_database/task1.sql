@@ -90,7 +90,7 @@ email varchar(45),
 address varchar(45));
 
 INSERT INTO furama_resort.customer (id_customer, id_type_customer, name_customer, date_of_birth, id_person, phone, email, address) 
-VALUES ('1', '1', 'Nguyen Trung Quan', '1978-12-13', '201381738', '0934 123 523', 'quan@gmail.com', 'Danang'),
+VALUES ('1', '2', 'Nguyen Trung Quan', '1978-12-13', '201381738', '0934 123 523', 'quan@gmail.com', 'Danang'),
 ('2', '2', 'Pham Phuong Dong', '1990-03-24', '493291923', '0123 832 832', 'dong@gmail.com', 'Quang Tri'),
 ('3', '3', 'Tran Thi Thuy', '1998-08-08', '121030300', '0138 747 429', 'thuy@gmail.com', 'Ha Noi'),
 ('4', '4', 'Phan Nhat Tan', '1994-04-30', '893477121', '0248 234 048', 'tan@gmail.com', 'Quang Ngai'),
