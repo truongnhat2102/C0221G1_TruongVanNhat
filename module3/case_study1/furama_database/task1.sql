@@ -1,4 +1,5 @@
 create database if not exists furama_resort;
+use furama_resort;
 create table positionn(
 id_position int not null auto_increment primary key,
 name_position varchar(250) null);
@@ -88,7 +89,8 @@ phone varchar(45),
 email varchar(45),
 address varchar(45));
 
-INSERT INTO furama_resort.customer (id_customer, id_type_customer, name_customer, date_of_birth, id_person, phone, email, address) VALUES ('1', '1', 'Nguyen Trung Quan', '1978-12-13', '201381738', '0934 123 523', 'quan@gmail.com', 'Danang'),
+INSERT INTO furama_resort.customer (id_customer, id_type_customer, name_customer, date_of_birth, id_person, phone, email, address) 
+VALUES ('1', '1', 'Nguyen Trung Quan', '1978-12-13', '201381738', '0934 123 523', 'quan@gmail.com', 'Danang'),
 ('2', '2', 'Pham Phuong Dong', '1990-03-24', '493291923', '0123 832 832', 'dong@gmail.com', 'Quang Tri'),
 ('3', '3', 'Tran Thi Thuy', '1998-08-08', '121030300', '0138 747 429', 'thuy@gmail.com', 'Ha Noi'),
 ('4', '4', 'Phan Nhat Tan', '1994-04-30', '893477121', '0248 234 048', 'tan@gmail.com', 'Quang Ngai'),
@@ -152,7 +154,7 @@ values ('1', '5', '1', '1', '2021-05-14', '2021-05-24', '1000', '1200'),
 ('2', '6', '2', '2', '2021-05-14', '2021-05-23', '800', '500'),
 ('3', '5', '3', '3', '2021-04-14', '2021-05-22', '600', '800'),
 ('4', '6', '4', '2', '2021-05-14', '2021-05-21', '400', '500'),
-('5', '5', '5', '1', '2021-03-14', '2021-05-20', '200', '1200'),
+('5', '5', '6', '1', '2021-03-14', '2021-05-20', '200', '1200'),
 ('6', '6', '1', '1', '2020-01-12', '2020-01-15', '200', '600');
 
 create table contract_detail(
