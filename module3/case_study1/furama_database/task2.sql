@@ -20,13 +20,13 @@ order by times_booking;
 
 -- task5
 select customer.id_customer, customer.name_customer, name_type_customer, contract.id_contract, name_service, date_contract, sum(service.price_service + extra_service.amount_extra_service * extra_service.price_extra_service) as total_price
-from customer
+from contract
+left join customer on customer.id_customer = contract.id_customer
 left join type_of_customer on customer.id_type_customer = type_of_customer.id_type_customer
-left join contract on customer.id_customer = contract.id_customer
 left join service on service.id_service = contract.id_service
 left join contract_detail on contract_detail.id_contract = contract.id_contract
 left join extra_service on extra_service.id_extra_service = contract_detail.id_extra_service
-group by customer.id_customer;
+group by contract.id_contract;
 
 -- task6 
 select service.name_service, area_service, price_service, name_type_service
@@ -34,20 +34,33 @@ from service
 left join type_of_service on service.id_type_service = type_of_service.id_type_service
 join contract on service.id_service = contract.id_service
 where month(date_contract) = '01' or month(date_contract) = '02' or month(date_contract) = '03' 
-and contract.date_contract = '2019' and contract.id_contract is not null;
+and contract.date_contract = '2019';
 
 -- task7
 select service.id_service, name_service, area_service, max_people_service, price_service, name_type_service
 from service
-join type_of_service on service.id_type_service = type_of_service.id_type_service
-join contract on contract.id_service = service.id_service
-where year(contract.date_contract) <> '2019' and year(contract.date_contract) like '2018';
+join type_of_service on type_of_service.id_type_service = service.id_type_service
+join contract on service.id_service = contract.id_service
+where year(contract.date_contract) like '2021' and service.id_service not in (
+select contract.id_service
+from contract
+where year(contract.date_contract) like '2020')
+group by name_service,name_type_service;
+
 
 -- task8
 select name_customer
 from customer
 group by name_customer;
 
+select name_customer
+from customer
+union
+select name_customer
+from customer;
+
+select distinctrow name_customer
+from customer;
 
 -- task 9
 select month(contract.date_contract) as month, count(customer.id_customer) as amount_customers
@@ -75,16 +88,18 @@ where (type_of_customer.name_type_customer like 'Diamond') and (customer.address
 
 -- task 12
 select contract.id_contract, employee.name_employee, customer.name_customer, customer.phone, service.name_service, extra_service.amount_extra_service
-from employee
-join contract on employee.id_employee = contract.id_employee
+from contract
+join employee on employee.id_employee = contract.id_employee
 join customer on customer.id_customer = contract.id_customer
 join service on service.id_service = contract.id_service
 join contract_detail on contract_detail.id_contract = contract.id_contract
 join extra_service on extra_service.id_extra_service = contract_detail.id_extra_service
-where (month(contract.date_contract) not in ('10', '11', '12'))
-and (month(contract.date_contract) in ('01', '02', '03', '04', '05','06'))
-and year(contract.date_contract) like '2019'
-group by customer.name_customer;
+where month(contract.date_contract) in ('10','11','12') 
+and year(contract.date_contract) ='2019'
+and contract.id_customer not in (
+select contract.id_customer
+from contract
+where month(date_contract) in ('1', '2', '3', '4', '5', '6'));
 
 -- task13
 select extra_service.*, count(contract_detail.id_extra_service) as count_extra_service
@@ -149,8 +164,10 @@ set extra_service.price_extra_service = (extra_service.price_extra_service * 2)
 where id_extra_service in (
 select contract_detail.id_extra_service
 from contract_detail
+join contract on contract.id_contract = contract_detail.id_contract
+where year(contract.date_contract) = '2019'
 group by (id_extra_service)
-having count(contract_detail.id_extra_service) > 10);
+having sum(extra_service.amount_extra_service) > 10);
 select extra_service.*
 from extra_service;
 
