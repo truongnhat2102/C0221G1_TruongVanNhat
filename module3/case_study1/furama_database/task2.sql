@@ -26,7 +26,7 @@ left join type_of_customer on customer.id_type_customer = type_of_customer.id_ty
 left join service on service.id_service = contract.id_service
 left join contract_detail on contract_detail.id_contract = contract.id_contract
 left join extra_service on extra_service.id_extra_service = contract_detail.id_extra_service
-group by contract.id_contract;
+group by contract.id_cusotmer,id_contract;
 
 -- task6 
 select service.name_service, area_service, price_service, name_type_service
@@ -114,13 +114,13 @@ select extra_service.*, count(contract_detail.id_extra_service) as count_extra_s
 from extra_service
 join contract_detail on contract_detail.id_extra_service = extra_service.id_extra_service
 group by (id_extra_service)
-having count_extra_service like '1';
+having count_extra_service = '1';
 
 -- task15
 select employee.*, count(contract.id_contract) as amount_contract
 from employee
 right join contract on contract.id_employee = employee.id_employee
-where year(date_contract) like '2018' or year(date_contract) like '2019' or id_contract is null
+where year(date_contract) = '2018' or year(date_contract) = '2019' or id_contract is null
 group by employee.id_employee
 having amount_contract <= 3;
 
