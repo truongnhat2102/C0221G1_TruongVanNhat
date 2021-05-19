@@ -33,8 +33,10 @@ select service.name_service, area_service, price_service, name_type_service
 from service
 left join type_of_service on service.id_type_service = type_of_service.id_type_service
 join contract on service.id_service = contract.id_service
-where month(date_contract) = '01' or month(date_contract) = '02' or month(date_contract) = '03' 
-and contract.date_contract = '2019';
+where year(contract.date_contract) = 2021 and contract.id_contract not in (
+select contract.id_contract
+from contract
+where month(date_contract) in ('1', '2', '3'));
 
 -- task7
 select service.id_service, name_service, area_service, max_people_service, price_service, name_type_service
@@ -102,12 +104,12 @@ from contract
 where month(date_contract) in ('1', '2', '3', '4', '5', '6'));
 
 -- task13
-select extra_service.*, count(contract_detail.id_extra_service) as count_extra_service
+select extra_service.*,count(contract_detail.id_extra_service) as count_extra_service
 from extra_service
 join contract_detail on contract_detail.id_extra_service = extra_service.id_extra_service
-group by(id_extra_service)
-order by count_extra_service desc
-limit 1;
+where id_extra_service in (
+
+group by id_extra_service;
 
 -- task14
 select extra_service.*, count(contract_detail.id_extra_service) as count_extra_service

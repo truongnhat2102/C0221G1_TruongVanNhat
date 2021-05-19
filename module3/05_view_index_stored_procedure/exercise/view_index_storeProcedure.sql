@@ -83,17 +83,17 @@ if statement like 'code_product'
 	then update products 
 	set code_product = insert_edit 
 	where id_product = find_id;
-    end if;
+	end if;
 if statement ='name_product'
 	then update products 
 	set name_product = insert_edit 
 	where id_product = find_id ;
-    end if;
+	end if;
 if statement ='price_product'
 	then update products 
 	set price_product = insert_edit 
 	where id_product = find_id ;
-    end if;
+	end if;
 if statement ='amount_product'
 	then update products 
 	set amount_product = insert_edit 
