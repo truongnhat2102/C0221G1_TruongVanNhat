@@ -33,8 +33,8 @@ select service.name_service, area_service, price_service, name_type_service
 from service
 left join type_of_service on service.id_type_service = type_of_service.id_type_service
 join contract on service.id_service = contract.id_service
-where year(contract.date_contract) = 2021 and contract.id_contract not in (
-select contract.id_contract
+where year(contract.date_contract) = 2021 and contract.id_service not in (
+select contract.id_service
 from contract
 where month(date_contract) in ('1', '2', '3'));
 
@@ -104,12 +104,13 @@ from contract
 where month(date_contract) in ('1', '2', '3', '4', '5', '6'));
 
 -- task13
-select extra_service.*,count(contract_detail.id_extra_service) as count_extra_service
-from extra_service
-join contract_detail on contract_detail.id_extra_service = extra_service.id_extra_service
-where id_extra_service in (
-
-group by id_extra_service;
+select *, max(count_extra_service) as max_count_extra_service
+from (select extra_service.*, count(contract_detail.id_extra_service) as count_extra_service
+	from contract_detail
+    join extra_service on extra_service.id_extra_service = contract_detail.id_extra_service
+    group by contract_detail.id_extra_service) abcd
+group by count_extra_service
+having count_extra_service = max_count_extra_service;
 
 -- task14
 select extra_service.*, count(contract_detail.id_extra_service) as count_extra_service
@@ -181,6 +182,99 @@ select id_employee, name_employee, email, phone, date_of_birth, address
 from employee;
 
 -- task21
+create view v_employee as
+select employee.* 
+from employee
+where address = 'hai chau' and id_employee in (
+select contract.id_employee
+from contract
+where date_contract = '2019/12/12');
+
+-- task22
+update v_employee
+set address = 'lien chieu';
+
+-- task23
+delimiter //
+create procedure sp_1(in customer_id int)
+begin
+SET foreign_key_checks = 0; 
+delete customer.*
+from customer
+where id_customer = customer_id;
+SET foreign_key_checks = 1;
+end//
+call sp_1(1);
+
+-- task24
+delimiter //
+create procedure sp_2(in employee_id int, 
+in customer_id int, 
+in service_id int, 
+in contract_date date, 
+in end_contract date, 
+in deposit int, 
+in total int)
+begin
+insert into contract(id_employee, 
+id_customer, 
+id_service, 
+date_contract, 
+date_end, 
+deposit, 
+total)
+values(employee_id, 
+customer_id, 
+service_id, 
+contract_date, 
+end_contract, 
+deposit, 
+total);
+end//
+call sp_2('5', '1', '1', '2021-05-14', '2021-05-24', '1000', '1200');
+
+-- task25
+create trigger tr_1 
+after delete
+on contract for each row
+begin
+ select concat("amount record in contract: ", count(id_contract)) 
+ as log into outfile "C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/log.txt";
+end;
+-- drop trigger tr_1;
+
+SET foreign_key_checks = 0; 
+delete from contract
+where id_contract = 1;
+SET foreign_key_checks = 1;
+
+-- task26
+create trigger tr_2
+before update
+on contract
+for each row
+begin
+if datediff(date_end - date_contract) <2 
+	then select concat('amount record in contract: ', count(id_contract)) 
+    as log into 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/log.txt';
+    end if
+end 
+end;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
