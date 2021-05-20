@@ -33,7 +33,7 @@ select service.name_service, area_service, price_service, name_type_service
 from service
 left join type_of_service on service.id_type_service = type_of_service.id_type_service
 join contract on service.id_service = contract.id_service
-where year(contract.date_contract) = 2021 and contract.id_service not in (
+where year(contract.date_contract) = 2019 and contract.id_service not in (
 select contract.id_service
 from contract
 where month(date_contract) in ('1', '2', '3'));
@@ -133,7 +133,7 @@ delete from employee
 where employee.id_employee not in (
 select contract.id_employee
 from contract 
-where (year(now()) - year(date_contract)) < 5 );
+where year(date_contract) between 2017 and 2019 );
 select employee.*
 from employee;
 
@@ -155,11 +155,13 @@ from customer
 join type_of_customer on type_of_customer.id_type_customer = customer.id_type_customer;
 
 -- task18
+SET foreign_key_checks = 0; 
 delete from customer
 where id_customer in (
 select contract.id_customer
 from contract
-where (year(now()) - year(date_contract)) > 5);
+where year(date_contract) < '2016');
+SET foreign_key_checks = 1; 
 
 -- task19
 update extra_service
@@ -238,8 +240,8 @@ create trigger tr_1
 after delete
 on contract for each row
 begin
- select concat("amount record in contract: ", count(id_contract)) 
- as log into outfile "C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/log.txt";
+ select concat("amount record in contract: ", new.count(id_contract)) 
+	as log into outfile "C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/log.txt";
 end;
 -- drop trigger tr_1;
 
@@ -253,13 +255,10 @@ create trigger tr_2
 before update
 on contract
 for each row
-begin
-if datediff(date_end - date_contract) <2 
-	then select concat('amount record in contract: ', count(id_contract)) 
-    as log into 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/log.txt';
+if datediff(date_end, date_contract) <2 
+	then select 'Ngày kết thúc hợp đồng phải lớn hơn ngày làm hợp đồng ít nhất là 2 ngày' 
+		as log into outfile 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/log.txt';
     end if
-end 
-end;
 
 
 
