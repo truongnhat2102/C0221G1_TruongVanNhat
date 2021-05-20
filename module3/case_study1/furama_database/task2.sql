@@ -33,7 +33,7 @@ select service.name_service, area_service, price_service, name_type_service
 from service
 left join type_of_service on service.id_type_service = type_of_service.id_type_service
 join contract on service.id_service = contract.id_service
-where year(contract.date_contract) = 2021 and contract.id_service not in (
+where year(contract.date_contract) = 2019 and contract.id_service not in (
 select contract.id_service
 from contract
 where month(date_contract) in ('1', '2', '3'));
@@ -86,7 +86,7 @@ right join contract_detail on contract_detail.id_extra_service = extra_service.i
 right join contract on contract.id_contract = contract_detail.id_contract
 right join customer on customer.id_customer = contract.id_customer
 right join type_of_customer on type_of_customer.id_type_customer = customer.id_type_customer
-where (type_of_customer.name_type_customer like 'Diamond') and (customer.address like 'Vinh' or customer.address like 'Quang Ngai');
+where (type_of_customer.name_type_customer = 'Diamond') and (customer.address = 'Hanoi' or customer.address = 'Quang Ngai');
 
 -- task 12
 select contract.id_contract, employee.name_employee, customer.name_customer, customer.phone, service.name_service, extra_service.amount_extra_service
@@ -190,6 +190,9 @@ from customer
 union
 select id_employee, name_employee, email, phone, date_of_birth, address
 from employee;
+
+-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- task21
 create view v_employee as

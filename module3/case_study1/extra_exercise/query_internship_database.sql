@@ -75,4 +75,15 @@ having amount_student >= 3;
 
 -- task4
 select project.project_id, project_name, max(project.expense)
+from project;
+
+-- task5
+select project.project_id, project_name
 from project
+join instructor_student on project.project_id = instructor_student.project_id
+join student on student.student_id = instructor_student.student_id
+group by instructor_student.student_id
+having count(instructor_student.student_id)  >=2;
+
+-- task6
+
