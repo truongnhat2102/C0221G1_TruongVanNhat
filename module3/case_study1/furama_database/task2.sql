@@ -33,7 +33,7 @@ select service.name_service, area_service, price_service, name_type_service
 from service
 left join type_of_service on service.id_type_service = type_of_service.id_type_service
 join contract on service.id_service = contract.id_service
-where year(contract.date_contract) = 2019 and contract.id_service not in (
+where year(contract.date_contract) = 2021 and contract.id_service not in (
 select contract.id_service
 from contract
 where month(date_contract) in ('1', '2', '3'));
@@ -104,13 +104,14 @@ from contract
 where month(date_contract) in ('1', '2', '3', '4', '5', '6'));
 
 -- task13
-select *, max(count_extra_service) as max_count_extra_service
-from (select extra_service.*, count(contract_detail.id_extra_service) as count_extra_service
-	from contract_detail
-    join extra_service on extra_service.id_extra_service = contract_detail.id_extra_service
-    group by contract_detail.id_extra_service) abcd
-group by count_extra_service
-having count_extra_service = max_count_extra_service;
+select extra_service.*
+from contract_detail
+join extra_service on extra_service.id_extra_service = contract_detail.id_extra_service
+group by contract_detail.id_extra_service
+having count(id_contract_detail) >= all(select count(id_contract_detail)
+from contract_detail
+group by id_extra_service);
+
 
 -- task14
 select extra_service.*, count(contract_detail.id_extra_service) as count_extra_service
@@ -129,11 +130,13 @@ having amount_contract <= 3;
 
 -- task16
 SET SQL_SAFE_UPDATES = 0;
+SET foreign_key_checks = 0; 
 delete from employee
 where employee.id_employee not in (
 select contract.id_employee
 from contract 
 where year(date_contract) between 2017 and 2019 );
+SET foreign_key_checks = 1; 
 select employee.*
 from employee;
 
@@ -155,12 +158,17 @@ from customer
 join type_of_customer on type_of_customer.id_type_customer = customer.id_type_customer;
 
 -- task18
+SET SQL_SAFE_UPDATES = 0;
 SET foreign_key_checks = 0; 
 delete from customer
 where id_customer in (
 select contract.id_customer
 from contract
-where year(date_contract) < '2016');
+where year(date_contract) < '2016')
+and id_customer not in (
+select contract.id_customer
+from contract
+where year(date_contract) > '2016');
 SET foreign_key_checks = 1; 
 
 -- task19
