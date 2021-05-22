@@ -1,48 +1,105 @@
 
-.tophead{
+#header{
     background-color: #1D1A31;
-    width: 100%;
-    height: 10%;
-    text-align: center;
-    display: inline-block;
-}
-.topbody{
-    background-color: #9A4C95;
-    width: 100%;
     height: 100px;
-    display: inline-block;
+    width: 100%;
 }
-
-.menu-detail{
+#nav{
     background-color: #4D2D52;
-    border: none;
-    width: 16.666666666666%;
+    height: 50px;
+    width: 100%;
+}
+li{
+    font-size: larger;
+    width: 15%;
     height: 100px;
-    font-size: medium;
+    position: relative;
+    top:50px;
+    color: white;
     float: left;
     display: inline-block;
+}
+li:hover{
+    color: red;
+}
+img:hover{
+    box-shadow: 5px 5px 5px 5px grey;
+}
+#main{
+    background-color: white;
+    height: auto;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+}
+.box-title{
+    background-color: #F08CAE;
+    width: 100%;
+    height: 400px;
+    top: 10px;
     position: relative;
 }
-.menu-detail:hover{
-    background-color: #9A4C95;
+.box-content{
+    width: 33.33%;
+    height: 300px;
+    color: #1D1A31;
+    position: relative;
+    float: left;
 }
-.dropdown{
-    display: none;
-    width: 16.666666666666%;
-    height: 100px;
+.img-format{
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    display: block;
+}
+.name-tag{
+    position: relative;
+    top: 120%;
+    left: 10%;
+    font-size: x-large;
+    display: inline-block;
+}
+#footer{
+    background-color: grey;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 100%;
+    clear: both;
+}
+.box-icon{
+    width: 100px;
+    height: 40px;
     text-align: center;
-    font-size: medium;
+    float: left;
+}
+.icon-format{
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #9A4C95;
+    width: 200px;
+    height: 250px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    color: black;
+}
+.box-img{
+    width: 200px;
+    height: 250px;
     position: absolute;
-    top: 110px;
-}
-.menu-detail:hover .dropdown{
     display: block;
-    background-color: #C1A5A9;
+    top: 25%;
+    left: 10%;
 }
-.content-menu{
-    font-size: larger;
-    color: white;
-    padding: 60px 50px;
+
+.box-img:hover .dropdown-content {
+    display: block;
+    box-shadow: 10px 10px 10px 10px grey;
+    transition: 1s;
+    opacity: 0.8;
 }

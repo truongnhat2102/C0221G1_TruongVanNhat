@@ -6,57 +6,120 @@
     <link rel="stylesheet" type="text/css" href="css_exercise3.css">
 </head>
 <body>
-<div style="background-color: #C1A5A9;">
-    <div class="tophead">
-        <img src="logo.svg" style="width: 25%; height: 25%;">
-        <input type="text" style="color: #C1A5A9;border-radius: 12px; width: 25%; height:5%;">
-        <img src="loupe.png" style="border-radius: 12px;height: 0.8%; width: 1%;margin-left: -2%;">
-    </div>
-    <div style=" position: relative">
-        <div class="menu-detail">
-            <span class="content_menu">jujutsu no kaisen</span>
-            <div class="dropdown">
-                <img src="jujutsu_no_kaisen.jpg">
-                <h2>JUJUTSU NO KAISEN</h2>
-            </div>
-        </div>
-        <div class="menu-detail">
-            <span class="content-menu">doraemon</span>
-            <div class="dropdown">
-                <img src="doraemon.jpg">
-                <h2>DORAEMON</h2>
-                <p ></p>
-            </div>
-        </div>
-        <div class="menu-detail">
-            <span class="content-menu">naruto</span>
-            <div class="dropdown">
-                <img src="naruto.jpg">
-                <h2>NARUTO</h2>
-            </div>
-        </div>
-        <div class="menu-detail">
-            <span class="content-menu">one piece</span>
-            <div class="dropdown">
-                <img src="one_piece.jpg">
-                <h2>ONE PIECE</h2>
-            </div>
-        </div>
-        <div class="menu-detail">
-            <span class="content-menu">dragon ball</span>
-            <div class="dropdown">
-                <img src="dragon_ball.jpg">
-                <h2>DRAGON BALL</h2>
-            </div>
-        </div>
-        <div class="menu-detail">
-            <span class="content-menu">7 deadly sins</span>
-            <div class="dropdown">
-                <img src="nanatsu_no_taizai.jpg">
-                <h2>7 DEADLY SINS</h2>
-            </div>
-        </div>
-    </div>
+<div id="header">
+    <li><img src="logo.svg" style="height: 30px; width: 100%; float: left"></li>
+    <li>ORIGINALS</li>
+    <li>GENRES</li>
+    <li>POPULAR</li>
+    <li>CANVAS</li>
+    <li>
+        <input type="text" style="border-radius: 12px; width: 100%; height: 20px; position: absolute"
+               placeholder="searching...">
+        <img src="loupe.png"
+             style="border-radius: 12px; width: 15px; height: 15px; position: absolute; top: 5px; left: 90%">
+    </li>
 </div>
+<div id="nav">
+
+</div>
+<div id="main">
+    <div class="box-title">
+        <div style="color: #1D1A31; position: absolute; left: 50%; top: 5%; font-size: xx-large">HOT</div>
+        <div>
+            <div class="box-content">
+                <div class="box-img">
+                    <img src="jujutsu_no_kaisen.jpg" class="img-format">
+                    <div class="dropdown-content">
+                        <span>Vì một lý do kỳ lạ nào đó, Yuji Itadori, mặc dù với thể chất hoàn hảo nhưng anh lại đâm đầu vào tham gia CLB Huyền Bí. Tuy nhiên, họ đã sớm phát hiện ra là những câu chuyện huyền bí hoàn toàn có thật khi các thành viên trong CLB lần lượt bị tấn công! Trong khi đó, Megumi Fushiguro "bí ẩn" lại đang truy tìm một đối tượng bị nguyền rủa cấp đặc biệt và cuộc tìm kiếm này đã đưa nhóm bạn đến Itadori...</span>
+                    </div>
+                </div>
+                <div class="name-tag">
+                    <div>JUJUTSU NO KAISEN</div>
+                </div>
+            </div>
+            <div class="box-content">
+                <div class="box-img">
+                    <img src="nanatsu_no_taizai.jpg" class="img-format">
+                    <div class="dropdown-content">
+                        <span>Thất Hình Đại Tội đơn giản là một câu chuyện xoay quanh một nhóm anh hùng/ tội phạm với những câu chuyện riêng của từng người, những cuộc chiến nhiệm vụ đầy khó khăn và họ phải đương đầu để vượt qua. Được lấy cảm hứng từ bộ truyện tranh nổi tiếng của Suzuki Nakaba.</span>
+                    </div>
+                </div>
+                <div class="name-tag">7 DEADLY SINS</div>
+            </div>
+            <div class="box-content">
+                <div class="box-img">
+                    <img src="doraemon.jpg" class="img-format">
+                    <div class="dropdown-content">
+                        <span>Doraemon (Nhật: ドラえもん?) là một series manga của Nhật Bản do Fujiko Fujio sáng tác từ tháng 12 năm 1969 đến tháng 4 năm 1996 đăng trên tạp chí CoroCoro Comic của nhà xuất bản Shogakukan. Có tổng cộng 1345 chương truyện được tuyển chọn đóng gói đưa vào 45 tập tankōbon dưới ấn hiệu Tentōmushi Comics cũng do Shogakukan xuất bản; manga...</span>
+                    </div>
+                </div>
+                <div class="name-tag">DORAEMON</div>
+            </div>
+        </div>
+    </div>
+    <div class="box-title">
+        <div style="color: #1D1A31; position: absolute; left: 48%; top: 5%; font-size: xx-large">ROMANTIC</div>
+        <div>
+            <div class="box-content">
+                <div class="box-img">
+                    <img src="naruto.jpg" class="img-format">
+                    <div class="dropdown-content">
+                        <span> "Naruto" là câu chuyện về Naruto Uzumaki, một ninja trẻ tìm kiếm sự công nhận từ mọi người và ước mơ trở thành Hokage, người lãnh đạo của làng mình...</span>
+                    </div>
+                </div>
+                <div class="name-tag">NARUTO</div>
+            </div>
+            <div class="box-content">
+                <div class="box-img">
+                    <img src="one_piece.jpg" class="img-format">
+                    <div class="dropdown-content">
+                        One Piece là câu truyện kể về Luffy và các thuyền viên của mình. Khi còn nhỏ, Luffy ước mơ trở thành Vua Hải Tặc. Cuộc sống của cậu bé thay đổi khi cậu vô tình có được sức mạnh có thể co dãn như cao su, nhưng đổi lại, cậu không bao giờ có thể bơi được nữa...</span>
+                    </div>
+                </div>
+                <div class="name-tag">ONE PIECE</div>
+            </div>
+            <div class="box-content">
+                <div class="box-img">
+                    <img src="dragon_ball.jpg" class="img-format">
+                    <div class="dropdown-content">
+                        Songoku là một cậu bé có cái đuôi khỉ được một ông lão sống trong rừng tìm thấy và đặt tên cho. Ông xem cậu như cháu ruột của mình mà nuôi nấng. Sau đó Songoku gặp một cô gái tên Bulma...</span>
+                    </div>
+                </div>
+                <div class="name-tag">DRAGON BALL</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div id="footer">
+    <div style="text-align: center; color: #1D1A31">SEE YOU AGAIN</div>
+    <div>
+        <hr>
+    </div>
+    <div style="padding-left: 43%;">
+        <div class="box-icon"><img src="facebook.png" class="icon-format"></div>
+        <div class="box-icon"><img src="instagram%20(1).png" class="icon-format"></div>
+        <div class="box-icon"><img src="twitter.png" class="icon-format"></div>
+    </div>
+    <div style="padding-left: 20%; clear: both">
+        <div class="box-icon">About</div>
+        <div class="box-icon">|</div>
+        <div class="box-icon">Feedback</div>
+        <div class="box-icon">|</div>
+        <div class="box-icon">Help</div>
+        <div class="box-icon">|</div>
+        <div class="box-icon">Terms</div>
+        <div class="box-icon">|</div>
+        <div class="box-icon">Privacy</div>
+        <div class="box-icon">|</div>
+        <div class="box-icon">Advertise</div>
+    </div>
+
+</div>
+<script>
+    function linkFacebook(){
+
+    }
+</script>
 </body>
 </html>
