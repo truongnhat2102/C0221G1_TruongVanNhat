@@ -8,23 +8,29 @@
     height: 25px;
     width: 100%;
 }
+#main{
+    height: 400px;
+    width: 100%;
+}
 #section{
     background-color: #225560;
     height: 200px;
     width: 70%;
+    position: relative;
     float: left;
 }
 #article{
     background-color: #EDF060;
     height: 200px;
-    width: 68.6666666%;
-    position: absolute;
-    top: 333px;
+    width: 70%;
+    position: relative;
+    top: 200px;
 }
 #aside{
     background-color: #171219;
     height: 400px;
     width: 30%;
+    position: relative;
     float: left;
 }
 #footer{

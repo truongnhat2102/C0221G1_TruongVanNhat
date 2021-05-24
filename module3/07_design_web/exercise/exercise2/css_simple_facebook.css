@@ -1,0 +1,176 @@
+#header{
+    border-bottom-color: black;
+    border-bottom: 5px;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0%;
+    border-bottom: black solid 2px;
+}
+.box-searching{
+    border-radius: 25px;
+    width: 20%;
+    height: 45px;
+    position: relative;
+    float: left;
+}
+.selector1{
+    width: 45%;
+    height: 50px;
+    position: absolute;
+    left: 20%;
+}
+.box-menu{
+    width: 25%;
+    height: 110%;
+    position: relative;
+    left: 20%;
+    float: left;
+    border-radius: 8px;
+}
+.box-menu:hover{
+   background-color: darkgrey;
+    border-bottom: blue solid 2px;
+}
+.head-icon{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+.selector2{
+    width: 40%;
+    height: 50px;
+    position: absolute;
+    left: 80%;
+}
+.box-icon{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    float: left;
+    border-radius: 20px;
+}
+.box-icon:hover{
+    background-color: darkgrey;
+}
+.extra-icon{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    left: 20%;
+    top: 20%;
+}
+.box-avatar{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    position: relative;
+    float: left;
+}
+.box-avatar:hover{
+    background-color: darkgrey;
+}
+#main{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 80px;
+}
+#section1{
+    width: 25%;
+    height: 30%;
+    position: relative;
+    float: top;
+}
+.box-section{
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    position: relative;
+    float: top;
+}
+.box-section:hover{
+    background-color: darkgrey;
+}
+.icon-section{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+}
+.content-section{
+    font-size: x-large ;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+}
+#section2{
+    width: 25%;
+    height: 40%;
+    position: relative;
+    float: top;
+}
+#article{
+    width: 33.33333%;
+    height: 100%;
+    position: absolute;
+    left: 33.33333%;
+    top: 0.00000000001%;
+}
+.box-status{
+    width: 100%;
+    height: 16.6666%;
+    position: relative;
+    top: 3%;
+    float: top;
+}
+.box-newsfeed{
+    width: 100%;
+    height: 65%;
+    position: relative;
+    float: top;
+    border-top: white solid 10px;
+    background-color: whitesmoke;
+}
+.icon-newsfeed{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 100%;
+    border-radius: 20px;
+}
+.icon-newsfeed:hover{
+    color: darkgrey;
+}
+.box-reaction{
+    width: 33.33333%;
+    height: 20%;
+    position: relative;
+    float: left;
+    border-radius: 8px;
+}
+.box-reaction:hover{
+    background-color: darkgrey;
+}
+#ads{
+    width: 33.33333%;
+    height: 50%;
+    position: absolute;
+    left: 70%;
+    top: 0.00000000001%;
+}
+#contact{
+    width: 33.33333%;
+    height: 50%;
+    position: absolute;
+    left: 70%;
+    top: 52.00000000001%;
+}
+#footer{
+    width: 33.33333%;
+    height: 33.3333%;
+    position: absolute;
+    top: 66.66666%;
+}
