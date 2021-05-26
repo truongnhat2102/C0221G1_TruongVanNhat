@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="18ba72fe-fbe4-4c74-aaea-052c54d5ea9d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/practice/practice2/src/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/practice3/src/ConverterSevlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08_basic_bootstrap/exercise/exercise2/basic_web.html" beforeDir="false" afterPath="$PROJECT_DIR$/../08_basic_bootstrap/exercise/exercise2/basic_web.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1t3eoaJmP2hju63i50KU2yEnNWQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="18ba72fe-fbe4-4c74-aaea-052c54d5ea9d" name="Default Changelist" comment="" />
+      <created>1622002375441</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622002375441</updated>
+      <workItem from="1622002379983" duration="23000" />
+      <workItem from="1622010731148" duration="61000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="286" y="187" key="FileChooserDialogImpl" timestamp="1622002400879">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="286" y="187" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1622002400879" />
+    <state x="0" y="18" key="new project wizard" timestamp="1622010792075">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="0" y="18" key="new project wizard/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1622010792075" />
+  </component>
+</project>
