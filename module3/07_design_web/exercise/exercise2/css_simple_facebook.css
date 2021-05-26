@@ -111,6 +111,7 @@
     height: 40%;
     position: relative;
     float: top;
+    top: 30%;
 }
 #article{
     width: 33.33333%;
@@ -131,7 +132,7 @@
     height: 65%;
     position: relative;
     float: top;
-    border-top: white solid 10px;
+    border-top: white solid 2px;
     background-color: whitesmoke;
 }
 .icon-newsfeed{
@@ -171,6 +172,6 @@
 #footer{
     width: 33.33333%;
     height: 33.3333%;
-    position: absolute;
+    position: fixed;
     top: 66.66666%;
 }
