@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c08a62c6-b2cc-4b4f-9592-fd29a9e117ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise_1/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/.idea/artifacts/exercise1_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/exercise1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/header.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/jquery/jquery-3.6.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/src/CalculateDiscount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/web/display-discount.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise1/web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise_1/out/artifacts/exercise_1_war_exploded/WEB-INF/classes/CalculateDiscount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise_1/out/artifacts/exercise_1_war_exploded/display-discount.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise_1/out/artifacts/exercise_1_war_exploded/display-discount.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise_1/out/artifacts/exercise_1_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise_1/out/artifacts/exercise_1_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise_1/out/production/exercise_1/CalculateDiscount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise_1/src/CalculateDiscount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise_1/src/CalculateServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise_1/web/display-discount.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise_1/web/display-discount.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise_1/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_web_app_overview/exercise/exercise_1/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/header.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/jquery/jquery-3.6.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/.idea/artifacts/serverlet_jsp_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/.idea/artifacts/unnamed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/.idea/runConfigurations/Tomcat_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/.idea/serverlet-jsp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/lib/javax.annotation.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/lib/javax.ejb.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/lib/javax.jms.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/lib/javax.persistence.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/lib/javax.resource.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/lib/javax.servlet.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/lib/javax.servlet.jsp.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/lib/javax.servlet.jsp.jstl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/lib/javax.transaction.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/out/production/sum_jsp_servle_tjsp/servlet/ServletSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/out/production/sumjspandservlet/servlet/ServletSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sum_jsp_servle_tjsp/.idea/artifacts/sum_jsp_servle_tjsp_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sum_jsp_servle_tjsp/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sum_jsp_servle_tjsp/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sum_jsp_servle_tjsp/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sum_jsp_servle_tjsp/out/artifacts/sum_jsp_servle_tjsp_war_exploded/WEB-INF/classes/servlet/ServletSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sum_jsp_servle_tjsp/out/artifacts/sum_jsp_servle_tjsp_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sum_jsp_servle_tjsp/out/artifacts/sum_jsp_servle_tjsp_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sum_jsp_servle_tjsp/out/artifacts/sum_jsp_servle_tjsp_war_exploded/result.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sum_jsp_servle_tjsp/out/production/sum_jsp_servle_tjsp/servlet/ServletSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sum_jsp_servle_tjsp/src/servlet/ServletSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sum_jsp_servle_tjsp/sum_jsp_servle_tjsp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sum_jsp_servle_tjsp/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sum_jsp_servle_tjsp/web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sum_jsp_servle_tjsp/web/result.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjsp/.idea/artifacts/sumjsp_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjsp/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjsp/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjsp/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjsp/out/artifacts/sumjsp_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjsp/out/artifacts/sumjsp_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjsp/out/artifacts/sumjsp_war_exploded/result.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjsp/out/artifacts/sumjsp_war_exploded/sum.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjsp/sumjsp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjsp/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjsp/web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjsp/web/result.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjsp/web/sum.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjspandservlet/.idea/artifacts/sumjspandservlet_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjspandservlet/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjspandservlet/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjspandservlet/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjspandservlet/out/artifacts/sumjspandservlet_war_exploded/WEB-INF/classes/servlet/ServletSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjspandservlet/out/artifacts/sumjspandservlet_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjspandservlet/out/artifacts/sumjspandservlet_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjspandservlet/out/production/sumjspandservlet/servlet/ServletSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjspandservlet/src/servlet/ServletSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjspandservlet/sumjspandservlet.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjspandservlet/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../serverlet-jsp/sumjspandservlet/web/index.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1t6QvMRdEHdjNyL7S6ZE0GmtGEB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c08a62c6-b2cc-4b4f-9592-fd29a9e117ef" name="Default Changelist" comment="" />
+      <created>1622087288343</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622087288343</updated>
+      <workItem from="1622087289815" duration="124000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="112" y="114" key="#Project_Structure" timestamp="1622087368754">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="112" y="114" key="#Project_Structure/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622087368754" />
+    <state x="15" y="123" key="new project wizard" timestamp="1622087412815">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="15" y="123" key="new project wizard/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622087412815" />
+  </component>
+</project>

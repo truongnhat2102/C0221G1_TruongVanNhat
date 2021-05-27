@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<form action="/CalculateDiscount" method="post">
+<form action="/calculate" method="post">
   <h2>Product Discount Calculator</h2>
   <p>Enter product description</p>
   <input type="text" name="productDes" placeholder="Products Description">

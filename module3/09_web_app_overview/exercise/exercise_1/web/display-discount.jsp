@@ -1,6 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <head>
     <title>ProductDiscountCalculator</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
