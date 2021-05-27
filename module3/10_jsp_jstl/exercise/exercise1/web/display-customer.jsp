@@ -22,10 +22,10 @@
         </tr>
         <c:forEach items="${customers}" var="customer">
             <tr>
-                <td><c:out value="${customer.getName()}"></c:out></td>
-                <td><c:out value="${customer.getDateOfBirth()}"></c:out></td>
-                <td><c:out value="${customer.getAddress()}"></c:out></td>
-                <td><c:out value="${customer.getAvatar()}"></c:out></td>
+                <td><c:out value="${customer.name}"></c:out></td>
+                <td><c:out value="${customer.dateOfBirth}"></c:out></td>
+                <td><c:out value="${customer.address}"></c:out></td>
+                <td><img src="${customer.avatar}" width="40" height="40"></td>
             </tr>
         </c:forEach>
     </table>

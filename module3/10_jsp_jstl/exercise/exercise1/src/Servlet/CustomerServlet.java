@@ -1,6 +1,6 @@
-package Servlet;
+package servlet;
 
-import Model.Customer;
+import model.Customer;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

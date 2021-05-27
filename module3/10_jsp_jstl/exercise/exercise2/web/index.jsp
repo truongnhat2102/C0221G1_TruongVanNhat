@@ -15,7 +15,7 @@
     <script src="lib/js/bootstrap.min.js"></script>
   </head>
   <body>
-  <form action="src\Servlet\calculateServlet.java" method="post">
+  <form action="/calculate" method="post">
     <h1>SIMPLE CALCULATOR</h1>
     <div class="container">
       <div class="row">
