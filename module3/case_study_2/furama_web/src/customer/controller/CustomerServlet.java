@@ -2,7 +2,7 @@ package customer.controller;
 
 import customer.model.bean.Customer;
 import customer.model.service.ICustomer;
-import customer.model.service.customerImpl.CustomerImpl;
+import customer.model.service.impl.CustomerImpl;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -43,6 +43,29 @@ public class CustomerServlet extends HttpServlet {
         }
     }
 
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String action = request.getParameter("action");
+        if (action == null) {
+            action = "";
+        }
+        switch (action) {
+            case "add":
+                showFormAdd(request, response);
+                break;
+            case "edit":
+                showFormEdit(request, response);
+                break;
+            case "delete":
+                showFormDelete(request, response);
+                break;
+            case "detail":
+                showProduct(request, response);
+                break;
+            default:
+                showProductList(request, response);
+                break;
+        }
+    }
 
     private void detail(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
@@ -135,29 +158,7 @@ public class CustomerServlet extends HttpServlet {
         }
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String action = request.getParameter("action");
-        if (action == null) {
-            action = "";
-        }
-        switch (action) {
-            case "add":
-                showFormAdd(request, response);
-                break;
-            case "edit":
-                showFormEdit(request, response);
-                break;
-            case "delete":
-                showFormDelete(request, response);
-                break;
-            case "detail":
-                showProduct(request, response);
-                break;
-            default:
-                showProductList(request, response);
-                break;
-        }
-    }
+
 
     private void showFindProduct(HttpServletRequest request, HttpServletResponse response) {
         String find = request.getParameter("search");

@@ -248,10 +248,10 @@
                             <td>${customer.dateOfBirth}</td>
                             <td>${customer.type}</td>
                             <td>
-                            <a href="/customer?action=edit&id=${customer.id}" class="settings" title="Settings"
-                               data-toggle="tooltip"><i class="material-icons">&#xE8B8;</i></a>
-                            <a href="/customer?action=delete&id=${customer.id}" class="delete" title="Delete"
-                               data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a>
+                                <a href="/customer?action=edit&id=${customer.id}" class="settings" title="Settings"
+                                   data-toggle="tooltip"><i class="material-icons">&#xE8B8;</i></a>
+                                <a href="/customer?action=delete&id=${customer.id}" class="delete" title="Delete"
+                                   data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a>
                             </td>
                         </tr>
                         </tbody>

@@ -248,10 +248,10 @@
                             <td>${employee.position}</td>
                             <td>${employee.phone}</td>
                             <td>
-                            <a href="/employee?action=edit&id=${employee.id}" class="settings" title="Settings"
-                               data-toggle="tooltip"><i class="material-icons">&#xE8B8;</i></a>
-                            <a href="/employee?action=delete&id=${employee.id}" class="delete" title="Delete"
-                               data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a>
+                                <a href="/employee?action=edit&id=${employee.id}" class="settings" title="Settings"
+                                   data-toggle="tooltip"><i class="material-icons">&#xE8B8;</i></a>
+                                <a href="/employee?action=delete&id=${employee.id}" class="delete" title="Delete"
+                                   data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a>
                             </td>
                         </tr>
                         </tbody>

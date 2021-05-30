@@ -114,42 +114,42 @@
 <div class="signup-form">
     <form method="post">
         <h2>EDIT</h2>
-        <p class="hint-text">Edit a <a>${employee.id}</a> employee</p>
+        <p class="hint-text">DO YOU WANT TO DELETE THIS EMPLOYEE</p>
         <div class="form-group">
-            <input type="name" class="form-control" name="name" placeholder="Name" value="${employee.name}" required="required">
+            <input disabled type="name" class="form-control" name="name" placeholder="Name" value="${employee.name}" required="required">
         </div>
         <div class="form-group">
-            <input type="date" class="form-control" name="birthday" placeholder="birthday" value="${employee.birthday}" required="required">
+            <input disabled type="date" class="form-control" name="birthday" placeholder="birthday" value="${employee.birthday}" required="required">
         </div>
         <div class="form-group">
-            <input class="form-control" name="idCard" placeholder="ID Card" value="${employee.idCard}" required="required">
+            <input disabled class="form-control" name="idCard" placeholder="ID Card" value="${employee.idCard}" required="required">
         </div>
         <div class="form-group">
-            <input type="number" class="form-control" name="salary" placeholder="salary" value="${employee.salary}" required="required">
+            <input disabled type="number" class="form-control" name="salary" placeholder="salary" value="${employee.salary}" required="required">
         </div>
         <div class="form-group">
-            <input type="number" class="form-control" name="phone" placeholder="phone" value="${employee.phone}" required="required">
+            <input disabled type="number" class="form-control" name="phone" placeholder="phone" value="${employee.phone}" required="required">
         </div>
         <div class="form-group">
-            <input type="email" class="form-control" name="email" placeholder="Email" value="${employee.email}" required="required">
+            <input disabled type="email" class="form-control" name="email" placeholder="Email" value="${employee.email}" required="required">
         </div>
         <div class="form-group">
-            <input class="form-control" name="address" placeholder="Address" value="${employee.address}" required="required">
+            <input disabled class="form-control" name="address" placeholder="Address" value="${employee.address}" required="required">
         </div>
         <div class="form-group">
-            <input class="form-control" name="position" placeholder="Position" value="${employee.position}" required="required">
+            <input disabled class="form-control" name="position" placeholder="Position" value="${employee.position}" required="required">
         </div>
         <div class="form-group">
-            <input class="form-control" name="educationDegree" placeholder="Education Degree" value="${employee.educationDegree}" required="required">
+            <input disabled class="form-control" name="educationDegree" placeholder="Education Degree" value="${employee.educationDegree}" required="required">
         </div>
         <div class="form-group">
-            <input class="form-control" name="dividion" placeholder="Dividion" value="${employee.division}" required="required">
+            <input disabled class="form-control" name="dividion" placeholder="Dividion" value="${employee.division}" required="required">
         </div>
         <div class="form-group">
-            <input class="form-control" name="username" placeholder="Username" value="${employee.username}"  required="required">
+            <input disabled class="form-control" name="username" placeholder="Username" value="${employee.username}"  required="required">
         </div>
         <div class="form-group">
-            <button type="submit" class="btn btn-success btn-lg btn-block">FINISH</button>
+            <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
         </div>
     </form>
 </div>

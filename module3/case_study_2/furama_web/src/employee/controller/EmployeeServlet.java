@@ -2,7 +2,7 @@ package employee.controller;
 
 import employee.model.bean.Employee;
 import employee.model.service.IEmployee;
-import employee.model.service.employee_impl.EmployeeImpl;
+import employee.model.service.impl.EmployeeImpl;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "EmployeeServlet", urlPatterns = "")
+@WebServlet(name = "EmployeeServlet", urlPatterns = "/employee")
 public class EmployeeServlet extends HttpServlet {
     IEmployee iEmployee = new EmployeeImpl();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -35,13 +35,36 @@ public class EmployeeServlet extends HttpServlet {
                 detail(request, response);
                 break;
             case "find":
-                showFindProduct(request, response);
+                showFind(request, response);
                 break;
             default:
                 break;
         }
     }
 
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String action = request.getParameter("action");
+        if (action == null) {
+            action = "";
+        }
+        switch (action) {
+            case "add":
+                showFormAdd(request, response);
+                break;
+            case "edit":
+                showFormEdit(request, response);
+                break;
+            case "delete":
+                showFormDelete(request, response);
+                break;
+            case "detail":
+                show(request, response);
+                break;
+            default:
+                showList(request, response);
+                break;
+        }
+    }
 
     private void detail(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
@@ -83,6 +106,7 @@ public class EmployeeServlet extends HttpServlet {
         String division = request.getParameter("division");
         String username = request.getParameter("username");
         Employee employee = new Employee(id, name, birthday, idCard, salary, phone, email, address,position,educationDegree,division,username);
+        iEmployee.add(employee);
         request.setAttribute("messages", "add completed");
         request.setAttribute("employee", employee);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/employee/add.jsp");
@@ -109,6 +133,7 @@ public class EmployeeServlet extends HttpServlet {
         String division = request.getParameter("division");
         String username = request.getParameter("username");
         Employee employee = new Employee(id, name, birthday, idCard, salary, phone, email, address,position,educationDegree,division,username);
+        iEmployee.edit(String.valueOf(id),employee);
         request.setAttribute("messages", "edit completed");
         request.setAttribute("employee", employee);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/employee/edit.jsp");
@@ -135,6 +160,7 @@ public class EmployeeServlet extends HttpServlet {
         String division = request.getParameter("division");
         String username = request.getParameter("username");
         Employee employee = new Employee(id, name, birthday, idCard, salary, phone, email, address,position,educationDegree,division,username);
+        iEmployee.remove(String.valueOf(id));
         request.setAttribute("employee", employee);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/employee/delete.jsp");
         try {
@@ -146,31 +172,7 @@ public class EmployeeServlet extends HttpServlet {
         }
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String action = request.getParameter("action");
-        if (action == null) {
-            action = "";
-        }
-        switch (action) {
-            case "add":
-                showFormAdd(request, response);
-                break;
-            case "edit":
-                showFormEdit(request, response);
-                break;
-            case "delete":
-                showFormDelete(request, response);
-                break;
-            case "detail":
-                showProduct(request, response);
-                break;
-            default:
-                showProductList(request, response);
-                break;
-        }
-    }
-
-    private void showFindProduct(HttpServletRequest request, HttpServletResponse response) {
+    private void showFind(HttpServletRequest request, HttpServletResponse response) {
         String find = request.getParameter("search");
         List<Employee> findEmployee = iEmployee.findByName(find);
         RequestDispatcher requestDispatcher = null;
@@ -190,7 +192,7 @@ public class EmployeeServlet extends HttpServlet {
 
     }
 
-    private void showProduct(HttpServletRequest request, HttpServletResponse response) {
+    private void show(HttpServletRequest request, HttpServletResponse response) {
         String id = request.getParameter("id");
         Employee employee = iEmployee.findById(id);
         RequestDispatcher requestDispatcher;
@@ -220,7 +222,7 @@ public class EmployeeServlet extends HttpServlet {
         }
     }
 
-    private void showProductList(HttpServletRequest request, HttpServletResponse response) {
+    private void showList(HttpServletRequest request, HttpServletResponse response) {
         String id = request.getParameter("id");
         List<Employee> employees = iEmployee.findByAll();
         RequestDispatcher requestDispatcher;

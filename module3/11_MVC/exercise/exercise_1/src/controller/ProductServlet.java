@@ -45,84 +45,7 @@ public class ProductServlet extends HttpServlet {
     }
 
 
-    private void detail(HttpServletRequest request, HttpServletResponse response) {
-        int id = Integer.parseInt(request.getParameter("id"));
-        String name = request.getParameter("name");
-        String price = request.getParameter("price");
-        String description = request.getParameter("description");
-        String manufacture = request.getParameter("manufacture");
-        Product product = new Product(id, name, price, description, manufacture);
-        request.setAttribute("messages", "edit completed");
-        request.setAttribute("product", product);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/product/detail_product.jsp");
-        try {
-            requestDispatcher.forward(request, response);
-        } catch (ServletException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
-    private void add(HttpServletRequest request, HttpServletResponse response) {
-        int id = Integer.parseInt(request.getParameter("id"));
-        String name = request.getParameter("name");
-        String price = request.getParameter("price");
-        String description = request.getParameter("description");
-        String manufacture = request.getParameter("manufacture");
-        Product product = new Product(id, name, price, description, manufacture);
-        iProduct.add(product);
-        request.setAttribute("messages", "add completed");
-        request.setAttribute("product", product);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/product/add.jsp");
-        try {
-            requestDispatcher.forward(request, response);
-        } catch (ServletException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void edit(HttpServletRequest request, HttpServletResponse response) {
-        int id = Integer.parseInt(request.getParameter("id"));
-        String name = request.getParameter("name");
-        String price = request.getParameter("price");
-        String description = request.getParameter("description");
-        String manufacture = request.getParameter("manufacture");
-        Product product = new Product(id, name, price, description, manufacture);
-        iProduct.edit(String.valueOf(id), product);
-        request.setAttribute("messages", "edit completed");
-        request.setAttribute("product", product);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/product/edit.jsp");
-        try {
-            requestDispatcher.forward(request, response);
-        } catch (ServletException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void delete(HttpServletRequest request, HttpServletResponse response) {
-        int id = Integer.parseInt(request.getParameter("id"));
-        String name = request.getParameter("name");
-        String price = request.getParameter("price");
-        String description = request.getParameter("description");
-        String manufacture = request.getParameter("manufacture");
-        Product product = new Product(id, name, price, description, manufacture);
-        iProduct.remove(String.valueOf(id));
-        request.setAttribute("messages", "edit completed");
-        request.setAttribute("product", product);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/product/delete.jsp");
-        try {
-            requestDispatcher.forward(request, response);
-        } catch (ServletException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
@@ -234,6 +157,85 @@ public class ProductServlet extends HttpServlet {
         RequestDispatcher requestDispatcher;
         requestDispatcher = request.getRequestDispatcher("/view/product/add.jsp");
         request.setAttribute("product", product);
+        try {
+            requestDispatcher.forward(request, response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void detail(HttpServletRequest request, HttpServletResponse response) {
+        int id = Integer.parseInt(request.getParameter("id"));
+        String name = request.getParameter("name");
+        String price = request.getParameter("price");
+        String description = request.getParameter("description");
+        String manufacture = request.getParameter("manufacture");
+        Product product = new Product(id, name, price, description, manufacture);
+        request.setAttribute("messages", "edit completed");
+        request.setAttribute("product", product);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/product/detail_product.jsp");
+        try {
+            requestDispatcher.forward(request, response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void add(HttpServletRequest request, HttpServletResponse response) {
+        int id = Integer.parseInt(request.getParameter("id"));
+        String name = request.getParameter("name");
+        String price = request.getParameter("price");
+        String description = request.getParameter("description");
+        String manufacture = request.getParameter("manufacture");
+        Product product = new Product(id, name, price, description, manufacture);
+        iProduct.add(product);
+        request.setAttribute("messages", "add completed");
+        request.setAttribute("product", product);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/product/add.jsp");
+        try {
+            requestDispatcher.forward(request, response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void edit(HttpServletRequest request, HttpServletResponse response) {
+        int id = Integer.parseInt(request.getParameter("id"));
+        String name = request.getParameter("name");
+        String price = request.getParameter("price");
+        String description = request.getParameter("description");
+        String manufacture = request.getParameter("manufacture");
+        Product product = new Product(id, name, price, description, manufacture);
+        iProduct.edit(String.valueOf(id), product);
+        request.setAttribute("messages", "edit completed");
+        request.setAttribute("product", product);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/product/edit.jsp");
+        try {
+            requestDispatcher.forward(request, response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void delete(HttpServletRequest request, HttpServletResponse response) {
+        int id = Integer.parseInt(request.getParameter("id"));
+        String name = request.getParameter("name");
+        String price = request.getParameter("price");
+        String description = request.getParameter("description");
+        String manufacture = request.getParameter("manufacture");
+        Product product = new Product(id, name, price, description, manufacture);
+        iProduct.remove(String.valueOf(id));
+        request.setAttribute("messages", "edit completed");
+        request.setAttribute("product", product);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/product/delete.jsp");
         try {
             requestDispatcher.forward(request, response);
         } catch (ServletException e) {
