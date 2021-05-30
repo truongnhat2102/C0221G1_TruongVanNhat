@@ -19,6 +19,11 @@ public class ProductImpl implements IProduct {
     }
 
     @Override
+    public List<Product> findByName(String name) {
+        return productRepository.findByName(name);
+    }
+
+    @Override
     public void edit(String id, Product product) {
         productRepository.edit(id,product);
     }

@@ -17,7 +17,6 @@ import java.util.List;
 @WebServlet(name = "ProductServlet", urlPatterns = {"", "/product"})
 public class ProductServlet extends HttpServlet {
     IProduct iProduct = new ProductImpl();
-    List<Product> findProduct = new ArrayList<>();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
@@ -29,44 +28,22 @@ public class ProductServlet extends HttpServlet {
                 add(request, response);
                 break;
             case "edit":
-                edit(request,response);
+                edit(request, response);
                 break;
             case "delete":
-                delete(request,response);
+                delete(request, response);
                 break;
             case "detail":
-                detail(request,response);
+                detail(request, response);
                 break;
             case "find":
-                findProduct(request,response);
+                showFindProduct(request, response);
                 break;
             default:
                 break;
         }
     }
 
-    private void findProduct(HttpServletRequest request, HttpServletResponse response) {
-        findProduct.clear();
-        String find = request.getParameter("find");
-        for (int i = 0; i < iProduct.findByAll().size(); i++) {
-            if ((iProduct.findById(String.valueOf(i)).getName()).contains(find)){
-                findProduct.add(iProduct.findById(String.valueOf(i)));
-            }
-        }
-        if (findProduct.isEmpty()){
-            request.setAttribute("messages", "dont have that");
-        } else {
-            request.setAttribute("products", findProduct);
-            RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/product/find_product.jsp");
-            try {
-                requestDispatcher.forward(request, response);
-            } catch (ServletException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
 
     private void detail(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
@@ -94,9 +71,7 @@ public class ProductServlet extends HttpServlet {
         String description = request.getParameter("description");
         String manufacture = request.getParameter("manufacture");
         Product product = new Product(id, name, price, description, manufacture);
-        if (!iProduct.findByAll().contains(id)) {
-            iProduct.add(product);
-        }
+        iProduct.add(product);
         request.setAttribute("messages", "add completed");
         request.setAttribute("product", product);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/product/add.jsp");
@@ -109,14 +84,14 @@ public class ProductServlet extends HttpServlet {
         }
     }
 
-    private void edit(HttpServletRequest request, HttpServletResponse response){
+    private void edit(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
         String name = request.getParameter("name");
         String price = request.getParameter("price");
         String description = request.getParameter("description");
         String manufacture = request.getParameter("manufacture");
         Product product = new Product(id, name, price, description, manufacture);
-        iProduct.edit(String.valueOf(id),product);
+        iProduct.edit(String.valueOf(id), product);
         request.setAttribute("messages", "edit completed");
         request.setAttribute("product", product);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/product/edit.jsp");
@@ -129,7 +104,7 @@ public class ProductServlet extends HttpServlet {
         }
     }
 
-    private void delete(HttpServletRequest request, HttpServletResponse response){
+    private void delete(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
         String name = request.getParameter("name");
         String price = request.getParameter("price");
@@ -159,16 +134,15 @@ public class ProductServlet extends HttpServlet {
                 showFormAdd(request, response);
                 break;
             case "edit":
-                showFormEdit(request,response);
+                showFormEdit(request, response);
                 break;
             case "delete":
-                showFormDelete(request,response);
+                showFormDelete(request, response);
                 break;
             case "detail":
-                showProduct(request,response);
+                showProduct(request, response);
                 break;
-            case "find":
-                showFindProduct(request,response);
+
             default:
                 showProductList(request, response);
                 break;
@@ -176,9 +150,15 @@ public class ProductServlet extends HttpServlet {
     }
 
     private void showFindProduct(HttpServletRequest request, HttpServletResponse response) {
-        RequestDispatcher requestDispatcher;
-        requestDispatcher = request.getRequestDispatcher("/view/product/find_product.jsp");
-        request.setAttribute("products", findProduct);
+        String find = request.getParameter("search");
+        List<Product> findProduct = iProduct.findByName(find);
+        RequestDispatcher requestDispatcher = null;
+        if (findProduct.size() == 0) {
+            requestDispatcher = request.getRequestDispatcher("/error.jsp");
+        } else {
+            request.setAttribute("products", findProduct);
+            requestDispatcher = request.getRequestDispatcher("/view/product/find_product.jsp");
+        }
         try {
             requestDispatcher.forward(request, response);
         } catch (ServletException e) {
@@ -186,6 +166,7 @@ public class ProductServlet extends HttpServlet {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 
     private void showProduct(HttpServletRequest request, HttpServletResponse response) {

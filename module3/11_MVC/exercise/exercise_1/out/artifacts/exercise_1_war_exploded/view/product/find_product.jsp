@@ -18,7 +18,9 @@
 </head>
 <body>
 <h1>PRODUCT FOUND OUT</h1>
-<form method="post">
+<p>
+    <a href="/product">Back to product list</a>
+</p>
     <table>
         <tr>
             <th>ID</th>
@@ -27,18 +29,15 @@
             <th>DESCRIPTION</th>
             <th>MANUFACTURE</th>
         </tr>
-        <c:forEach var="product" items='${products}'>
-            <tr>
-                <td>${product.id}</td>
-                <td>${product.name}</td>
-                <td>${product.price}</td>
-                <td>${product.description}</td>
-                <td>${product.manufacture}</td>
-                <td><a href="/product?action=edit&id=${product.getId()}">Edit</a></td>
-                <td><a href="/product?action=delete&id=${product.getId()}">Delete</a></td>
-            </tr>
-        </c:forEach>
+<%--        <c:forEach var="product" items="${products}">--%>
+<%--            <tr>--%>
+<%--                <td>${product.id}</td>--%>
+<%--                <td>${product.name}</td>--%>
+<%--                <td>${product.price}</td>--%>
+<%--                <td>${product.description}</td>--%>
+<%--                <td>${product.manufacture}</td>--%>
+<%--            </tr>--%>
+<%--        </c:forEach>--%>
     </table>
-</form>
 </body>
 </html>

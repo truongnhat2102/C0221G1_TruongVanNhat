@@ -9,6 +9,8 @@ public interface IProduct {
 
     Product findById(String id);
 
+    List<Product> findByName(String name);
+
     void edit(String id, Product product);
 
     void add(Product product);

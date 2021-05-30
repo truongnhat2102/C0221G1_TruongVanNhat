@@ -20,9 +20,10 @@
 <h1>LIST PRODUCT</h1>
 
 <a href="/product?action=add">Add new product</a>
-<form method="post">
-    <input type="text" name="find">
-    <a href="/product?action=find">Find product</a>
+<form method="post" action="/product" style="float: right">
+    <input name="action" value="search" hidden>
+    <input type="text" name="search" id="search" placeholder="Search ...">
+    <button>Search</button>
 </form>
 
 <form method="post">
