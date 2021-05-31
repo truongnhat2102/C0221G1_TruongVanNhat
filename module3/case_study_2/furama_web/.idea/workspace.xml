@@ -25,191 +25,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4bdaa67-87f5-4bfc-9cf9-afc55f79a326" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/customer/model/service/impl/CustomerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/employee/model/service/impl/EmployeeImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/home/HomeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/employee/detail_employee.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/53114-furama-resort-da-nang-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/Furama-Resort-Da-Nang16-1280x720.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/header.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/jquery/jquery-3.6.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/lib/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/view/home/unnamed.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/src/contract/controller/Servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/src/customer/controller/CustomerServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/src/customer/model/bean/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/src/customer/model/repository/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/src/customer/model/service/ICustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/src/customer/model/service/customerImpl/CustomerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/src/employee/controller/EmployeeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/src/employee/model/bean/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/src/employee/model/repository/EmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/src/employee/model/service/IEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/src/employee/model/service/employee_impl/EmployeeImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/header.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/jquery/jquery-3.6.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/lib/lib/jstl-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/view/customer/add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/view/customer/delete.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/view/customer/detail_customer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/view/customer/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/view/customer/find_customer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/view/customer/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/view/employee/add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/view/employee/delete.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/view/employee/detail_employee.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/view/employee/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/view/employee/find_employee.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web_furama/web/view/employee/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/53114-furama-resort-da-nang-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/Furama-Resort-Da-Nang16-1280x720.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/home_furama.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/header.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/jquery/jquery-3.6.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/lib/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../test/unnamed.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../11_MVC/exercise/exercise_1/src/controller/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_MVC/exercise/exercise_1/src/controller/ProductServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/furama_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/furama_web_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jstl_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jstl_1_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/function.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/small_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/classes/contract/controller/Servlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/classes/customer/controller/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/classes/customer/controller/CustomerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/classes/customer/model/service/customerImpl/CustomerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/classes/employee/controller/EmployeeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/classes/employee/controller/EmployeeServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/classes/employee/model/service/employee_impl/EmployeeImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/header.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/jquery/jquery-3.6.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/lib/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/customer/find_customer.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/customer/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/employee/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/employee/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/employee/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/employee/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/furama_web/contract/controller/Servlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/furama_web/customer/controller/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/furama_web/customer/controller/CustomerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/furama_web/customer/model/service/customerImpl/CustomerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/furama_web/employee/controller/EmployeeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/furama_web/employee/controller/EmployeeServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/furama_web/employee/model/service/employee_impl/EmployeeImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contract/controller/Servlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/controller/CustomerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/model/service/customerImpl/CustomerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/employee/controller/EmployeeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employee/controller/EmployeeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/employee/model/service/IEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employee/model/service/IEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/employee/model/service/employee_impl/EmployeeImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/header.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/jquery/jquery-3.6.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/lib/jstl-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/view/customer/find_customer.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/view/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/customer/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/view/employee/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/employee/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/view/employee/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/employee/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tomcat-9.0.21/conf/catalina.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../tomcat-9.0.21/conf/catalina.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/home/53114-furama-resort-da-nang-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/home/Furama-Resort-Da-Nang16-1280x720.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/home/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/home/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/home/home_furama.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/home/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/home/unnamed.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/home/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/home/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../test/home_furama.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../test/home_furama.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,6 +81,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\C0221G1_TruongVanNhat\module3\case_study_2\furama_web\web\view\home\img" />
       <recent name="D:\C0221G1_TruongVanNhat\module3\case_study_2\furama_web\web" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -346,7 +173,8 @@
       <option name="presentableId" value="Default" />
       <updated>1622362527613</updated>
       <workItem from="1622362531327" duration="4474000" />
-      <workItem from="1622388058688" duration="734000" />
+      <workItem from="1622388058688" duration="1969000" />
+      <workItem from="1622433804953" duration="36000" />
     </task>
     <servers />
   </component>
@@ -374,69 +202,73 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2108" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622362547796" />
-    <state width="1293" height="292" key="GridCell.Tab.0.bottom" timestamp="1622388700176">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1293" height="292" key="GridCell.Tab.0.bottom" timestamp="1622390031586">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1293" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388700176" />
-    <state width="965" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622363616841" />
-    <state width="1293" height="292" key="GridCell.Tab.0.center" timestamp="1622388700176">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1293" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886324" />
+    <state width="1293" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
+    <state width="1293" height="292" key="GridCell.Tab.0.center" timestamp="1622390031586">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1293" height="292" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388700176" />
-    <state width="965" height="292" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622363616841" />
-    <state width="1293" height="292" key="GridCell.Tab.0.left" timestamp="1622388700176">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1293" height="292" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886323" />
+    <state width="1293" height="292" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
+    <state width="1293" height="292" key="GridCell.Tab.0.left" timestamp="1622390031586">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1293" height="292" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388700176" />
-    <state width="965" height="292" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622363616841" />
-    <state width="1293" height="292" key="GridCell.Tab.0.right" timestamp="1622388700176">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1293" height="292" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886323" />
+    <state width="1293" height="292" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
+    <state width="1293" height="292" key="GridCell.Tab.0.right" timestamp="1622390031586">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1293" height="292" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388700176" />
-    <state width="965" height="292" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622363616841" />
-    <state width="1293" height="292" key="GridCell.Tab.1.bottom" timestamp="1622388699974">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1293" height="292" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886324" />
+    <state width="1293" height="292" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
+    <state width="1293" height="292" key="GridCell.Tab.1.bottom" timestamp="1622390031586">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1293" height="292" key="GridCell.Tab.1.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388699974" />
-    <state width="965" height="292" key="GridCell.Tab.1.bottom/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622363616707" />
-    <state width="1293" height="292" key="GridCell.Tab.1.center" timestamp="1622388699974">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1293" height="292" key="GridCell.Tab.1.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886324" />
+    <state width="1293" height="292" key="GridCell.Tab.1.bottom/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
+    <state width="1293" height="292" key="GridCell.Tab.1.center" timestamp="1622390031586">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1293" height="292" key="GridCell.Tab.1.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388699974" />
-    <state width="965" height="292" key="GridCell.Tab.1.center/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622363616707" />
-    <state width="1293" height="292" key="GridCell.Tab.1.left" timestamp="1622388699974">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1293" height="292" key="GridCell.Tab.1.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886324" />
+    <state width="1293" height="292" key="GridCell.Tab.1.center/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
+    <state width="1293" height="292" key="GridCell.Tab.1.left" timestamp="1622390031586">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1293" height="292" key="GridCell.Tab.1.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388699974" />
-    <state width="965" height="292" key="GridCell.Tab.1.left/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622363616707" />
-    <state width="1293" height="292" key="GridCell.Tab.1.right" timestamp="1622388699974">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1293" height="292" key="GridCell.Tab.1.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886324" />
+    <state width="1293" height="292" key="GridCell.Tab.1.left/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
+    <state width="1293" height="292" key="GridCell.Tab.1.right" timestamp="1622390031586">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1293" height="292" key="GridCell.Tab.1.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388699974" />
-    <state width="965" height="292" key="GridCell.Tab.1.right/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622363616707" />
-    <state width="1293" height="292" key="GridCell.Tab.2.bottom" timestamp="1622388699974">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1293" height="292" key="GridCell.Tab.1.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886324" />
+    <state width="1293" height="292" key="GridCell.Tab.1.right/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
+    <state width="1293" height="292" key="GridCell.Tab.2.bottom" timestamp="1622390031586">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1293" height="292" key="GridCell.Tab.2.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388699974" />
-    <state width="965" height="292" key="GridCell.Tab.2.bottom/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622363616708" />
-    <state width="1293" height="292" key="GridCell.Tab.2.center" timestamp="1622388699974">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1293" height="292" key="GridCell.Tab.2.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886324" />
+    <state width="1293" height="292" key="GridCell.Tab.2.bottom/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
+    <state width="1293" height="292" key="GridCell.Tab.2.center" timestamp="1622390031586">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1293" height="292" key="GridCell.Tab.2.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388699974" />
-    <state width="965" height="292" key="GridCell.Tab.2.center/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622363616708" />
-    <state width="1293" height="292" key="GridCell.Tab.2.left" timestamp="1622388699974">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1293" height="292" key="GridCell.Tab.2.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886324" />
+    <state width="1293" height="292" key="GridCell.Tab.2.center/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
+    <state width="1293" height="292" key="GridCell.Tab.2.left" timestamp="1622390031586">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1293" height="292" key="GridCell.Tab.2.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388699974" />
-    <state width="965" height="292" key="GridCell.Tab.2.left/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622363616707" />
-    <state width="1293" height="292" key="GridCell.Tab.2.right" timestamp="1622388699974">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1293" height="292" key="GridCell.Tab.2.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886324" />
+    <state width="1293" height="292" key="GridCell.Tab.2.left/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
+    <state width="1293" height="292" key="GridCell.Tab.2.right" timestamp="1622390031586">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1293" height="292" key="GridCell.Tab.2.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388699974" />
-    <state width="965" height="292" key="GridCell.Tab.2.right/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622363616708" />
+    <state width="1293" height="292" key="GridCell.Tab.2.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886324" />
+    <state width="1293" height="292" key="GridCell.Tab.2.right/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
     <state x="2134" y="114" key="SettingsEditor" timestamp="1622362598143">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2134" y="114" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622362598143" />
+    <state x="2262" y="123" key="new project wizard" timestamp="1622433840357">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2262" y="123" key="new project wizard/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622433840357" />
   </component>
 </project>

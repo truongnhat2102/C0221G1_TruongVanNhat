@@ -163,7 +163,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-3">
-            <img src="logo.png">
+            <img src="img/logo.png">
         </div>
         <div class="col-sm-9">
         </div>
@@ -225,13 +225,13 @@
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="img" src="Furama-Resort-Da-Nang16-1280x720.jpg" class="d-block w-100">
+                        <img class="img" src="img/Furama-Resort-Da-Nang16-1280x720.jpg" class="d-block w-100">
                     </div>
                     <div class="carousel-item">
-                        <img class="img" src="53114-furama-resort-da-nang-11.jpg" class="d-block w-100">
+                        <img class="img" src="<c:url value='img/53114-furama-resort-da-nang-11.jpg'></c:url>" class="d-block w-100">
                     </div>
                     <div class="carousel-item">
-                        <img class="img" src="unnamed.jpg" class="d-block w-100">
+                        <img class="img" src="img/unnamed.jpg" class="d-block w-100">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -250,12 +250,10 @@
     <div class="row ">
         <div class="col-12">
             <div style="width: 100%; height: 60px; margin-top: 5%; text-align: center">
-                <p>jhfgbaerufuiewahfuiewahfguiehg</p>
+                <p> © 2018 Furama Resort Danang.</p>
             </div>
         </div>
     </div>
 </div>
-
-
 </body>
 </html>
