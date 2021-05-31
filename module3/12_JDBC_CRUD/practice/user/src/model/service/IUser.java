@@ -7,13 +7,15 @@ import java.util.List;
 public interface IUser {
     List<User> findByAll();
 
-    User findById();
+    User findById(int id);
 
-    List<User> findByName();
+    void add(User user);
 
-    void add();
+    void edit(int id, User user);
 
-    void edit();
+    void delete(int id);
 
-    void delete();
+    List<User> sortByName();
+
+    List<User> searchByCountry(String find);
 }
