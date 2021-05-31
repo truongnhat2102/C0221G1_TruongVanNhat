@@ -108,9 +108,198 @@
         .signup-form form a:hover{
             text-decoration: underline;
         }
+        .form-control {
+            box-shadow: none;
+            border-radius: 4px;
+        }
+
+        .form-control:focus {
+            border-color: #f08373;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            background: #fff;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-bottom: 1px solid #dfe3e8;
+            border-radius: 0;
+        }
+
+        .navbar .navbar-brand, .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+            padding-left: 0;
+            font-size: 20px;
+            padding-right: 50px;
+        }
+
+        .navbar .navbar-brand b {
+            font-weight: bold;
+            color: green;
+        }
+
+        .navbar ul.nav li a {
+            color: #888;
+        }
+
+        .navbar ul.nav li a:hover, .navbar ul.nav li a:focus {
+            color: #f08373 !important;
+        }
+
+        .navbar ul.nav li.active > a, .navbar ul.nav li.open > a {
+            color: #eb5844 !important;
+            background: transparent !important;
+        }
+
+        .search-box {
+            width: 100%;
+            position: relative;
+        }
+
+        .search-box input {
+            border-color: #dfe3e8;
+            box-shadow: none
+        }
+
+        .search-box input, .search-box .btn {
+            min-height: 38px;
+            border-radius: 2px;
+        }
+
+        .search-box .input-group-btn .btn {
+            border-color: #eb5844;
+            background: #eb5844;
+            outline: none;
+        }
+
+        .navbar ul li i {
+            font-size: 18px;
+            line-height: 16px;
+        }
+
+        .navbar .navbar-right .dropdown-toggle::after {
+            display: none;
+        }
+
+        .navbar .dropdown-menu {
+            border-radius: 1px;
+            border-color: #e5e5e5;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+        }
+
+        .navbar .dropdown-menu li a {
+            padding: 6px 20px;
+        }
+
+        .navbar .navbar-right .dropdown-menu {
+            width: 400px;
+            padding: 20px;
+            left: auto;
+            right: 0;
+            font-size: 14px;
+        }
+
+        .hide {
+            display: none !important;
+        }
+
+        @media (max-width: 768px) {
+            .navbar .navbar-right .dropdown-menu {
+                width: 100%;
+                background: transparent;
+                padding: 10px 20px;
+            }
+
+            .navbar .input-group {
+                width: 100%;
+            }
+        }
+
+        .footer {
+            bottom: 0px;
+            position: fixed;
+            color: darkgray;
+        }
+        .img{
+            width: 100%;
+            height: 700px;
+        }
     </style>
+    <script>
+        $(document).ready(function () {
+            var dropdown = $(".navbar-right .dropdown");
+            var toogleBtn = $(".navbar-right .dropdown-toggle");
+
+            // Toggle search and close icon for search dropdown
+            dropdown.on("show.bs.dropdown", function (e) {
+                toogleBtn.toggleClass("hide");
+            });
+            dropdown.on("hide.bs.dropdown", function (e) {
+                toogleBtn.addClass("hide");
+                toogleBtn.first().removeClass("hide");
+            });
+        });
+    </script>
 </head>
 <body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <img src="img/logo.png">
+        </div>
+        <div class="col-sm-9">
+        </div>
+    </div>
+</div>
+<div class="headbody">
+    <nav class="navbar navbar-default navbar-expand-lg navbar-light">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Furama<b>Resort</b></a>
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="navbar-toggler-icon"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/customer">Customer</a></li>
+                <li><a href="/employee">Employee</a></li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Services <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contract">Contract</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-search"></i></a>
+                    <a data-toggle="dropdown" class="nav-link dropdown-toggle hide" href="#"><i class="fa fa-close"></i></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <form>
+                                <div class="input-group search-box">
+                                    <input type="text" id="search" class="form-control" placeholder="Search here...">
+                                    <span class="input-group-btn">
+									    <button type="button" class="btn btn-primary"><i
+                                                class="fa fa-search"></i></button>
+								    </span>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
 <div class="signup-form">
     <form method="post">
         <h2>ADD</h2>
@@ -154,6 +343,15 @@
 
     </form>
     <div class="text-center">Already have an account? <a href="#">Sign in</a></div>
+</div>
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-12">
+            <div style="width: 100%; height: 60px; margin-top: 5%; text-align: center">
+                <p> © 2018 Furama Resort Danang.</p>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

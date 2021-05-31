@@ -25,16 +25,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4bdaa67-87f5-4bfc-9cf9-afc55f79a326" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../12_JDBC_CRUD/practice/user/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../12_JDBC_CRUD/practice/user/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/furama_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/furama_web_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jstl_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jstl_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/home/53114-furama-resort-da-nang-11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/home/Furama-Resort-Da-Nang16-1280x720.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/furama_web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/customer/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/customer/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/customer/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/customer/delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/customer/detail_customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/customer/detail_customer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/customer/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/customer/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/customer/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/employee/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/employee/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/employee/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/employee/delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/employee/detail_employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/employee/detail_employee.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/employee/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/employee/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/employee/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/employee/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/home/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/home/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/home/home_furama.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/home/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/home/unnamed.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/home/lib/header.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/furama_web_war_exploded/view/home/lib/header.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/controller/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/model/bean/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/model/bean/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/model/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/model/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/model/service/ICustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/model/service/ICustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer/model/service/impl/CustomerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customer/model/service/impl/CustomerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/employee/controller/EmployeeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employee/controller/EmployeeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/employee/model/bean/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employee/model/bean/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/employee/model/repository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employee/model/repository/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/employee/model/service/IEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employee/model/service/IEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/employee/model/service/impl/EmployeeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employee/model/service/impl/EmployeeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/HomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/customer/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/customer/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/customer/.idea/customer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/customer/.idea/customer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/customer/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/customer/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/customer/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/customer/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/customer/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/customer/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/customer/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/customer/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/customer/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/customer/delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/customer/detail_customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/customer/detail_customer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/customer/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/customer/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/customer/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/employee/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/employee/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/employee/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/employee/delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/employee/detail_employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/employee/detail_employee.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/employee/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/employee/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/employee/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/employee/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/view/home/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/home/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/home/lib/header.txt" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/home/lib/header.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../test/home_furama.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../test/home_furama.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,9 +113,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/view/home" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -175,6 +213,7 @@
       <workItem from="1622362531327" duration="4474000" />
       <workItem from="1622388058688" duration="1969000" />
       <workItem from="1622433804953" duration="36000" />
+      <workItem from="1622477164014" duration="414000" />
     </task>
     <servers />
   </component>
@@ -198,74 +237,74 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2134" y="114" key="#Project_Structure/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622362857821" />
-    <state x="2108" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622362547796">
+    <state x="2108" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622477220949">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2108" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622362547796" />
-    <state width="1293" height="292" key="GridCell.Tab.0.bottom" timestamp="1622390031586">
+    <state x="2108" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622477220949" />
+    <state width="1293" height="292" key="GridCell.Tab.0.bottom" timestamp="1622477280007">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1293" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886324" />
-    <state width="1293" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
-    <state width="1293" height="292" key="GridCell.Tab.0.center" timestamp="1622390031586">
+    <state width="1293" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622477280007" />
+    <state width="1293" height="292" key="GridCell.Tab.0.center" timestamp="1622477280007">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1293" height="292" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886323" />
-    <state width="1293" height="292" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
-    <state width="1293" height="292" key="GridCell.Tab.0.left" timestamp="1622390031586">
+    <state width="1293" height="292" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622477280007" />
+    <state width="1293" height="292" key="GridCell.Tab.0.left" timestamp="1622477280007">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1293" height="292" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886323" />
-    <state width="1293" height="292" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
-    <state width="1293" height="292" key="GridCell.Tab.0.right" timestamp="1622390031586">
+    <state width="1293" height="292" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622477280007" />
+    <state width="1293" height="292" key="GridCell.Tab.0.right" timestamp="1622477280007">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1293" height="292" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886324" />
-    <state width="1293" height="292" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
-    <state width="1293" height="292" key="GridCell.Tab.1.bottom" timestamp="1622390031586">
+    <state width="1293" height="292" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622477280007" />
+    <state width="1293" height="292" key="GridCell.Tab.1.bottom" timestamp="1622477279842">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1293" height="292" key="GridCell.Tab.1.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886324" />
-    <state width="1293" height="292" key="GridCell.Tab.1.bottom/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
-    <state width="1293" height="292" key="GridCell.Tab.1.center" timestamp="1622390031586">
+    <state width="1293" height="292" key="GridCell.Tab.1.bottom/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622477279842" />
+    <state width="1293" height="292" key="GridCell.Tab.1.center" timestamp="1622477279842">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1293" height="292" key="GridCell.Tab.1.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886324" />
-    <state width="1293" height="292" key="GridCell.Tab.1.center/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
-    <state width="1293" height="292" key="GridCell.Tab.1.left" timestamp="1622390031586">
+    <state width="1293" height="292" key="GridCell.Tab.1.center/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622477279842" />
+    <state width="1293" height="292" key="GridCell.Tab.1.left" timestamp="1622477279842">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1293" height="292" key="GridCell.Tab.1.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886324" />
-    <state width="1293" height="292" key="GridCell.Tab.1.left/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
-    <state width="1293" height="292" key="GridCell.Tab.1.right" timestamp="1622390031586">
+    <state width="1293" height="292" key="GridCell.Tab.1.left/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622477279842" />
+    <state width="1293" height="292" key="GridCell.Tab.1.right" timestamp="1622477279842">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1293" height="292" key="GridCell.Tab.1.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886324" />
-    <state width="1293" height="292" key="GridCell.Tab.1.right/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
-    <state width="1293" height="292" key="GridCell.Tab.2.bottom" timestamp="1622390031586">
+    <state width="1293" height="292" key="GridCell.Tab.1.right/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622477279842" />
+    <state width="1293" height="292" key="GridCell.Tab.2.bottom" timestamp="1622477279842">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1293" height="292" key="GridCell.Tab.2.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886324" />
-    <state width="1293" height="292" key="GridCell.Tab.2.bottom/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
-    <state width="1293" height="292" key="GridCell.Tab.2.center" timestamp="1622390031586">
+    <state width="1293" height="292" key="GridCell.Tab.2.bottom/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622477279842" />
+    <state width="1293" height="292" key="GridCell.Tab.2.center" timestamp="1622477279842">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1293" height="292" key="GridCell.Tab.2.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886324" />
-    <state width="1293" height="292" key="GridCell.Tab.2.center/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
-    <state width="1293" height="292" key="GridCell.Tab.2.left" timestamp="1622390031586">
+    <state width="1293" height="292" key="GridCell.Tab.2.center/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622477279842" />
+    <state width="1293" height="292" key="GridCell.Tab.2.left" timestamp="1622477279842">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1293" height="292" key="GridCell.Tab.2.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886324" />
-    <state width="1293" height="292" key="GridCell.Tab.2.left/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
-    <state width="1293" height="292" key="GridCell.Tab.2.right" timestamp="1622390031586">
+    <state width="1293" height="292" key="GridCell.Tab.2.left/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622477279842" />
+    <state width="1293" height="292" key="GridCell.Tab.2.right" timestamp="1622477279842">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1293" height="292" key="GridCell.Tab.2.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622388886324" />
-    <state width="1293" height="292" key="GridCell.Tab.2.right/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622390031586" />
-    <state x="2134" y="114" key="SettingsEditor" timestamp="1622362598143">
+    <state width="1293" height="292" key="GridCell.Tab.2.right/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622477279842" />
+    <state x="2134" y="114" key="SettingsEditor" timestamp="1622477268664">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2134" y="114" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622362598143" />
+    <state x="2134" y="114" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622477268664" />
     <state x="2262" y="123" key="new project wizard" timestamp="1622433840357">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
