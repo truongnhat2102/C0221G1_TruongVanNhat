@@ -207,7 +207,7 @@ where date_contract = '2019/12/12');
 update v_employee
 set address = 'lien chieu';
 
--- task23
+-- task23usersusersusersusers
 delimiter //
 create procedure sp_1(in customer_id int)
 begin
