@@ -241,19 +241,10 @@
     </script>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-3">
-            <img src="img/logo.png">
-        </div>
-        <div class="col-sm-9">
-        </div>
-    </div>
-</div>
 <div class="headbody">
     <nav class="navbar navbar-default navbar-expand-lg navbar-light">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Furama<b>Resort</b></a>
+            <a class="navbar-brand" href="/home">Furama<b>Resort</b></a>
             <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
                 <span class="navbar-toggler-icon"></span>
                 <span class="icon-bar"></span>
@@ -308,16 +299,19 @@
             <input type="name" class="form-control" name="name" placeholder="Name" required="required">
         </div>
         <div class="form-group">
-            <input type="type" class="form-control" name="type" placeholder="Type Customer">
+            <input type="type" class="form-control" name="idType" placeholder="Type Customer">
         </div>
         <div class="form-group">
-            <input type="date" class="form-control" name="dateOfBirth" placeholder="birthday" required="required">
+            <input type="type" class="form-control" name="dateOfBirth" placeholder="birthday" required="required">
         </div>
         <div class="form-group">
             <input type="gender" class="form-control" name="gender" placeholder="gender" required="required">
         </div>
         <div class="form-group">
             <input class="form-control" name="idCard" placeholder="ID Card" required="required">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="phone" placeholder="Phone" required="required">
         </div>
         <div class="form-group">
             <input type="email" class="form-control" name="email" placeholder="Email" required="required">

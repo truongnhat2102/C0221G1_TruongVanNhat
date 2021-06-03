@@ -8,13 +8,14 @@ import java.util.List;
 
 public class EmployeeImpl implements IEmployee {
     EmployeeRepository employeeRepository = new EmployeeRepository();
+
     @Override
     public List<Employee> findByAll() {
         return employeeRepository.findByAll();
     }
 
     @Override
-    public Employee findById(String id) {
+    public Employee findById(int id) {
         return employeeRepository.findById(id);
     }
 
@@ -24,18 +25,18 @@ public class EmployeeImpl implements IEmployee {
     }
 
     @Override
-    public void edit(String id, Employee employee) {
-        employeeRepository.edit(id, employee);
+    public boolean edit(Employee employee) {
+        return employeeRepository.edit(employee);
     }
 
     @Override
-    public void add(Employee employee) {
-        employeeRepository.add(employee);
+    public boolean add(Employee employee) {
+        return employeeRepository.add(employee);
     }
 
     @Override
-    public void remove(String id) {
-        employeeRepository.remove(id);
+    public boolean remove(int id) {
+        return employeeRepository.remove(id);
     }
 }
 

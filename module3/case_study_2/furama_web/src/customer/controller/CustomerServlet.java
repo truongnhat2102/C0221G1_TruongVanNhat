@@ -32,12 +32,9 @@ public class CustomerServlet extends HttpServlet {
             case "delete":
                 delete(request, response);
                 break;
-            case "detail":
-                detail(request, response);
-                break;
-            case "find":
-                showFindProduct(request, response);
-                break;
+//            case "detail":
+//                detail(request, response);
+//                break;
             default:
                 break;
         }
@@ -59,49 +56,57 @@ public class CustomerServlet extends HttpServlet {
                 showFormDelete(request, response);
                 break;
             case "detail":
-                showProduct(request, response);
+                showDetail(request, response);
+                break;
+            case "find":
+                showFindByName(request, response);
                 break;
             default:
-                showProductList(request, response);
+                showList(request, response);
                 break;
         }
     }
 
-    private void detail(HttpServletRequest request, HttpServletResponse response) {
-        int id = Integer.parseInt(request.getParameter("id"));
-        String name = request.getParameter("name");
-        String type = request.getParameter("type");
-        String dateOfbirth = request.getParameter("dateOfBirth");
-        String gender = request.getParameter("gender");
-        String idCard = request.getParameter("idCard");
-        String email = request.getParameter("email");
-        String address = request.getParameter("address");
-        Customer customer = new Customer(id, name, type, dateOfbirth, gender, idCard, email, address);
-        request.setAttribute("messages", "edit completed");
-        request.setAttribute("customer", customer);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/customer/detail_customer.jsp");
-        try {
-            requestDispatcher.forward(request, response);
-        } catch (ServletException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+//    private void detail(HttpServletRequest request, HttpServletResponse response) {
+//        int id = Integer.parseInt(request.getParameter("id"));
+//        String name = request.getParameter("name");
+//        String type = request.getParameter("type");
+//        String dateOfbirth = request.getParameter("dateOfBirth");
+//        String gender = request.getParameter("gender");
+//        String idCard = request.getParameter("idCard");
+//        String phone = request.getParameter("phone");
+//        String email = request.getParameter("email");
+//        String address = request.getParameter("address");
+//        Customer customer = new Customer(id, name, type, dateOfbirth, gender, idCard, phone, email, address);
+//        request.setAttribute("messages", "edit completed");
+//        request.setAttribute("customer", customer);
+//        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/customer/detail_customer.jsp");
+//        try {
+//            requestDispatcher.forward(request, response);
+//        } catch (ServletException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     private void add(HttpServletRequest request, HttpServletResponse response) {
-        int id = Integer.parseInt(request.getParameter("id"));
         String name = request.getParameter("name");
-        String type = request.getParameter("type");
+        int idType = Integer.parseInt(request.getParameter("idType"));
         String dateOfbirth = request.getParameter("dateOfBirth");
         String gender = request.getParameter("gender");
         String idCard = request.getParameter("idCard");
+        String phone = request.getParameter("phone");
         String email = request.getParameter("email");
         String address = request.getParameter("address");
-        Customer customer = new Customer(id, name, type, dateOfbirth, gender, idCard, email, address);
-        iCustomer.add(customer);
-        request.setAttribute("messages", "add completed");
-        request.setAttribute("customer", customer);
+        Customer customer = new Customer(name, idType, dateOfbirth, gender, phone, idCard, email, address);
+        if (iCustomer.add(customer)){
+            request.setAttribute("messages", "add completed");
+            request.setAttribute("customer", customer);
+
+        } else {
+            request.setAttribute("messages", "cant add completed");
+        }
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/customer/add.jsp");
         try {
             requestDispatcher.forward(request, response);
@@ -115,16 +120,21 @@ public class CustomerServlet extends HttpServlet {
     private void edit(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
         String name = request.getParameter("name");
-        String type = request.getParameter("type");
+        int idType = Integer.parseInt(request.getParameter("idType"));
         String dateOfbirth = request.getParameter("dateOfBirth");
         String gender = request.getParameter("gender");
         String idCard = request.getParameter("idCard");
+        String phone = request.getParameter("phone");
         String email = request.getParameter("email");
         String address = request.getParameter("address");
-        Customer customer = new Customer(id, name, type, dateOfbirth, gender, idCard, email, address);
-        iCustomer.edit(String.valueOf(id), customer);
-        request.setAttribute("messages", "edit completed");
-        request.setAttribute("customer", customer);
+        Customer customer = new Customer(id, name, idType, dateOfbirth, gender, phone, idCard, email, address);
+        if (iCustomer.edit(customer)) {
+            request.setAttribute("messages", "edit completed");
+            request.setAttribute("customer", customer);
+
+        } else {
+            request.setAttribute("messages", "cant edit completed");
+        }
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/customer/edit.jsp");
         try {
             requestDispatcher.forward(request, response);
@@ -137,18 +147,12 @@ public class CustomerServlet extends HttpServlet {
 
     private void delete(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
-        String name = request.getParameter("name");
-        String type = request.getParameter("type");
-        String dateOfbirth = request.getParameter("dateOfBirth");
-        String gender = request.getParameter("gender");
-        String idCard = request.getParameter("idCard");
-        String email = request.getParameter("email");
-        String address = request.getParameter("address");
-        Customer customer = new Customer(id, name, type, dateOfbirth, gender, idCard, email, address);
-        iCustomer.remove(String.valueOf(id));
-        request.setAttribute("messages", "edit completed");
-        request.setAttribute("customer", customer);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/customer/delete.jsp");
+        if(iCustomer.remove(id)){
+            request.setAttribute("messages", "delete completed");
+        } else {
+            request.setAttribute("messages", "cant delete completed");
+        }
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/customer/list.jsp");
         try {
             requestDispatcher.forward(request, response);
         } catch (ServletException e) {
@@ -160,7 +164,7 @@ public class CustomerServlet extends HttpServlet {
 
 
 
-    private void showFindProduct(HttpServletRequest request, HttpServletResponse response) {
+    private void showFindByName(HttpServletRequest request, HttpServletResponse response) {
         String find = request.getParameter("search");
         List<Customer> findCustomer = iCustomer.findByName(find);
         RequestDispatcher requestDispatcher = null;
@@ -180,8 +184,8 @@ public class CustomerServlet extends HttpServlet {
 
     }
 
-    private void showProduct(HttpServletRequest request, HttpServletResponse response) {
-        String id = request.getParameter("id");
+    private void showDetail(HttpServletRequest request, HttpServletResponse response) {
+        int id = Integer.parseInt(request.getParameter("id"));
         Customer customer = iCustomer.findById(id);
         RequestDispatcher requestDispatcher;
         requestDispatcher = request.getRequestDispatcher("/view/customer/detail_customer.jsp");
@@ -196,22 +200,10 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void showFormDelete(HttpServletRequest request, HttpServletResponse response) {
-        String id = request.getParameter("id");
-        Customer customer = iCustomer.findById(id);
-        RequestDispatcher requestDispatcher;
-        requestDispatcher = request.getRequestDispatcher("/view/customer/delete.jsp");
-        request.setAttribute("customer", customer);
-        try {
-            requestDispatcher.forward(request, response);
-        } catch (ServletException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+
     }
 
-    private void showProductList(HttpServletRequest request, HttpServletResponse response) {
-        String id = request.getParameter("id");
+    private void showList(HttpServletRequest request, HttpServletResponse response) {
         List<Customer> customers = iCustomer.findByAll();
         RequestDispatcher requestDispatcher;
         requestDispatcher = request.getRequestDispatcher("/view/customer/list.jsp");
@@ -226,7 +218,7 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void showFormEdit(HttpServletRequest request, HttpServletResponse response) {
-        String id = request.getParameter("id");
+        int id = Integer.parseInt(request.getParameter("id"));
         Customer customer = iCustomer.findById(id);
         RequestDispatcher requestDispatcher;
         requestDispatcher = request.getRequestDispatcher("/view/customer/edit.jsp");
@@ -241,11 +233,8 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void showFormAdd(HttpServletRequest request, HttpServletResponse response) {
-        String id = request.getParameter("id");
-        Customer customer = iCustomer.findById(id);
         RequestDispatcher requestDispatcher;
         requestDispatcher = request.getRequestDispatcher("/view/customer/add.jsp");
-        request.setAttribute("customer", customer);
         try {
             requestDispatcher.forward(request, response);
         } catch (ServletException e) {

@@ -10,9 +10,30 @@ public class Employee {
     private String email;
     private String address;
     private String position;
+    private int idPosition;
     private String educationDegree;
+    private int idDegree;
     private String division;
+    private int idDivision;
     private String username;
+
+    public Employee(int id, String name, String birthday, String idCard, String salary, String phone, String email, String address, String position, int idPosition, String educationDegree, int idDegree, String division, int idDivision, String username) {
+        this.id = id;
+        this.name = name;
+        this.birthday = birthday;
+        this.idCard = idCard;
+        this.salary = salary;
+        this.phone = phone;
+        this.email = email;
+        this.address = address;
+        this.position = position;
+        this.idPosition = idPosition;
+        this.educationDegree = educationDegree;
+        this.idDegree = idDegree;
+        this.division = division;
+        this.idDivision = idDivision;
+        this.username = username;
+    }
 
     public Employee(int id, String name, String birthday, String idCard, String salary, String phone, String email, String address, String position, String educationDegree, String division, String username) {
         this.id = id;
@@ -27,6 +48,44 @@ public class Employee {
         this.educationDegree = educationDegree;
         this.division = division;
         this.username = username;
+    }
+
+    public Employee( String name, String birthday, String idCard, String salary, String phone, String email, String address, int idPosition, int idDegree, int idDivision, String username) {
+        this.name = name;
+        this.birthday = birthday;
+        this.idCard = idCard;
+        this.salary = salary;
+        this.phone = phone;
+        this.email = email;
+        this.address = address;
+        this.idPosition = idPosition;
+        this.idDegree = idDegree;
+        this.idDivision = idDivision;
+        this.username = username;
+    }
+
+    public int getIdDivision() {
+        return idDivision;
+    }
+
+    public void setIdDivision(int idDivision) {
+        this.idDivision = idDivision;
+    }
+
+    public int getIdPosition() {
+        return idPosition;
+    }
+
+    public void setIdPosition(int idPosition) {
+        this.idPosition = idPosition;
+    }
+
+    public int getIdDegree() {
+        return idDegree;
+    }
+
+    public void setIdDegree(int idDegree) {
+        this.idDegree = idDegree;
     }
 
     public int getId() {

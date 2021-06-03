@@ -241,19 +241,10 @@
     </script>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-3">
-            <img src="img/logo.png">
-        </div>
-        <div class="col-sm-9">
-        </div>
-    </div>
-</div>
 <div class="headbody">
     <nav class="navbar navbar-default navbar-expand-lg navbar-light">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Furama<b>Resort</b></a>
+            <a class="navbar-brand" href="/home">Furama<b>Resort</b></a>
             <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
                 <span class="navbar-toggler-icon"></span>
                 <span class="icon-bar"></span>
@@ -303,39 +294,56 @@
 <div class="signup-form">
     <form method="post">
         <h2>EDIT</h2>
-        <p class="hint-text">DO YOU WANT TO DELETE THIS EMPLOYEE</p>
+        <p class="hint-text">EDIT EMPLOYEE</p>
         <div class="form-group">
-            <input disabled type="name" class="form-control" name="name" placeholder="Name" value="${employee.name}" required="required">
+            <input class="form-control" name="name" placeholder="Name" value="${employee.name}" required="required">
         </div>
         <div class="form-group">
-            <input disabled type="date" class="form-control" name="birthday" placeholder="birthday" value="${employee.birthday}" required="required">
+            <input class="form-control" name="birthday" placeholder="birthday" value="${employee.birthday}" required="required">
         </div>
         <div class="form-group">
-            <input disabled class="form-control" name="idCard" placeholder="ID Card" value="${employee.idCard}" required="required">
+            <input class="form-control" name="idCard" placeholder="ID Card" value="${employee.idCard}" required="required">
         </div>
         <div class="form-group">
-            <input disabled type="number" class="form-control" name="salary" placeholder="salary" value="${employee.salary}" required="required">
+            <input type="number" class="form-control" name="salary" placeholder="salary" value="${employee.salary}" required="required">
         </div>
         <div class="form-group">
-            <input disabled type="number" class="form-control" name="phone" placeholder="phone" value="${employee.phone}" required="required">
+            <input type="number" class="form-control" name="phone" placeholder="phone" value="${employee.phone}" required="required">
         </div>
         <div class="form-group">
-            <input disabled type="email" class="form-control" name="email" placeholder="Email" value="${employee.email}" required="required">
+            <input type="email" class="form-control" name="email" placeholder="Email" value="${employee.email}" required="required">
         </div>
         <div class="form-group">
-            <input disabled class="form-control" name="address" placeholder="Address" value="${employee.address}" required="required">
+            <input class="form-control" name="address" placeholder="Address" value="${employee.address}" required="required">
         </div>
         <div class="form-group">
-            <input disabled class="form-control" name="position" placeholder="Position" value="${employee.position}" required="required">
+            <select class="form-select" aria-label="Default select example" name="position">
+                <option value="1">Receptionist</option>
+                <option value="2">Server</option>
+                <option value="3">Expert</option>
+                <option value="4">Supervisor</option>
+                <option value="5">Manager</option>
+                <option value="6">General Manager</option>
+            </select>
         </div>
         <div class="form-group">
-            <input disabled class="form-control" name="educationDegree" placeholder="Education Degree" value="${employee.educationDegree}" required="required">
+            <select class="form-select" aria-label="Default select example" name="education" >
+                <option value="1">Intermediate</option>
+                <option value="2">College</option>
+                <option value="3">University</option>
+                <option value="4">Higher Education</option>
+            </select>
         </div>
         <div class="form-group">
-            <input disabled class="form-control" name="dividion" placeholder="Dividion" value="${employee.division}" required="required">
+            <select class="form-select" aria-label="Default select example" name="division">
+                <option value="1">Sale - Marketing</option>
+                <option value="2">Administration</option>
+                <option value="3">Service</option>
+                <option value="4">Management</option>
+            </select>
         </div>
         <div class="form-group">
-            <input disabled class="form-control" name="username" placeholder="Username" value="${employee.username}"  required="required">
+            <input class="form-control" name="username" placeholder="Username" value="${employee.username}"  required="required">
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>

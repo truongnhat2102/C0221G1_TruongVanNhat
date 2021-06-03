@@ -2,49 +2,152 @@ package customer.model.repository;
 
 import customer.model.bean.Customer;
 
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class CustomerRepository {
-    static Map<String, Customer> map = new HashMap<>();
-    static {
-        map.put("1", new Customer(1,"minh1","diamond","10/10/1997","men","20131023","minhngokngheck","quangnam"));
-        map.put("2", new Customer(2,"minh2","diamond","10/10/1997","men","20131023","minhngokngheck","quangnam"));
-        map.put("3", new Customer(3,"minh3","diamond","10/10/1997","men","20131023","minhngokngheck","quangnam"));
-        map.put("4", new Customer(4,"minh4","diamond","10/10/1997","men","20131023","minhngokngheck","quangnam"));
-        map.put("5", new Customer(5,"minh5","diamond","10/10/1997","men","20131023","minhngokngheck","quangnam"));
-        map.put("6", new Customer(6,"minh6","diamond","10/10/1997","men","20131023","minhngokngheck","quangnam"));
-    }
-    public List<Customer> findByAll(){
-        return new ArrayList<>(map.values());
+    BaseRepository baseRepository = new BaseRepository();
+
+    public List<Customer> findByAll() {
+        Connection connection = baseRepository.connectionDatabase();
+        List<Customer> customerList = new ArrayList<>();
+        try {
+            CallableStatement callableStatement = connection.prepareCall("call find_by_all();");
+            ResultSet rs = callableStatement.executeQuery();
+            while (rs.next()) {
+                int id = rs.getInt("id_customer");
+                String name = rs.getString("name_customer");
+                String typeCustomer = rs.getString("name_type_customer");
+                String birthday = rs.getString("date_of_birth");
+                String gender = rs.getString("gender");
+                String idCard = rs.getString("id_person");
+                String phone = rs.getString("phone");
+                String email = rs.getString("email");
+                String address = rs.getString("address");
+                Customer customer = new Customer(id, name, typeCustomer, birthday, gender, idCard, phone, email, address);
+                customerList.add(customer);
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return customerList;
     }
 
-    public Customer findById(String id){
-        return map.get(id);
+    public Customer findById(int id) {
+        Connection connection = baseRepository.connectionDatabase();
+        Customer customer = null;
+        try {
+            CallableStatement callableStatement = connection.prepareCall("call find_by_id(?);");
+            callableStatement.setInt(1,id);
+            ResultSet rs = callableStatement.executeQuery();
+            while(rs.next()) {
+                int id_customer = rs.getInt("id_customer");
+                String nameCustomer = rs.getString("name_customer");
+                String typeCustomer = rs.getString("name_type_customer");
+                String birthday = rs.getString("date_of_birth");
+                String gender = rs.getString("gender");
+                String idCard = rs.getString("id_person");
+                String phone = rs.getString("phone");
+                String email = rs.getString("email");
+                String address = rs.getString("address");
+                customer = new Customer(id_customer, nameCustomer, typeCustomer, birthday, gender, idCard, phone, email, address);
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return customer;
     }
 
     public List<Customer> findByName(String name){
-        List<Customer> customers = new ArrayList<>(map.values());
-        List<Customer> customers1 = new ArrayList<>();
-        for (int i = 0; i < customers.size(); i++) {
-            if (customers.get(i).getName().contains(name)){
-                customers1.add(customers.get(i));
+        List<Customer> customerList = new ArrayList<>();
+        Connection connection = baseRepository.connectionDatabase();
+        Customer customer = null;
+        try {
+            CallableStatement callableStatement = connection.prepareCall("call find_by_name(?);");
+            ResultSet rs = callableStatement.executeQuery();
+            callableStatement.setString(1,"%"+name+"%");
+            while(rs.next()) {
+                int id = rs.getInt("id_customer");
+                String nameCustomer = rs.getString("name_customer");
+                String typeCustomer = rs.getString("name_type_customer");
+                String birthday = rs.getString("date_of_birth");
+                String gender = rs.getString("gender");
+                String idCard = rs.getString("id_person");
+                String phone = rs.getString("phone");
+                String email = rs.getString("email");
+                String address = rs.getString("address");
+                customer = new Customer(id, nameCustomer, typeCustomer, birthday, gender, idCard, phone, email, address);
+                customerList.add(customer);
             }
+
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
         }
-        return customers1;
+        return customerList;
     }
 
-    public void add(Customer customer){
-        map.put(String.valueOf(customer.getId()),customer);
+    public boolean add(Customer customer){
+        Connection connection = baseRepository.connectionDatabase();
+        CallableStatement callableStatement = null;
+        boolean check =false;
+        try {
+            callableStatement = connection.prepareCall("call insert_customer(?,?,?,?,?,?,?,?);");
+            callableStatement.setInt(1,customer.getIdType());
+            callableStatement.setString(2,customer.getName());
+            callableStatement.setString(3,customer.getDateOfBirth());
+            callableStatement.setString(4,customer.getGender());
+            callableStatement.setString(5,customer.getIdCard());
+            callableStatement.setString(6,customer.getPhone());
+            callableStatement.setString(7,customer.getEmail());
+            callableStatement.setString(8,customer.getAddress());
+            callableStatement.executeUpdate();
+            check = true;
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return check;
     }
 
-    public void remove(String id){
-        map.remove(id);
+    public boolean remove(int id){
+        Connection connection = baseRepository.connectionDatabase();
+        boolean check = false;
+        try {
+            CallableStatement callableStatement = connection.prepareCall("call delete_customer(?);");
+            callableStatement.executeUpdate();
+            callableStatement.setInt(1,id);
+            check = true;
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return check;
     }
 
-    public void edit(String id, Customer customer){
-        map.put(id,customer);
+    public boolean edit(Customer customer){
+        Connection connection = baseRepository.connectionDatabase();
+        CallableStatement callableStatement = null;
+        boolean check =false;
+        try {
+            callableStatement = connection.prepareCall("call update_customer(?,?,?,?,?,?,?,?,?);");
+            callableStatement.setInt(1,customer.getId());
+            callableStatement.setInt(2,customer.getIdType());
+            callableStatement.setString(3,customer.getName());
+            callableStatement.setString(4,customer.getDateOfBirth());
+            callableStatement.setString(5,customer.getGender());
+            callableStatement.setString(6,customer.getIdCard());
+            callableStatement.setString(7,customer.getPhone());
+            callableStatement.setString(8,customer.getEmail());
+            callableStatement.setString(9,customer.getAddress());
+            callableStatement.executeUpdate();
+            check = true;
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return check;
     }
 }

@@ -241,19 +241,10 @@
     </script>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-3">
-            <img src="img/logo.png">
-        </div>
-        <div class="col-sm-9">
-        </div>
-    </div>
-</div>
 <div class="headbody">
     <nav class="navbar navbar-default navbar-expand-lg navbar-light">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Furama<b>Resort</b></a>
+            <a class="navbar-brand" href="/home">Furama<b>Resort</b></a>
             <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
                 <span class="navbar-toggler-icon"></span>
                 <span class="icon-bar"></span>
@@ -308,16 +299,19 @@
             <input type="name" class="form-control" name="name" placeholder="Name" value="${customer.name}" required="required">
         </div>
         <div class="form-group">
-            <input type="type" class="form-control" name="type" value="${customer.type}" placeholder="Type Customer">
+            <input type="number" class="form-control" name="idType" value="${customer.idType}" placeholder="Type Customer">
         </div>
         <div class="form-group">
-            <input type="date" class="form-control" name="dateOfBirth" value="${customer.dateOfBirth}" placeholder="birthday" required="required">
+            <input type="type" class="form-control" name="dateOfBirth" value="${customer.dateOfBirth}" placeholder="birthday" required="required">
         </div>
         <div class="form-group">
             <input type="gender" class="form-control" name="gender" value="${customer.gender}" placeholder="gender" required="required">
         </div>
         <div class="form-group">
             <input class="form-control" name="idCard" placeholder="ID Card" value="${customer.idCard}" required="required">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="phone" placeholder="Phone" value="${customer.phone}" required="required">
         </div>
         <div class="form-group">
             <input type="email" class="form-control" name="email" placeholder="Email" value="${customer.email}" required="required">

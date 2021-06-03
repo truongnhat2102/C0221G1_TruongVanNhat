@@ -211,6 +211,7 @@
             margin-top: 10px;
             font-size: 13px;
         }
+
         .form-control {
             box-shadow: none;
             border-radius: 4px;
@@ -322,7 +323,8 @@
             position: fixed;
             color: darkgray;
         }
-        .img{
+
+        .img {
             width: 100%;
             height: 700px;
         }
@@ -347,7 +349,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-3">
-            <img src="img/logo.png">
+            <img src="../../img/logo.png">
         </div>
         <div class="col-sm-9">
         </div>
@@ -356,7 +358,7 @@
 <div class="headbody">
     <nav class="navbar navbar-default navbar-expand-lg navbar-light">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Furama<b>Resort</b></a>
+            <a class="navbar-brand" href="/home">Furama<b>Resort</b></a>
             <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
                 <span class="navbar-toggler-icon"></span>
                 <span class="icon-bar"></span>
@@ -403,66 +405,95 @@
         </div>
     </nav>
 </div>
-<form action="/employee">
-    <div class="container">
-        <div class="table-responsive">
-            <div class="table-wrapper">
-                <div class="table-title">
-                    <div class="row">
-                        <div class="col-xs-5">
-                            <h2>Employee <b>Management</b></h2>
-                        </div>
-                        <div class="col-xs-7">
-                            <a href="/employee?action=add" class="btn btn-primary"><i
-                                    class="material-icons">&#xE147;</i> <span>Add New Employee</span></a>
-                        </div>
+<div class="container">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-xs-5">
+                        <h2>Employee <b>Management</b></h2>
+                    </div>
+                    <div class="col-xs-7">
+                        <a href="/employee?action=add" class="btn btn-primary"><i
+                                class="material-icons">&#xE147;</i> <span>Add New Employee</span></a>
                     </div>
                 </div>
-                <table class="table table-striped table-hover">
-                    <thead>
+            </div>
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Division</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+
+                <c:forEach var="employee" items="${employees}">
+                    <tbody>
                     <tr>
-                        <th>#</th>
-                        <th>Name</th>
-                        <th>Date Of Birth</th>
-                        <th>Type</th>
-                        <th>Action</th>
+                        <td>${employee.id}</td>
+                        <td><a href="/employee?action=detail&id=${employee.id}">${employee.name}</a></td>
+                        <td>${employee.position}</td>
+                        <td>${employee.division}</td>
+                        <td>
+                            <button type="button" class="btn btn-primary" class="settings" title="Settings"
+                                    data-toggle="tooltip"><a href="/employee?action=edit&id=${employee.id}"><i
+                                    style="color: white" class="material-icons">&#xE8B8;</i></a></button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModalLong" onclick="sendDataToModal('${employee.id}')">
+                                <a><i style="color: white" class="material-icons">&#xE5C9;</i></a>
+                            </button>
+                        </td>
                     </tr>
-                    </thead>
+                    </tbody>
+                </c:forEach>
 
-                    <c:forEach var="employee" items="${employees}">
-                        <tbody>
-                        <tr>
-                            <td>${employee.id}</td>
-                            <td><a href="/employee?action=detail&id=${employee.id}">${employee.name}</a></td>
-                            <td>${employee.position}</td>
-                            <td>${employee.phone}</td>
-                            <td>
-                                <a href="/employee?action=edit&id=${employee.id}" class="settings" title="Settings"
-                                   data-toggle="tooltip"><i class="material-icons">&#xE8B8;</i></a>
-                                <a href="/employee?action=delete&id=${employee.id}" class="delete" title="Delete"
-                                   data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </c:forEach>
+            </table>
+            <div class="clearfix">
+                <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+                <ul class="pagination">
+                    <li class="page-item"><a href="#">Previous</a></li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
-                </table>
-                <div class="clearfix">
-                    <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
-                    <ul class="pagination">
-                        <li class="page-item"><a href="#">Previous</a></li>
-                        <li class="page-item"><a href="#" class="page-link">1</a></li>
-                        <li class="page-item"><a href="#" class="page-link">2</a></li>
-                        <li class="page-item"><a href="#" class="page-link">3</a></li>
-                        <li class="page-item"><a href="#" class="page-link">4</a></li>
-                        <li class="page-item"><a href="#" class="page-link">5</a></li>
-                        <li class="page-item"><a href="#" class="page-link">Next</a></li>
-                    </ul>
+<!-- Modal -->
+<form action="/employee?action=delete" method="post">
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" id="idName" name="id" class="btn btn-primary">Delete</button>
                 </div>
             </div>
         </div>
     </div>
 </form>
+<script>
+    function sendDataToModal(id) {
+        document.getElementById("idName").value = id;
+    }
+</script>
 <div class="container-fluid">
     <div class="row ">
         <div class="col-12">

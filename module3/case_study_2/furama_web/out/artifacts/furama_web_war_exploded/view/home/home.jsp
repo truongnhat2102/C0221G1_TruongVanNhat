@@ -163,7 +163,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-3">
-            <img src="img/logo.png">
+            <img src="../../img/logo.png">
         </div>
         <div class="col-sm-9">
         </div>
@@ -172,7 +172,7 @@
 <div class="headbody">
     <nav class="navbar navbar-default navbar-expand-lg navbar-light">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Furama<b>Resort</b></a>
+            <a class="navbar-brand" href="/home">Furama<b>Resort</b></a>
             <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
                 <span class="navbar-toggler-icon"></span>
                 <span class="icon-bar"></span>
@@ -224,14 +224,14 @@
         <div class="col-12">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img class="img" src="../../img/Furama-Resort-Da-Nang16-1280x720.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img" src="../../img/53114-furama-resort-da-nang-11.jpg" class="d-block w-100">
+                    </div>
                     <div class="carousel-item active">
-                        <img class="img" src="img/Furama-Resort-Da-Nang16-1280x720.jpg" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="img" src="<c:url value='img/53114-furama-resort-da-nang-11.jpg'></c:url>" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="img" src="img/unnamed.jpg" class="d-block w-100">
+                        <img class="img" src="../../img/unnamed.jpg" class="d-block w-100">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

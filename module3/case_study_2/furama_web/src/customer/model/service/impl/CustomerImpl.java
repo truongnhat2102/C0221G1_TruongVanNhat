@@ -15,7 +15,7 @@ public class CustomerImpl implements ICustomer {
     }
 
     @Override
-    public Customer findById(String id) {
+    public Customer findById(int id) {
         return customerRepository.findById(id);
     }
 
@@ -25,17 +25,17 @@ public class CustomerImpl implements ICustomer {
     }
 
     @Override
-    public void edit(String id, Customer customer) {
-        customerRepository.edit(id, customer);
+    public boolean edit(Customer customer) {
+        return customerRepository.edit(customer);
     }
 
     @Override
-    public void add(Customer customer) {
-        customerRepository.add(customer);
+    public boolean add(Customer customer) {
+        return customerRepository.add(customer);
     }
 
     @Override
-    public void remove(String id) {
-        customerRepository.remove(id);
+    public boolean remove(int id) {
+        return customerRepository.remove(id);
     }
 }

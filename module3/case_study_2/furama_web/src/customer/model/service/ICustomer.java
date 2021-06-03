@@ -8,13 +8,13 @@ import java.util.List;
 public interface ICustomer {
     List<Customer> findByAll();
 
-    Customer findById(String id);
+    Customer findById(int id);
 
     List<Customer> findByName(String name);
 
-    void edit(String id, Customer customer);
+    boolean edit(Customer customer);
 
-    void add(Customer customer);
+    boolean add(Customer customer);
 
-    void remove(String id);
+    boolean remove(int id);
 }

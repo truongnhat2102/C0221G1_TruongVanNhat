@@ -347,7 +347,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-3">
-            <img src="img/logo.png">
+            <img src="../home/img/logo.png">
         </div>
         <div class="col-sm-9">
         </div>
@@ -356,7 +356,7 @@
 <div class="headbody">
     <nav class="navbar navbar-default navbar-expand-lg navbar-light">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Furama<b>Resort</b></a>
+            <a class="navbar-brand" href="/home">Furama<b>Resort</b></a>
             <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
                 <span class="navbar-toggler-icon"></span>
                 <span class="icon-bar"></span>
@@ -463,6 +463,7 @@
         </div>
     </div>
 </form>
+
 <div class="container-fluid">
     <div class="row ">
         <div class="col-12">

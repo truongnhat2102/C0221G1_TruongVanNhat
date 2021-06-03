@@ -7,13 +7,13 @@ import java.util.List;
 public interface IEmployee {
     List<Employee> findByAll();
 
-    Employee findById(String id);
+    Employee findById(int id);
 
     List<Employee> findByName(String name);
 
-    void edit(String id, Employee employee);
+    boolean edit(Employee employee);
 
-    void add(Employee employee);
+    boolean add(Employee employee);
 
-    void remove(String id);
+    boolean remove(int id);
 }

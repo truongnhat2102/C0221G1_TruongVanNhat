@@ -111,6 +111,56 @@
     </style>
 </head>
 <body>
+<div class="headbody">
+    <nav class="navbar navbar-default navbar-expand-lg navbar-light">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/home">Furama<b>Resort</b></a>
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="navbar-toggler-icon"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/customer">Customer</a></li>
+                <li><a href="/employee">Employee</a></li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Services <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contract">Contract</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-search"></i></a>
+                    <a data-toggle="dropdown" class="nav-link dropdown-toggle hide" href="#"><i class="fa fa-close"></i></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <form>
+                                <div class="input-group search-box">
+                                    <input type="text" id="search" class="form-control" placeholder="Search here...">
+                                    <span class="input-group-btn">
+									    <button type="button" class="btn btn-primary"><i
+                                                class="fa fa-search"></i></button>
+								    </span>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
 <div class="signup-form">
     <form method="post">
         <h2>EDIT</h2>
@@ -137,13 +187,30 @@
             <input disabled class="form-control" name="address" placeholder="Address" value="${employee.address}" required="required">
         </div>
         <div class="form-group">
-            <input disabled class="form-control" name="position" placeholder="Position" value="${employee.position}" required="required">
+            <select disabled class="form-select" aria-label="Default select example" name="position">
+                <option value="employee">Receptionist</option>
+                <option value="2">Server</option>
+                <option value="3">Expert</option>
+                <option value="4">Supervisor</option>
+                <option value="5">Manager</option>
+                <option value="6">General Manager</option>
+            </select>
         </div>
         <div class="form-group">
-            <input disabled class="form-control" name="educationDegree" placeholder="Education Degree" value="${employee.educationDegree}" required="required">
+            <select disabled class="form-select" aria-label="Default select example" name="education">
+                <option value="1">Intermediate</option>
+                <option value="2">College</option>
+                <option value="3">University</option>
+                <option value="4">Higher Education</option>
+            </select>
         </div>
         <div class="form-group">
-            <input disabled class="form-control" name="dividion" placeholder="Dividion" value="${employee.division}" required="required">
+            <select disabled class="form-select" aria-label="Default select example" name="division">
+                <option value="1">Sale - Marketing</option>
+                <option value="2">Administration</option>
+                <option value="3">Service</option>
+                <option value="4">Management</option>
+            </select>
         </div>
         <div class="form-group">
             <input disabled class="form-control" name="username" placeholder="Username" value="${employee.username}"  required="required">

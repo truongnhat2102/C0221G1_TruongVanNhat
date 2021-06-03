@@ -26,29 +26,35 @@
             background: #63738a;
             font-family: 'Roboto', sans-serif;
         }
-        .form-control{
+
+        .form-control {
             height: 40px;
             box-shadow: none;
             color: #969fa4;
         }
-        .form-control:focus{
+
+        .form-control:focus {
             border-color: #5cb85c;
         }
-        .form-control, .btn{
+
+        .form-control, .btn {
             border-radius: 3px;
         }
-        .signup-form{
+
+        .signup-form {
             width: 400px;
             margin: 0 auto;
             padding: 30px 0;
         }
-        .signup-form h2{
+
+        .signup-form h2 {
             color: #636363;
             margin: 0 0 15px;
             position: relative;
             text-align: center;
         }
-        .signup-form h2:before, .signup-form h2:after{
+
+        .signup-form h2:before, .signup-form h2:after {
             content: "";
             height: 2px;
             width: 30%;
@@ -57,18 +63,22 @@
             top: 50%;
             z-index: 2;
         }
-        .signup-form h2:before{
+
+        .signup-form h2:before {
             left: 0;
         }
-        .signup-form h2:after{
+
+        .signup-form h2:after {
             right: 0;
         }
-        .signup-form .hint-text{
+
+        .signup-form .hint-text {
             color: #999;
             margin-bottom: 30px;
             text-align: center;
         }
-        .signup-form form{
+
+        .signup-form form {
             color: #999;
             border-radius: 3px;
             margin-bottom: 15px;
@@ -76,38 +86,48 @@
             box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
             padding: 30px;
         }
-        .signup-form .form-group{
+
+        .signup-form .form-group {
             margin-bottom: 20px;
         }
-        .signup-form input[type="checkbox"]{
+
+        .signup-form input[type="checkbox"] {
             margin-top: 3px;
         }
-        .signup-form .btn{
+
+        .signup-form .btn {
             font-size: 16px;
             font-weight: bold;
             min-width: 140px;
             outline: none !important;
         }
-        .signup-form .row div:first-child{
+
+        .signup-form .row div:first-child {
             padding-right: 10px;
         }
-        .signup-form .row div:last-child{
+
+        .signup-form .row div:last-child {
             padding-left: 10px;
         }
-        .signup-form a{
+
+        .signup-form a {
             color: #fff;
             text-decoration: underline;
         }
-        .signup-form a:hover{
+
+        .signup-form a:hover {
             text-decoration: none;
         }
-        .signup-form form a{
+
+        .signup-form form a {
             color: #5cb85c;
             text-decoration: none;
         }
-        .signup-form form a:hover{
+
+        .signup-form form a:hover {
             text-decoration: underline;
         }
+
         .form-control {
             box-shadow: none;
             border-radius: 4px;
@@ -219,7 +239,8 @@
             position: fixed;
             color: darkgray;
         }
-        .img{
+
+        .img {
             width: 100%;
             height: 700px;
         }
@@ -241,19 +262,10 @@
     </script>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-3">
-            <img src="img/logo.png">
-        </div>
-        <div class="col-sm-9">
-        </div>
-    </div>
-</div>
 <div class="headbody">
     <nav class="navbar navbar-default navbar-expand-lg navbar-light">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Furama<b>Resort</b></a>
+            <a class="navbar-brand" href="/home">Furama<b>Resort</b></a>
             <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
                 <span class="navbar-toggler-icon"></span>
                 <span class="icon-bar"></span>
@@ -305,10 +317,10 @@
         <h2>ADD</h2>
         <p class="hint-text">Add a new employee</p>
         <div class="form-group">
-            <input type="name" class="form-control" name="name" placeholder="Name" required="required">
+            <input class="form-control" name="name" placeholder="Name" required="required">
         </div>
         <div class="form-group">
-            <input type="date" class="form-control" name="birthday" placeholder="birthday" required="required">
+            <input class="form-control" type="date" name="birthday" placeholder="birthday" required="required">
         </div>
         <div class="form-group">
             <input class="form-control" name="idCard" placeholder="ID Card" required="required">
@@ -326,21 +338,41 @@
             <input class="form-control" name="address" placeholder="Address" required="required">
         </div>
         <div class="form-group">
-            <input class="form-control" name="position" placeholder="Position" required="required">
+            <select class="form-select" aria-label="Default select example" name="position">
+                <option selected >Position</option>
+                <option value="1">Receptionist</option>
+                <option value="2">Server</option>
+                <option value="3">Expert</option>
+                <option value="4">Supervisor</option>
+                <option value="5">Manager</option>
+                <option value="6">General Manager</option>
+            </select>
         </div>
         <div class="form-group">
-            <input class="form-control" name="educationDegree" placeholder="Education Degree" required="required">
+            <select class="form-select" aria-label="Default select example" name="education">
+                <option selected >Education</option>
+                <option value="1">Intermediate</option>
+                <option value="2">College</option>
+                <option value="3">University</option>
+                <option value="4">Higher Education</option>
+            </select>
         </div>
         <div class="form-group">
-            <input class="form-control" name="dividion" placeholder="Dividion" required="required">
+            <select class="form-select" aria-label="Default select example" name="division">
+                <option selected >Division</option>
+                <option value="1">Sale - Marketing</option>
+                <option value="2">Administration</option>
+                <option value="3">Service</option>
+                <option value="4">Management</option>
+            </select>
         </div>
-        <div class="form-group">
-            <input class="form-control" name="username" placeholder="Username" required="required">
+            <div class="form-group">
+                <input class="form-control" name="username" placeholder="Username" required="required">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+            </div>
         </div>
-        <div class="form-group">
-            <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
-        </div>
-
     </form>
     <div class="text-center">Already have an account? <a href="#">Sign in</a></div>
 </div>
