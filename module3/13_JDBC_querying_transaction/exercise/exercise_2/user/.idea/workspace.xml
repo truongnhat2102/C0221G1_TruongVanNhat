@@ -62,7 +62,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../case_study_2/furama_web" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -261,6 +261,7 @@
       <workItem from="1622538458895" duration="11000" />
       <workItem from="1622554895350" duration="6781000" />
       <workItem from="1622569723812" duration="1664000" />
+      <workItem from="1622601208280" duration="15000" />
     </task>
     <servers />
   </component>
@@ -296,10 +297,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2610" y="287" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622566410372" />
-    <state x="2660" y="295" key="FileChooserDialogImpl" timestamp="1622538468091">
+    <state x="2660" y="295" key="FileChooserDialogImpl" timestamp="1622601220983">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2660" y="295" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622538468091" />
+    <state x="2660" y="295" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622601220983" />
     <state width="1293" height="382" key="GridCell.Tab.0.bottom" timestamp="1622571399137">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

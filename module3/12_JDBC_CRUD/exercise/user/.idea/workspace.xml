@@ -25,11 +25,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24e898db-03be-4514-aeda-ecf1db0c3c05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/user_war_exploded/view/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/user_war_exploded/view/user/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/user/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/user/controller/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/repository/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/repository/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study_2/furama_web/.idea/libraries/jstl_1_2__2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study_2/furama_web/.idea/libraries/mysql_connector_java_8_0_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study_2/furama_web/src/customer/model/repository/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study_2/furama_web/src/mysql-connector-java-8.0.11.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../13_JDBC_querying_transaction/exercise/exercise_2/user/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../13_JDBC_querying_transaction/exercise/exercise_2/user/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study_2/furama_web/.idea/artifacts/furama_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_2/furama_web/.idea/artifacts/furama_web_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../case_study_2/furama_web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_2/furama_web/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study_2/furama_web/furama_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_2/furama_web/furama_web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study_2/furama_web/src/customer/model/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_2/furama_web/src/customer/model/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../case_study_2/furama_web/web/jstl-1.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_2/furama_web/src/jstl-1.2.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../test/home_furama.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../test/home_furama.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +72,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../case_study_2/furama_web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../13_JDBC_querying_transaction/exercise/exercise_1/user" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -187,6 +192,7 @@
       <workItem from="1622471005034" duration="2169000" />
       <workItem from="1622474841322" duration="10000" />
       <workItem from="1622522672767" duration="705000" />
+      <workItem from="1622601492838" duration="358000" />
     </task>
     <servers />
   </component>
@@ -214,9 +220,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2685" y="246" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622458392789" />
-    <state x="2660" y="295" key="FileChooserDialogImpl" timestamp="1622474849420">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1622601849743">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1622601849743" />
     <state x="2660" y="295" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1622474849420" />
     <state width="1293" height="218" key="GridCell.Tab.0.bottom" timestamp="1622523378271">
       <screen x="1920" y="0" width="1920" height="1080" />
