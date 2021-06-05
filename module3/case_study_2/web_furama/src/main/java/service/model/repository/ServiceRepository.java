@@ -20,7 +20,7 @@ public class ServiceRepository {
                     " join type_of_service on service.id_type_service = type_of_service.id_type_service;");
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()){
-                int id = resultSet.getInt("id");
+                int id = resultSet.getInt("id_service");
                 String name = resultSet.getString("name_service");
                 int area = resultSet.getInt("area_service");
                 int floor = resultSet.getInt("floor_service");
@@ -41,6 +41,36 @@ public class ServiceRepository {
         }
         return serviceList;
     }
+
+    public Service findById(int id){
+        Connection connection = baseRepository.conectDatabase();
+        Service service = null;
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement("select * from service " +
+                    " where service.id_service = ?;");
+            preparedStatement.setInt(1,id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                String name = resultSet.getString("name_service");
+                int area = resultSet.getInt("area_service");
+                int floor = resultSet.getInt("floor_service");
+                int maxPeople = resultSet.getInt("max_people_service");
+                double cost = resultSet.getDouble("price_service");
+                int idTypeRent = resultSet.getInt("id_type_rent");
+                int idTypeService = resultSet.getInt("id_type_service");
+                double poolArea = resultSet.getDouble("pool_area");
+                String standardRoom = resultSet.getString("standard_room");
+                String description = resultSet.getString("description");
+                String nameTypeRent = resultSet.getString("name_type_rent");
+                String nameTypeService = resultSet.getString("name_type_service");
+                service = new Service(id,name,area,cost,maxPeople,idTypeService,nameTypeService,idTypeRent,nameTypeRent,standardRoom,description,poolArea,floor);
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return service;
+    }
+
     public boolean add(Service service){
         Connection connection = baseRepository.conectDatabase();
         boolean check=false;

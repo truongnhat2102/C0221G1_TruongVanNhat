@@ -113,7 +113,14 @@
             <input type="name" class="form-control" name="name" placeholder="Name" value="${customer.name}" required="required">
         </div>
         <div class="form-group">
-            <input type="number" class="form-control" name="idType" value="${customer.idType}" placeholder="Type Customer">
+            <select class="form-select" aria-label="Default select example" name="idType">
+                <option selected value="${idTypeNumber}"></option>
+                <option value="1">Diamond</option>
+                <option value="2">Platinum</option>
+                <option value="3">Gold</option>
+                <option value="4">Silver</option>
+                <option value="5">Member</option>
+            </select>
         </div>
         <div class="form-group">
             <input type="type" class="form-control" name="dateOfBirth" value="${customer.dateOfBirth}" placeholder="birthday" required="required">

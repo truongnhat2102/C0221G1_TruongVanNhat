@@ -183,7 +183,7 @@
                         <li><a href="/service?action=addRoom">Add new Room</a></li>
                     </ul>
                 </li>
-                <li><a href="/contract">Contract</a></li>
+                <li><a href="/contract?action=add">Contract</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">

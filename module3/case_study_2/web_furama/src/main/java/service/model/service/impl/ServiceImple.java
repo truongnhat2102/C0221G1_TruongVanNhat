@@ -15,6 +15,11 @@ public class ServiceImple implements IService {
     }
 
     @Override
+    public Service findById(int id) {
+        return serviceRepository.findById(id);
+    }
+
+    @Override
     public boolean add(Service service) {
         return serviceRepository.add(service);
     }

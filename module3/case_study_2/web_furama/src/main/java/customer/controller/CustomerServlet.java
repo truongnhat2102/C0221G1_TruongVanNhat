@@ -11,11 +11,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(name = "CustomerServlet", urlPatterns = {"/customer"})
 public class CustomerServlet extends HttpServlet {
     ICustomer iCustomer = new CustomerImpl();
+    int[] idTypeList = {1,2,3,4,5};
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
         if (action == null) {
@@ -91,6 +93,7 @@ public class CustomerServlet extends HttpServlet {
 
     private void add(HttpServletRequest request, HttpServletResponse response) {
         String name = request.getParameter("name");
+        request.setAttribute("idTypeList",idTypeList);
         int idType = Integer.parseInt(request.getParameter("idType"));
         String dateOfbirth = request.getParameter("dateOfBirth");
         String gender = request.getParameter("gender");
@@ -219,6 +222,7 @@ public class CustomerServlet extends HttpServlet {
     private void showFormEdit(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
         Customer customer = iCustomer.findById(id);
+        request.setAttribute("idTypeNumber",customer.getIdType());
         RequestDispatcher requestDispatcher;
         requestDispatcher = request.getRequestDispatcher("/view/customer/edit.jsp");
         request.setAttribute("customer", customer);
