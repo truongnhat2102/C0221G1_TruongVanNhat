@@ -132,7 +132,7 @@
             <input class="form-control" name="address" placeholder="Address" required="required">
         </div>
         <div class="form-group">
-            <select class="form-select" aria-label="Default select example" name="position">
+            <select class="form-select form-control" aria-label="Default select example" name="position">
                 <option selected >Position</option>
                 <c:forEach var="position" items="${positionList}">
                     <option value="${position.getIdPosition()}">${position.getNamePosition()}</option>
@@ -146,7 +146,7 @@
             </select>
         </div>
         <div class="form-group">
-            <select class="form-select" aria-label="Default select example" name="education">
+            <select class="form-select form-control" aria-label="Default select example" name="education">
                 <option selected >Education</option>
                 <c:forEach var="educationDegree" items="${educationList}">
                     <option value="${educationDegree.getIdEducation()}">${educationDegree.getNameEducation()}</option>
@@ -158,7 +158,7 @@
             </select>
         </div>
         <div class="form-group">
-            <select class="form-select" aria-label="Default select example" name="division">
+            <select class="form-select form-control" aria-label="Default select example" name="division">
                 <option selected >Division</option>
                 <c:forEach var="division" items="${divisionList}">
                     <option value="${division.getIdDivision()}">${division.getNameDivision()}</option>

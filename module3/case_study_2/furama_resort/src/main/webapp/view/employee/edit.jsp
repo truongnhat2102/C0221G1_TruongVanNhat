@@ -131,7 +131,7 @@
             <input class="form-control" name="address" placeholder="Address" value="${employee.address}" required="required">
         </div>
         <div class="form-group">
-            <select class="form-select" aria-label="Default select example" name="position">
+            <select class="form-select form-control" aria-label="Default select example" name="position">
                 <option selected value="${employee.position.getIdPosition()}">${employee.position.getNamePosition()}</option>
                 <c:forEach var="position" items="${positionList}">
                     <option value="${position.getIdPosition()}">${position.getNamePosition()}</option>
@@ -145,7 +145,7 @@
             </select>
         </div>
         <div class="form-group">
-            <select class="form-select" aria-label="Default select example" name="education">
+            <select class="form-select form-control" aria-label="Default select example" name="education">
                 <option selected value="${employee.educationDegree.getIdEducation()}">${employee.educationDegree.getNameEducation()}</option>
                 <c:forEach var="educationDegree" items="${educationList}">
                     <option value="${educationDegree.getIdEducation()}">${educationDegree.getNameEducation()}</option>
@@ -157,7 +157,7 @@
             </select>
         </div>
         <div class="form-group">
-            <select class="form-select" aria-label="Default select example" name="division">
+            <select class="form-select form-control" aria-label="Default select example" name="division">
                 <option selected value="${employee.division.getIdDivision()}">${employee.division.getNameDivision()}</option>
                 <c:forEach var="division" items="${divisionList}">
                     <option value="${division.getIdDivision()}">${division.getNameDivision()}</option>

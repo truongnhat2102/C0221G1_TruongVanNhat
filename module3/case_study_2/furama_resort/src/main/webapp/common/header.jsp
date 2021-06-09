@@ -175,16 +175,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="/customer">Customer</a></li>
                 <li><a href="/employee">Employee</a></li>
-                <li class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle">Services <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/service?action=addVilla">Add new Villa</a></li>
-                        <li><a href="/service?action=addHouse">Add new House</a></li>
-                        <li><a href="/service?action=addRoom">Add new Room</a></li>
-                    </ul>
-                </li>
-<%--                <li><a href="/contract?action=add">Contract</a></li>--%>
-<%--                <li><a href="#">Contact</a></li>--%>
+                <li><a href="/service?action=addService">Service</a></li>
                 <li class="dropdown">
                     <a data-toggle="dropdown" class="dropdown-toggle">Contract <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -192,6 +183,7 @@
                         <li><a href="/contract_detail?action=add">Add new Contract Detail</a></li>
                     </ul>
                 </li>
+                <li><a href="/list_active">Customer Active</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">

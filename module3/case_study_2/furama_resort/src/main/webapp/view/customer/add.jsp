@@ -110,13 +110,14 @@
         <h2>ADD</h2>
         <p class="hint-text">Add a new customer</p>
         <div class="form-group">
-            <input type="name" class="form-control" name="name" placeholder="Name" required="required">
+            <input class="form-control" name="name" placeholder="Name" >
+            <p>${msgName}</p>
         </div>
         <%--        <div class="form-group">--%>
         <%--            <input type="type" class="form-control" name="idType" placeholder="Type Customer">--%>
         <%--        </div>--%>
         <div class="form-group">
-            <select class="form-select" aria-label="Default select example" name="idType">
+            <select class="form-select form-control" aria-label="Default select example" name="idType">
                 <option selected>Type Customer</option>
                 <c:forEach var="typeCustomer" items="${typeCustomerList}">
                     <option value="${typeCustomer.getIdTypeCustomer()}">${typeCustomer.getNameTypeCustomer()}</option>
@@ -124,13 +125,14 @@
             </select>
         </div>
         <div class="form-group">
-            <input type="type" class="form-control" name="dateOfBirth" placeholder="birthday" required="required">
+            <input  class="form-control" name="dateOfBirth" placeholder="birthday" >
+            <p>${msgDateOfBirth}</p>
         </div>
         <%--        <div class="form-group">--%>
         <%--            <input type="gender" class="form-control" name="gender" placeholder="gender" required="required">--%>
         <%--        </div>--%>
         <div class="form-group">
-            <select class="form-select" aria-label="Default select example" name="gender">
+            <select class="form-select form-control" aria-label="Default select example" name="gender">
                 <option selected>Gender</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
@@ -138,16 +140,19 @@
             </select>
         </div>
         <div class="form-group">
-            <input class="form-control" name="idCard" placeholder="ID Card" required="required">
+            <input class="form-control" name="idCard" placeholder="ID Card" >
+            <p>${msgIdCard}</p>
         </div>
         <div class="form-group">
-            <input class="form-control" name="phone" placeholder="Phone" required="required">
+            <input class="form-control" name="phone" placeholder="Phone" >
+            <p>${msgPhone}</p>
         </div>
         <div class="form-group">
-            <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+            <input class="form-control" name="email" placeholder="Email" >
+            <p>${msgEmail}</p>
         </div>
         <div class="form-group">
-            <input class="form-control" name="address" placeholder="Address" required="required">
+            <input class="form-control" name="address" placeholder="Address" >
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>

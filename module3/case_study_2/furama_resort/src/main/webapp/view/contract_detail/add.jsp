@@ -110,14 +110,14 @@
         <h2>ADD</h2>
         <p class="hint-text">Add a new contract</p>
         <div class="form-group">
-            <select class="form-select" aria-label="Default select example" name="idContract">
+            <select class="form-select form-control" aria-label="Default select example" name="idContract">
                 <c:forEach var="contract" items="${contractList}">
                     <option value="${contract.getIdContract()}">${contract.getCustomer().getName()}</option>
                 </c:forEach>
             </select>
         </div>
         <div class="form-group">
-            <select class="form-select" aria-label="Default select example" name="idExtraService">
+            <select class="form-select form-control" aria-label="Default select example" name="idExtraService">
                 <c:forEach var="extraService" items="${extraServiceList}">
                     <option value="${extraService.getIdExtraService()}">${extraService.getNameExtraService()}</option>
                 </c:forEach>

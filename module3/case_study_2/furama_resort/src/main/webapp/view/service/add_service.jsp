@@ -19,29 +19,35 @@
             background: #63738a;
             font-family: 'Roboto', sans-serif;
         }
-        .form-control{
+
+        .form-control {
             height: 40px;
             box-shadow: none;
             color: #969fa4;
         }
-        .form-control:focus{
+
+        .form-control:focus {
             border-color: #5cb85c;
         }
-        .form-control, .btn{
+
+        .form-control, .btn {
             border-radius: 3px;
         }
-        .signup-form{
+
+        .signup-form {
             width: 400px;
             margin: 0 auto;
             padding: 30px 0;
         }
-        .signup-form h2{
+
+        .signup-form h2 {
             color: #636363;
             margin: 0 0 15px;
             position: relative;
             text-align: center;
         }
-        .signup-form h2:before, .signup-form h2:after{
+
+        .signup-form h2:before, .signup-form h2:after {
             content: "";
             height: 2px;
             width: 30%;
@@ -50,18 +56,22 @@
             top: 50%;
             z-index: 2;
         }
-        .signup-form h2:before{
+
+        .signup-form h2:before {
             left: 0;
         }
-        .signup-form h2:after{
+
+        .signup-form h2:after {
             right: 0;
         }
-        .signup-form .hint-text{
+
+        .signup-form .hint-text {
             color: #999;
             margin-bottom: 30px;
             text-align: center;
         }
-        .signup-form form{
+
+        .signup-form form {
             color: #999;
             border-radius: 3px;
             margin-bottom: 15px;
@@ -69,36 +79,45 @@
             box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
             padding: 30px;
         }
-        .signup-form .form-group{
+
+        .signup-form .form-group {
             margin-bottom: 20px;
         }
-        .signup-form input[type="checkbox"]{
+
+        .signup-form input[type="checkbox"] {
             margin-top: 3px;
         }
-        .signup-form .btn{
+
+        .signup-form .btn {
             font-size: 16px;
             font-weight: bold;
             min-width: 140px;
             outline: none !important;
         }
-        .signup-form .row div:first-child{
+
+        .signup-form .row div:first-child {
             padding-right: 10px;
         }
-        .signup-form .row div:last-child{
+
+        .signup-form .row div:last-child {
             padding-left: 10px;
         }
-        .signup-form a{
+
+        .signup-form a {
             color: #fff;
             text-decoration: underline;
         }
-        .signup-form a:hover{
+
+        .signup-form a:hover {
             text-decoration: none;
         }
-        .signup-form form a{
+
+        .signup-form form a {
             color: #5cb85c;
             text-decoration: none;
         }
-        .signup-form form a:hover{
+
+        .signup-form form a:hover {
             text-decoration: underline;
         }
     </style>
@@ -108,7 +127,7 @@
 <div class="signup-form">
     <form method="post">
         <h2>ADD</h2>
-        <p class="hint-text">Add a new employee</p>
+        <p class="hint-text">Add a new service</p>
         <div class="form-group">
             <input class="form-control" name="name" placeholder="Name" required="required">
         </div>
@@ -122,33 +141,58 @@
             <input type="number" class="form-control" name="maxPeople" placeholder="Max People">
         </div>
         <div class="form-group">
-            <input disabled class="form-control" name="nameTypeService" value="${nameTypeService}" placeholder="${nameTypeService}">
-        </div>
-        <div class="form-group">
-            <select class="form-select" aria-label="Default select example" name="idTypeRent">
+            <select class="form-select form-control" aria-label="Default select example" name="idTypeRent">
                 <option value="1">Day</option>
                 <option value="2">Month</option>
                 <option value="3">Year</option>
             </select>
         </div>
         <div class="form-group">
-            <input class="form-control" name="standardRoom" placeholder="standardRoom">
+            <select class="form-select form-control" aria-label="Default select example" name="typeService" onchange="showInfor(this.value)">
+               <option value="1">Villa</option>
+               <option value="2">House</option>
+               <option value="3">Room</option>
+            </select>
         </div>
         <div class="form-group">
-            <input class="form-control" name="description" placeholder="Description">
+            <input class="form-control" name="standardRoom" placeholder="standardRoom" id="standardRoom">
         </div>
         <div class="form-group">
-            <input class="form-control" name="poolArea" placeholder="Area of Pool">
+            <input class="form-control" name="description" placeholder="Description" id="description">
         </div>
         <div class="form-group">
-            <input class="form-control" name="floor" placeholder="Many floors">
+            <input class="form-control" name="poolArea" placeholder="Area of Pool" id="poolArea" >
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="floor" placeholder="Many floors" id="floor" >
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
         </div>
+
     </form>
 </div>
 </form>
+<script>
+    function showInfor(value) {
+        if (value == 1) {
+            document.getElementById("standardRoom").style.display = "block";
+            document.getElementById("description").style.display = "block";
+            document.getElementById("poolArea").style.display = "block";
+            document.getElementById("floor").style.display = "block";
+        } else if (value == 2) {
+            document.getElementById("standardRoom").style.display = "block";
+            document.getElementById("description").style.display = "block";
+            document.getElementById("poolArea").style.display = "none";
+            document.getElementById("floor").style.display = "block";
+        } else if (value == 3){
+            document.getElementById("standardRoom").style.display = "none";
+            document.getElementById("description").style.display = "none";
+            document.getElementById("poolArea").style.display = "none";
+            document.getElementById("floor").style.display = "none";
+        }
+    }
+</script>
 <div class="text-center">Already have an account? <a href="#">Sign in</a></div>
 </div>
 <div class="container-fluid">

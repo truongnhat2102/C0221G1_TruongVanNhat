@@ -237,10 +237,10 @@
                             <a href="/customer?action=add" class="btn btn-primary"><i
                                     class="material-icons">&#xE147;</i> <span>Add New Customer</span></a>
                         </div>
-                        <div class="col-xs-7">
-                            <a href="/customer?action=activeCustomers" class="btn btn-primary"><i
-                                    class="material-icons">&#xE147;</i> <span>List Active Customer</span></a>
-                        </div>
+<%--                        <div class="col-xs-7">--%>
+<%--                            <a href="/customer?action=activeCustomers" class="btn btn-primary"><i--%>
+<%--                                    class="material-icons">&#xE147;</i> <span>List Active Customer</span></a>--%>
+<%--                        </div>--%>
                     </div>
                 </div>
                 <table class="table table-striped table-hover">
@@ -254,10 +254,10 @@
                     </tr>
                     </thead>
 
-                    <c:forEach var="customer" items="${customers}">
+                    <c:forEach var="customer" items="${customers}" varStatus="status">
                         <tbody>
                         <tr>
-                            <td>${customer.id}</td>
+                            <td>${status.count}</td>
                             <td><a href="/customer?action=detail&id=${customer.id}">${customer.name}</a></td>
                             <td>${customer.dateOfBirth}</td>
                             <td>${customer.getTypeCustomer().nameTypeCustomer}</td>
