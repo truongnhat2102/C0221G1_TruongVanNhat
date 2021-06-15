@@ -112,9 +112,9 @@ public class CustomerRepository {
         Connection connection = baseRepository.connectionDatabase();
         Customer customer = null;
         try {
-            CallableStatement callableStatement = connection.prepareCall("call find_by_name(?);");
-            ResultSet rs = callableStatement.executeQuery();
-            callableStatement.setString(1,"%"+name+"%");
+            PreparedStatement preparedStatement = connection.prepareStatement("select * from customer join type_of_customer on customer.id_type_customer = type_of_customer.id_type_customer where customer.name_customer like ?;");
+            preparedStatement.setString(1,"%"+name+"%");
+            ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()) {
                 int id = rs.getInt("id_customer");
                 String nameCustomer = rs.getString("name_customer");
@@ -130,7 +130,7 @@ public class CustomerRepository {
                 customerList.add(customer);
             }
             rs.close();
-            callableStatement.close();
+            preparedStatement.close();
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
@@ -199,4 +199,7 @@ public class CustomerRepository {
         return check;
     }
 
+    public static void main(String[] args) {
+        new CustomerRepository().findByName("asd");
+    }
 }

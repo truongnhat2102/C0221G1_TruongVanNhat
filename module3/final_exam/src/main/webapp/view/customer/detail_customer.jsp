@@ -107,31 +107,31 @@
 <div class="signup-form">
     <form method="post">
         <h2>DETAIL</h2>
-        <p class="hint-text"><a>${customer.id}</a> customer</p>
+        <p class="hint-text"><a>${customer.idCustomer}</a> customer</p>
         <div class="form-group">
-            <input disabled type="name" class="form-control" name="name" placeholder="Name" value="${customer.name}">
+            <input disabled type="name" class="form-control" name="name" placeholder="Name" value="${customer.nameCustomer}">
         </div>
         <div class="form-group">
             <input disabled type="type" class="form-control" name="type" value="${customer.typeCustomer.nameTypeCustomer}" placeholder="Type Customer">
         </div>
         <div class="form-group">
-            <input disabled type="date" class="form-control" name="dateOfBirth" value="${customer.dateOfBirth}" placeholder="birthday">
+            <input disabled type="date" class="form-control" name="dateOfBirth" value="${customer.birthday}" placeholder="birthday">
         </div>
         <div class="form-group">
             <input disabled type="gender" class="form-control" name="gender" value="${customer.gender}" placeholder="gender" >
         </div>
-        <div class="form-group">
-            <input disabled class="form-control" name="idCard" placeholder="ID Card" value="${customer.idCard}" >
-        </div>
-        <div class="form-group">
-            <input disabled type="email" class="form-control" name="email" placeholder="Email" value="${customer.email}" >
-        </div>
-        <div class="form-group">
-            <input disabled class="form-control" name="address" value="${customer.address}" placeholder="Address" >
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn btn-success btn-lg btn-block">CHECKED</button>
-        </div>
+<%--        <div class="form-group">--%>
+<%--            <input disabled class="form-control" name="idCard" placeholder="ID Card" value="${customer.idCard}" >--%>
+<%--        </div>--%>
+<%--        <div class="form-group">--%>
+<%--            <input disabled type="email" class="form-control" name="email" placeholder="Email" value="${customer.email}" >--%>
+<%--        </div>--%>
+<%--        <div class="form-group">--%>
+<%--            <input disabled class="form-control" name="address" value="${customer.address}" placeholder="Address" >--%>
+<%--        </div>--%>
+<%--        <div class="form-group">--%>
+<%--            <button type="submit" class="btn btn-success btn-lg btn-block">CHECKED</button>--%>
+<%--        </div>--%>
     </form>
 </div>
 <jsp:include page="/common/footer.jsp"></jsp:include>

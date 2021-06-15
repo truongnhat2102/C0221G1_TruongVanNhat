@@ -32,6 +32,9 @@ public class CustomerServlet extends javax.servlet.http.HttpServlet {
             case "delete":
                 delete(request, response);
                 break;
+            case "search":
+                showFindByName(request, response);
+                break;
 //            case "detail":
 //                detail(request, response);
 //                break;
@@ -58,15 +61,38 @@ public class CustomerServlet extends javax.servlet.http.HttpServlet {
             case "detail":
                 showDetail(request, response);
                 break;
-//            case "find":
-//                showFindByName(request, response);
-//                break;
 //            case "activeCustomers":
 //                showListActive(request,response);
 //                break;
             default:
                 showList(request, response);
                 break;
+        }
+    }
+
+    private void showFindByName(HttpServletRequest request, HttpServletResponse response) {
+        String name = request.getParameter("search");
+        List<Customer> customerList = iCustomer.findByName(name);
+        RequestDispatcher requestDispatcher = null;
+        if (customerList.size() == 0){
+            requestDispatcher = request.getRequestDispatcher("/home.jsp");
+            try {
+                requestDispatcher.forward(request, response);
+            } catch (ServletException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            requestDispatcher = request.getRequestDispatcher("/view/customer/list.jsp");
+            request.setAttribute("customers",customerList);
+            try {
+                requestDispatcher.forward(request, response);
+            } catch (ServletException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 

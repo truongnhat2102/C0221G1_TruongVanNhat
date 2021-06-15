@@ -282,15 +282,15 @@
                         <tbody>
                         <tr>
                             <td>${status.count}</td>
-                            <td><a href="/customer?action=detail&id=${customer.id}">${customer.name}</a></td>
-                            <td>${customer.dateOfBirth}</td>
+                            <td><a href="/customer?action=detail&id=${customer.idCustomer}">${customer.nameCustomer}</a></td>
+                            <td>${customer.birthday}</td>
                             <td>${customer.getTypeCustomer().nameTypeCustomer}</td>
                             <td>
                                 <button type="button" class="btn btn-primary" class="settings" title="Settings"
-                                        data-toggle="tooltip"><a href="/customer?action=edit&id=${customer.id}"><i
+                                        data-toggle="tooltip"><a href="/customer?action=edit&id=${customer.idCustomer}"><i
                                         style="color: white" class="material-icons">&#xE8B8;</i></a></button>
                                 <button type="button" class="btn btn-primary" data-toggle="modal"
-                                        data-target="#exampleModalLong" onclick="sendDataToModal('${customer.id}')">
+                                        data-target="#exampleModalLong" onclick="sendDataToModal('${customer.idCustomer}')">
                                     <a><i style="color: white" class="material-icons">&#xE5C9;</i></a>
                                 </button>
                             </td>

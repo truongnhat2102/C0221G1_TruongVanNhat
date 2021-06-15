@@ -108,9 +108,10 @@
 <div class="signup-form">
     <form method="post">
         <h2>EDIT</h2>
-        <p class="hint-text">Edit a <a>${customer.id}</a> customer</p>
+        <a class="hint-text">Edit a <a>${customer.idCustomer}</a> customer</p>
         <div class="form-group">
-            <input type="name" class="form-control" name="name" placeholder="Name" required="required" value="${customer.name}">
+            <input type="name" class="form-control" name="name" placeholder="Name" value="${customer.nameCustomer}">
+            <p>${msgName}</p>
         </div>
         <%--        <div class="form-group">--%>
         <%--            <input type="type" class="form-control" name="idType" placeholder="Type Customer">--%>
@@ -122,9 +123,11 @@
                     <option value="${typeCustomer.getIdTypeCustomer()}">${typeCustomer.getNameTypeCustomer()}</option>
                 </c:forEach>
             </select>
+            <p>${msgTypeCustomer}</p>
         </div>
         <div class="form-group">
-            <input type="type" class="form-control" name="dateOfBirth" placeholder="birthday" required="required" value="${customer.dateOfBirth}">
+            <input type="type" class="form-control" name="dateOfBirth" placeholder="birthday" value="${customer.birthday}">
+            <p>${msgBirthday}</p>
         </div>
         <%--        <div class="form-group">--%>
         <%--            <input type="gender" class="form-control" name="gender" placeholder="gender" required="required">--%>
@@ -136,19 +139,20 @@
                 <option value="female">Female</option>
                 <option value="other">Other</option>
             </select>
+            <p>${msgGender}</p>
         </div>
-        <div class="form-group">
-            <input class="form-control" name="idCard" placeholder="ID Card" required="required" value="${customer.idCard}">
-        </div>
-        <div class="form-group">
-            <input class="form-control" name="phone" placeholder="Phone" required="required" value="${customer.phone}">
-        </div>
-        <div class="form-group">
-            <input type="email" class="form-control" name="email" placeholder="Email" required="required" value="${customer.email}">
-        </div>
-        <div class="form-group">
-            <input class="form-control" name="address" placeholder="Address" required="required" value="${customer.address}">
-        </div>
+<%--        <div class="form-group">--%>
+<%--            <input class="form-control" name="idCard" placeholder="ID Card" required="required" value="${customer.idCard}">--%>
+<%--        </div>--%>
+<%--        <div class="form-group">--%>
+<%--            <input class="form-control" name="phone" placeholder="Phone" required="required" value="${customer.phone}">--%>
+<%--        </div>--%>
+<%--        <div class="form-group">--%>
+<%--            <input type="email" class="form-control" name="email" placeholder="Email" required="required" value="${customer.email}">--%>
+<%--        </div>--%>
+<%--        <div class="form-group">--%>
+<%--            <input class="form-control" name="address" placeholder="Address" required="required" value="${customer.address}">--%>
+<%--        </div>--%>
         <div class="form-group">
             <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
         </div>

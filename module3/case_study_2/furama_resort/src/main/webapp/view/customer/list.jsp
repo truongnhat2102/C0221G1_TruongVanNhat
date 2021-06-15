@@ -223,7 +223,29 @@
 <body>
 <jsp:include page="/common/header.jsp"></jsp:include>
 <body>
-
+<div>
+    <ul class="container">
+        <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-search"></i></a>
+            <a data-toggle="dropdown" class="nav-link dropdown-toggle hide" href="#"><i
+                    class="fa fa-close"></i></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <form action="/customer?action=search" method="post">
+                        <div class="input-group search-box">
+                            <input type="text" id="search" class="form-control"
+                                   placeholder="Search here..." name="search">
+                            <span class="input-group-btn">
+									    <button type="submit" class="btn btn-primary"><i
+                                                class="fa fa-search"></i></button>
+								    </span>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
 <form action="/customer">
     <div class="container">
         <div class="table-responsive">
@@ -237,12 +259,14 @@
                             <a href="/customer?action=add" class="btn btn-primary"><i
                                     class="material-icons">&#xE147;</i> <span>Add New Customer</span></a>
                         </div>
-<%--                        <div class="col-xs-7">--%>
-<%--                            <a href="/customer?action=activeCustomers" class="btn btn-primary"><i--%>
-<%--                                    class="material-icons">&#xE147;</i> <span>List Active Customer</span></a>--%>
-<%--                        </div>--%>
+                        <%--                        <div class="col-xs-7">--%>
+                        <%--                            <a href="/customer?action=activeCustomers" class="btn btn-primary"><i--%>
+                        <%--                                    class="material-icons">&#xE147;</i> <span>List Active Customer</span></a>--%>
+                        <%--                        </div>--%>
                     </div>
                 </div>
+
+
                 <table class="table table-striped table-hover">
                     <thead>
                     <tr>

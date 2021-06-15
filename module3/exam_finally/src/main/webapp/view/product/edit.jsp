@@ -13,6 +13,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
         body {
             color: #fff;
@@ -104,60 +110,39 @@
     </style>
 </head>
 <body>
-<jsp:include page="/common/header.jsp"></jsp:include>
 <div class="signup-form">
     <form method="post">
         <h2>EDIT</h2>
         <a class="hint-text">Edit a <a>${customer.idCustomer}</a> customer</p>
-        <div class="form-group">
-            <input type="name" class="form-control" name="name" placeholder="Name" value="${customer.nameCustomer}">
-            <p>${msgName}</p>
-        </div>
-        <%--        <div class="form-group">--%>
-        <%--            <input type="type" class="form-control" name="idType" placeholder="Type Customer">--%>
-        <%--        </div>--%>
-        <div class="form-group">
-            <select class="form-select" aria-label="Default select example" name="idType">
-                <option selected value="${customer.getTypeCustomer().getIdTypeCustomer()}">${customer.getTypeCustomer().getNameTypeCustomer()}</option>
-                <c:forEach var="typeCustomer" items="${typeCustomerList}">
-                    <option value="${typeCustomer.getIdTypeCustomer()}">${typeCustomer.getNameTypeCustomer()}</option>
-                </c:forEach>
-            </select>
-            <p>${msgTypeCustomer}</p>
-        </div>
-        <div class="form-group">
-            <input type="type" class="form-control" name="dateOfBirth" placeholder="birthday" value="${customer.birthday}">
-            <p>${msgBirthday}</p>
-        </div>
-        <%--        <div class="form-group">--%>
-        <%--            <input type="gender" class="form-control" name="gender" placeholder="gender" required="required">--%>
-        <%--        </div>--%>
-        <div class="form-group">
-            <select class="form-select" aria-label="Default select example" name="gender">
-                <option selected value="${customer.gender}">${customer.gender}</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-            </select>
-            <p>${msgGender}</p>
-        </div>
-<%--        <div class="form-group">--%>
-<%--            <input class="form-control" name="idCard" placeholder="ID Card" required="required" value="${customer.idCard}">--%>
-<%--        </div>--%>
-<%--        <div class="form-group">--%>
-<%--            <input class="form-control" name="phone" placeholder="Phone" required="required" value="${customer.phone}">--%>
-<%--        </div>--%>
-<%--        <div class="form-group">--%>
-<%--            <input type="email" class="form-control" name="email" placeholder="Email" required="required" value="${customer.email}">--%>
-<%--        </div>--%>
-<%--        <div class="form-group">--%>
-<%--            <input class="form-control" name="address" placeholder="Address" required="required" value="${customer.address}">--%>
-<%--        </div>--%>
-        <div class="form-group">
-            <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
-        </div>
+            <div class="form-group">
+                <input class="form-control" name="name" placeholder="Name" value="${product.nameProduct}">
+                <p>${msgName}</p>
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="price" placeholder="Price" value="${product.price}">
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="quantity" placeholder="Quantity" value="${product.quantity}">
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="color" placeholder="Color" value="${product.color}">
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="description" placeholder="Description" value="${product.description}">
+            </div>
+            <div class="form-group">
+                <select class="form-select form-control" aria-label="Default select example" name="idCategory">
+                    <option selected value="${product.getProductCategory().getIdProductCategory()}>${product.getProductCategory().getNameProductCategory()}</option>
+                    <c:forEach var="productCategory" items="${productCategoryList}">
+                        <option value="${productCategory.getIdProductCategory()}">${productCategory.getNameProductCategory()}</option>
+                    </c:forEach>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg btn-block">Edit Now</button>
+            </div>
+        </a>
     </form>
 </div>
-<jsp:include page="/common/footer.jsp"></jsp:include>
 </body>
 </html>

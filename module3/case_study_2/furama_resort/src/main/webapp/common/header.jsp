@@ -185,26 +185,7 @@
                 </li>
                 <li><a href="/list_active">Customer Active</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-search"></i></a>
-                    <a data-toggle="dropdown" class="nav-link dropdown-toggle hide" href="#"><i class="fa fa-close"></i></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <form>
-                                <div class="input-group search-box">
-                                    <input type="text" id="search" class="form-control" placeholder="Search here...">
-                                    <span class="input-group-btn">
-									    <button type="button" class="btn btn-primary"><i
-                                                class="fa fa-search"></i></button>
-								    </span>
-                                </div>
-                            </form>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            </ul>
+
         </div>
     </nav>
 </div>

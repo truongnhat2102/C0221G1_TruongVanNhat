@@ -139,21 +139,21 @@
                 <option value="other">Other</option>
             </select>
         </div>
-        <div class="form-group">
-            <input class="form-control" name="idCard" placeholder="ID Card" >
-            <p>${msgIdCard}</p>
-        </div>
-        <div class="form-group">
-            <input class="form-control" name="phone" placeholder="Phone" >
-            <p>${msgPhone}</p>
-        </div>
-        <div class="form-group">
-            <input class="form-control" name="email" placeholder="Email" >
-            <p>${msgEmail}</p>
-        </div>
-        <div class="form-group">
-            <input class="form-control" name="address" placeholder="Address" >
-        </div>
+<%--        <div class="form-group">--%>
+<%--            <input class="form-control" name="idCard" placeholder="ID Card" >--%>
+<%--            <p>${msgIdCard}</p>--%>
+<%--        </div>--%>
+<%--        <div class="form-group">--%>
+<%--            <input class="form-control" name="phone" placeholder="Phone" >--%>
+<%--            <p>${msgPhone}</p>--%>
+<%--        </div>--%>
+<%--        <div class="form-group">--%>
+<%--            <input class="form-control" name="email" placeholder="Email" >--%>
+<%--            <p>${msgEmail}</p>--%>
+<%--        </div>--%>
+<%--        <div class="form-group">--%>
+<%--            <input class="form-control" name="address" placeholder="Address" >--%>
+<%--        </div>--%>
         <div class="form-group">
             <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
         </div>
