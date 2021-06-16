@@ -8,36 +8,22 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.List;
-
 @Controller
 public class ConvertController {
     @Autowired
     IConvertService convertService;
 
-    @GetMapping(value = "/hello_spring")
+    @GetMapping(value = "/convert_money")
     public String goHello(){
-        return "hello_spring";
+        return "convert_money";
     }
 
-    @PostMapping(value = "/hello_spring")
+    @PostMapping(value = "/convert_money")
     public String goResult(@RequestParam(name = "moneyConvert") double moneyCovert,
                            @RequestParam(name = "currency") int i,
                            Model model){
-        double currency = 1;
-        switch (i){
-            case 1:
-                currency = 0.00004347826;
-                break;
-            case 2:
 
-                currency = 23000;
-                break;
-            default:
-                currency = 1;
-                break;
-        }
-        model.addAttribute("result",convertService.convert(moneyCovert,currency));
-        return "hello_spring";
+        model.addAttribute("result",convertService.convert(moneyCovert,i));
+        return "convert_money";
     }
 }
