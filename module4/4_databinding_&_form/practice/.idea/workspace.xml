@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="967e376b-0b47-42c9-8256-3be6a7a6ec1e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../2_spring_controller/practice/practice_1_manage_employee/src/main/java/employee/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2_spring_controller/practice/practice_1_manage_employee/src/main/java/employee/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2_spring_controller/practice/practice_1_manage_employee/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2_spring_controller/practice/practice_1_manage_employee/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2_spring_controller/practice/practice_1_manage_employee/src/main/webapp/WEB-INF/views/employee/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2_spring_controller/practice/practice_1_manage_employee/src/main/webapp/WEB-INF/views/employee/info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2_spring_controller/practice/practice_1_manage_employee/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2_spring_controller/practice/practice_1_manage_employee/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2_spring_controller/practice/practice_2_login/src/main/java/user/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2_spring_controller/practice/practice_2_login/src/main/java/user/model/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2_spring_controller/practice/practice_2_login/src/main/java/user/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2_spring_controller/practice/practice_2_login/src/main/java/user/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2_spring_controller/practice/practice_2_login/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2_spring_controller/practice/practice_2_login/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2_spring_controller/practice/practice_2_login/src/main/webapp/WEB-INF/views/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2_spring_controller/practice/practice_2_login/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2_spring_controller/practice/practice_2_login/src/main/webapp/WEB-INF/views/user.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2_spring_controller/practice/practice_2_login/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise/exercise_1_/src/main/java/email_display/controller/EmailDisplayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise/exercise_1_/src/main/java/email_display/model/EmailDisplay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise/exercise_1_/src/main/java/email_display/repository/EmailDisplayRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise/exercise_1_/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise/exercise_1_/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise/exercise_1_/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/dictionary/controller/DictionaryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/dictionary/service/IDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/dictionary/service/impl/DictionaryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/tomcat-9.0.21/webapps/ROOT/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/tomcat-9.0.21/webapps/ROOT/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/tomcat-9.0.21/webapps/ROOT/WEB-INF/views/dictionary.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/tomcat-9.0.21/webapps/ROOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/tomcat-9.0.21/webapps/ROOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build_gradle_to_spring/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../build_gradle_to_spring/build.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1u4JnGllp6rJ10YHjq5l8fH1KDF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="967e376b-0b47-42c9-8256-3be6a7a6ec1e" name="Default Changelist" comment="" />
+      <created>1623919092643</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623919092643</updated>
+      <workItem from="1623919093887" duration="4000" />
+    </task>
+    <servers />
+  </component>
+</project>
