@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:form="http://www.w3.org/1999/html">
+<head th:replace="/layout :: head"></head>
+<body>
+<h3>Add</h3>
+<p>
+    <a th:href="@{/product/list}">
+        Back to customer list
+    </a>
+</p>
+<div id="form">
+    <form th:action="@{/product/save}" method="post">
+        <div>
+            <label>Id</label>
+            <input type="text" name="idProduct"/>
+        </div>
+        <div>
+            <label>Name</label>
+            <input type="text" name="name"/>
+        </div>
+        <div>
+            <label>Price</label>
+            <input type="number" name="price"/>
+        </div>
+        <input type="submit" value="save"/>
+    </form>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

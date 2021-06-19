@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<form action="/add_display" method="post">
+<form:form action="/add_display" method="post" modelAttribute="emailDisplay">
     <table>
         <tr>
             <td>Language</td>
@@ -49,6 +49,6 @@
             <td><input disabled type="text" name="signature" value="${emailDisplay.signature}"></td>
         </tr>
     </table>
-</form>
+</form:form>
 </body>
 </html>

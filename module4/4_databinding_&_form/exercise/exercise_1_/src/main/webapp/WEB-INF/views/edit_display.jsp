@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: Techcare
@@ -11,7 +12,7 @@
     <title>Title</title>
 </head>
 <body>
-<form action="/add_display" method="post">
+<form:form action="/edit_display" method="post" modelAttribute="emailDisplay">
     <table>
         <tr>
             <td>Language</td>
@@ -50,6 +51,6 @@
         </tr>
     </table>
     <button type="submit">save display</button>
-</form>
+</form:form>
 </body>
 </html>
