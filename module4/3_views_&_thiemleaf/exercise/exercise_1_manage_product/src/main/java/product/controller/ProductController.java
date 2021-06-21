@@ -38,7 +38,7 @@ public class ProductController {
                        @RequestParam(name = "price") double price){
         Product product = new Product(id, name, price);
         iProduct.save(product);
-        return "/save";
+        return "/create";
     }
 
 
@@ -53,7 +53,7 @@ public class ProductController {
     @PostMapping(value = "/product/update")
     public String update(Product product){
         iProduct.update(product.getId(), product);
-        return "/update";
+        return "/edit";
     }
 
 

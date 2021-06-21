@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7456d017-95f7-4542-8bf4-c119550c76cc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/exercise/exercise_show_picture/src/main/java/nasa_picture/controller/NasaPictureController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/exercise/exercise_show_picture/src/main/java/nasa_picture/model/Picture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/exercise/exercise_show_picture/src/main/java/nasa_picture/repository/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/exercise/exercise_show_picture/src/main/java/nasa_picture/service/IPictureService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/exercise/exercise_show_picture/src/main/java/nasa_picture/service/impl/PictureServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/exercise/exercise_show_picture/src/main/resources/hibernate.conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/exercise/exercise_show_picture/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/lib/FastInfoset-1.2.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/lib/antlr-2.7.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/lib/byte-buddy-1.10.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/lib/classmate-1.5.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/lib/dom4j-2.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/lib/hibernate-commons-annotations-5.1.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/lib/hibernate-core-5.4.11.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/lib/istack-commons-runtime-3.0.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/lib/jandex-2.1.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/lib/javassist-3.24.0-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/lib/javax.activation-api-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/lib/javax.persistence-api-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/lib/jaxb-api-2.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/lib/jaxb-runtime-2.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/lib/jboss-logging-3.3.2.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/lib/stax-ex-1.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/lib/txw2-2.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/src/main/java/customer/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/src/main/java/customer/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/src/main/java/customer/service/impl/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/src/main/java/customer/service/impl/HibernateCustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/src/main/resources/hibernate.conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5_database_query_&amp;_ORM/practice/practice_manage_customer/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/dictionary/controller/DictionaryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/dictionary/service/IDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/dictionary/service/impl/DictionaryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/tomcat-9.0.21/webapps/ROOT/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/tomcat-9.0.21/webapps/ROOT/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/tomcat-9.0.21/webapps/ROOT/WEB-INF/views/dictionary.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/tomcat-9.0.21/webapps/ROOT/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/build/classes/java/main/product/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/build/classes/java/main/product/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/build/classes/java/main/product/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/build/classes/java/main/product/repository/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/build/libs/exercise_1_manage_product-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/build/libs/exercise_1_manage_product-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/src/main/java/product/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/src/main/java/product/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/src/main/java/product/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/src/main/java/product/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/src/main/webapp/WEB-INF/views/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/src/main/webapp/WEB-INF/views/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/src/main/webapp/WEB-INF/views/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3_views_&amp;_thiemleaf/exercise/exercise_1_manage_product/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1u3qRm94C9FX07EaYL5lt0DunCs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\C0221G1_TruongVanNhat\module4\4_databinding_&amp;_form\exercise\exercise_1_\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.212" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.212" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : org.example : exercise_1_electric_mail-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_exercise_1_electric_mail" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="57144" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : org.example : exercise_1_electric_mail-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7456d017-95f7-4542-8bf4-c119550c76cc" name="Default Changelist" comment="" />
+      <created>1623904614157</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623904614157</updated>
+      <workItem from="1623904617141" duration="5536000" />
+      <workItem from="1623924030137" duration="1073000" />
+      <workItem from="1623941552596" duration="7583000" />
+      <workItem from="1623980813238" duration="633000" />
+      <workItem from="1623985827564" duration="4026000" />
+      <workItem from="1623999716203" duration="42000" />
+      <workItem from="1624259977658" duration="50000" />
+      <workItem from="1624260051451" duration="194000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623956420284">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1623956420284" />
+    <state x="765" y="256" key="#com.intellij.ide.util.MemberChooser" timestamp="1623914637038">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="765" y="256" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1623914637038" />
+    <state x="488" y="464" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1623951488159">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="488" y="464" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1623951488159" />
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1624260025202">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="295" key="FileChooserDialogImpl/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1623999734665" />
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1624260025202" />
+    <state x="342" y="150" key="new project wizard" timestamp="1623999757074">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="342" y="150" key="new project wizard/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1623999757074" />
+  </component>
+</project>

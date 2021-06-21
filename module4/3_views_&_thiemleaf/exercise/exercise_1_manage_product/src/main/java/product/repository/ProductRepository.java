@@ -13,8 +13,8 @@ public class ProductRepository {
     static {
         products = new HashMap<>();
         products.put(1, new Product(1,"Samsung",100000));
-        products.put(2, new Product(2,"iphone",100000));
-        products.put(3, new Product(3,"nokia",100000));
+        products.put(2, new Product(2,"Iphone",50000));
+        products.put(3, new Product(3,"Nokia",100000));
     }
 
     public List<Product> findAll(){
@@ -40,7 +40,7 @@ public class ProductRepository {
     }
 
     public void update(int id, Product product){
-        products.put(id, product);
+        products.put(id,product);
     }
 
     public void remove(int id){

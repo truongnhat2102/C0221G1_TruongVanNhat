@@ -12,7 +12,7 @@
     <form th:action="@{/product/update}" method="post" th:object="${product}">
         <div>
             <label>Id</label>
-            <input disabled type="text" name="idProduct" th:field="*{id}"/>
+            <input readonly type="text" name="idProduct" th:field="*{id}"/>
         </div>
         <div>
             <label>Name</label>

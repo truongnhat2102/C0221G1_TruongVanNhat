@@ -10,27 +10,53 @@
     </a>
 </p>
 
-<table id = "products">
-    <thead>
-    <tr>
-        <th>#</th>
-        <th>Name</th>
-        <th>Price</th>
-        <th>Edit</th>
-        <th>Delete</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr th:each="row,rowStat : ${productList}">
-        <td th:text="${rowStat.count}"></td>
-        <td th:text="${row.getName()}" th:href="@{/product/{id}/view(id=${row.getId()})}"></td>
-        <td th:text="${row.getPrice()}"></td>
-        <td><a th:href="@{/product/{id}/edit(id=${row.getId()})}">edit</a></td>
-        <td><a th:href="@{/product/{id}/delete(id=${row.getId()})}">delete</a></td>
+<form action="/findByName" method="post">
+    <input type="text" name="findByName">
+    <button type="submit">find</button>
+    <table id = "products">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="row,rowStat : ${productList}">
+            <td th:text="${rowStat.count}"></td>
+            <td th:text="${row.getName()}"></td>
+            <td th:text="${row.getPrice()}"></td>
+            <td><a th:href="@{/product/{id}/edit(id=${row.getId()})}">edit</a></td>
+            <td><a th:href="@{/product/{id}/delete(id=${row.getId()})}">delete</a></td>
+            <td><a th:href="@{/customer/{id}/view(id=${row.getId()})}">view</a></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+
+<!--<table id = "products">-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        <th>#</th>-->
+<!--        <th>Name</th>-->
+<!--        <th>Price</th>-->
+<!--        <th>Edit</th>-->
+<!--        <th>Delete</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    <tr th:each="row,rowStat : ${productList}">-->
+<!--        <td th:text="${rowStat.count}"></td>-->
+<!--        <td th:text="${row.getName()}"></td>-->
+<!--        <td th:text="${row.getPrice()}"></td>-->
+<!--        <td><a th:href="@{/product/{id}/edit(id=${row.getId()})}">edit</a></td>-->
+<!--        <td><a th:href="@{/product/{id}/delete(id=${row.getId()})}">delete</a></td>-->
 <!--        <td><a th:href="@{/customer/{id}/view(id=${row.getId()})}">view</a></td>-->
-    </tr>
-    </tbody>
-</table>
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--</table>-->
 <footer th:replace="/layout :: footer"></footer>
 </body>
 </html>
