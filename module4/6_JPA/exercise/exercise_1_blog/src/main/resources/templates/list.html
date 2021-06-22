@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+</head>
+<body>
+<h2>BLOG</h2>
+<a th:href="@{/create-blog}">create blog</a>
+<table>
+    <tr>
+        <td>#</td>
+        <td>author</td>
+        <td>title</td>
+        <td>action</td>
+    </tr>
+    <div th:each="blog, status : ${blogList}">
+        <tr>
+            <td th:text="${status.count}"></td>
+            <td th:text="${blog.author}"></td>
+            <td><a th:text="${blog.title}" th:href="@{/view?id=${blog.id}}"></a></td>
+            <td><a th:href="@{/edit?id=${blog.id}}">edit</a></td>
+        </tr>
+    </div>
+
+</table>
+</body>
+</html>

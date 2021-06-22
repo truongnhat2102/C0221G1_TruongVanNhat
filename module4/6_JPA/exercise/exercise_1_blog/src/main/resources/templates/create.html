@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+</head>
+<body>
+<h2>CREATE BLOG</h2>
+<form action="/create" method="post" th:object="${blog}">
+    <div>Title</div>
+    <input type="text" th:field="*{title}">
+    <div>Author</div>
+    <input type="text" th:field="*{author}">
+    <div>Content</div>
+    <textarea type="" th:field="*{content}"></textarea>
+    <button type="submit">save blog</button>
+</form>
+</body>
+</html>
