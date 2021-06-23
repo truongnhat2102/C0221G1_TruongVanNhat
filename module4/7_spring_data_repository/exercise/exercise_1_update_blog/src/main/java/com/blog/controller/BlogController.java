@@ -1,7 +1,8 @@
-package com.blog.blog.controller;
+package com.blog.controller;
 
-import com.blog.blog.model.Blog;
-import com.blog.blog.service.IBlogService;
+
+import com.blog.model.entity.Blog;
+import com.blog.model.service.IBlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

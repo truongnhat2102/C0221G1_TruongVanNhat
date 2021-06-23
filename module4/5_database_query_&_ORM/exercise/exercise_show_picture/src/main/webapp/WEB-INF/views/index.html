@@ -38,13 +38,13 @@
 </form>
 
 <hr>
-    <div th:each="picture,status : ${pictureList}">
-        <p th:text="${picture.director}"></p>
-        <p th:text="${picture.comment}"></p>
-        <p th:text="${picture.likes}"></p>
-        <a th:href="@{/index/like(id=${picture.getId()})}">like</a>
-        <hr>
-    </div>
+<div th:each="picture,status : ${pictureList}">
+    <p th:text="${picture.director}"></p>
+    <p th:text="${picture.comment}"></p>
+    <p th:text="${picture.likes}"></p>
+    <a th:href="@{/index/like(id=${picture.getId()})}">like</a>
+    <hr>
+</div>
 
 
 </body>

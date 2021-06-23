@@ -33,10 +33,7 @@ public class ProductController {
     }
 
     @PostMapping(value = "/product/save")
-    public String save(@RequestParam(name = "idProduct") int id,
-                       @RequestParam(name = "name") String name,
-                       @RequestParam(name = "price") double price){
-        Product product = new Product(id, name, price);
+    public String save(@ModelAttribute(name = "product") Product product){
         iProduct.save(product);
         return "/create";
     }

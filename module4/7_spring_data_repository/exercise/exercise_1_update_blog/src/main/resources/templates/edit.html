@@ -5,18 +5,14 @@
     <title>List</title>
 </head>
 <body>
-<h2>CREATE BLOG</h2>
-<form action="/create" method="post" th:object="${blog}">
+<h2>EDIT BLOG</h2>
+<form action="/edit" method="post" th:object="${blog}">
     <div>Title</div>
     <input type="text" th:field="*{title}">
     <div>Author</div>
     <input type="text" th:field="*{author}">
-    <div>Category</div>
-    <select th:field="*{category}">
-        <option th:each="category : ${categoryList}" th:text="category.nameCategory" th:value="category"></option>
-    </select>
     <div>Content</div>
-    <textarea type="" th:field="*{content}"></textarea>
+    <textarea th:field="*{content}"></textarea>
     <button type="submit">save blog</button>
 </form>
 </body>

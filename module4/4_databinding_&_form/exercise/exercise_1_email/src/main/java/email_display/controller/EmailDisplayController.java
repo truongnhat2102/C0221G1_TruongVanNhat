@@ -15,46 +15,45 @@ import java.security.UnrecoverableEntryException;
 public class EmailDisplayController {
     @Autowired
     EmailDisplayRepository emailDisplayRepository;
-
+    
+    //list
     @GetMapping(value = "/list")
-    public void list(@RequestParam(name = "action") String action,
-                     @RequestParam(name = "signature") String signature,
-                     Model model){
-        switch (action){
-            case "add":
-                showFormAdd();
-                break;
-            case "edit":
-                showFormEdit(signature);
-                break;
-            case "detail":
-                model.addAttribute("emailDisplay", emailDisplayRepository.findBySignature(signature));
-                break;
-            default:
-                model.addAttribute("emailDisplayList", emailDisplayRepository.findByAll());
-                break;
-        }
+    public String list(Model model){
+        model.addAttribute("emailDisplayList", emailDisplayRepository.findByAll());
+        return "/list";
     }
 
-    @PostMapping(value = "/addDisplay")
-    public void addDisplay(@RequestParam(name = "action") String action,
-                           @ModelAttribute(name = "emailDisplay") EmailDisplay emailDisplay){
-        switch (action){
-            case "add":
-                emailDisplayRepository.addDisplay(emailDisplay);
-            case "edit":
-                emailDisplayRepository.editDisplay(emailDisplay);
-        }
+    //view
+    @GetMapping(value = "/view(signature=product.getId())")
+    public String view(@RequestParam(name = "signature") String signature,
+                       Model model){
+        model.addAttribute("emailDisplay", emailDisplayRepository.findBySignature(signature));
+        return "/view(signature=product.getId())";
     }
 
+    // add
+    @GetMapping(value = "/addDisplay")
     public String showFormAdd(){
         return "addDisplay";
     }
 
+    @PostMapping(value = "/addDisplay")
+    public String add(@ModelAttribute(name = "emailDisplay") EmailDisplay emailDisplay){
+        emailDisplayRepository.addDisplay(emailDisplay);
+        return "redirect: /addDisplay";
+    }
+
+    // edit
+    @GetMapping(value = "/editDisplay")
     public String showFormEdit(String signature){
         Model model = null;
         model.addAttribute("emailDisplay", emailDisplayRepository.findBySignature(signature));
-        return "editDisplay";
+        return "/editDisplay";
+    }
+    @PostMapping(value = "/editDisplay")
+    public String edit(@ModelAttribute(name = "emailDisplay") EmailDisplay emailDisplay){
+        emailDisplayRepository.editDisplay(emailDisplay);
+        return "redirect: /editDisplay";
     }
 
 

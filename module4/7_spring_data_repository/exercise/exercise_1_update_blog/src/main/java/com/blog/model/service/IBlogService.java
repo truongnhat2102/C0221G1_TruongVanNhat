@@ -1,7 +1,9 @@
-package com.blog.blog.service;
+package com.blog.model.service;
 
-import com.blog.blog.model.Blog;
-import com.blog.blog.model.Category;
+
+
+import com.blog.model.entity.Blog;
+import com.blog.model.entity.Category;
 
 import java.util.List;
 
