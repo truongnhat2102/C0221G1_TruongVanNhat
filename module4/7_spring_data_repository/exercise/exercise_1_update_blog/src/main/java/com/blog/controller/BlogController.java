@@ -3,21 +3,27 @@ package com.blog.controller;
 
 import com.blog.model.entity.Blog;
 import com.blog.model.service.IBlogService;
+import com.blog.model.service.ICategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping(value = {"","/list"})
 public class BlogController {
-    @Autowired
+
     IBlogService iBlogService;
+    ICategoryService iCategoryService;
 
     // list
-    @GetMapping(value = "/list")
-    public String list(Model model){
-        model.addAttribute("blogList", iBlogService.findAll());
+    @GetMapping(value = {"/list",""})
+    public String list(Model model,
+                       @PageableDefault(size = 2) Pageable pageable){
+        Page<Blog> page = iBlogService.findAll(pageable);
+        model.addAttribute("blogList", page);
         return "/list";
     }
 
@@ -25,7 +31,7 @@ public class BlogController {
     @GetMapping(value = "/create-blog")
     public String showFormCreate(Model model){
         model.addAttribute("blog", new Blog());
-        model.addAttribute("categoryList", iBlogService.findAllCategory());
+        model.addAttribute("categoryList", iCategoryService.findAll());
         return "/create";
     }
 

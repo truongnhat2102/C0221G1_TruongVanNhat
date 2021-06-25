@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fdd497df-b984-4b10-a3ad-1859329e8137" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise_1_update_blog/src/main/java/com/blog/model/service/ICategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise_1_update_blog/src/main/java/com/blog/model/service/impl/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/dictionary/controller/DictionaryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/dictionary/service/IDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/tomcat-9.0.21/webapps/ROOT/WEB-INF/classes/dictionary/service/impl/DictionaryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/tomcat-9.0.21/webapps/ROOT/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/tomcat-9.0.21/webapps/ROOT/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/tomcat-9.0.21/webapps/ROOT/WEB-INF/views/dictionary.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/tomcat-9.0.21/webapps/ROOT/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercise/exercise_1_update_blog/src/main/java/com/blog/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/exercise_1_update_blog/src/main/java/com/blog/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercise/exercise_1_update_blog/src/main/java/com/blog/model/repository/ICategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/exercise_1_update_blog/src/main/java/com/blog/model/repository/ICategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercise/exercise_1_update_blog/src/main/java/com/blog/model/service/IBlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/exercise_1_update_blog/src/main/java/com/blog/model/service/IBlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercise/exercise_1_update_blog/src/main/java/com/blog/model/service/impl/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/exercise_1_update_blog/src/main/java/com/blog/model/service/impl/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercise/exercise_1_update_blog/src/main/resources/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/exercise_1_update_blog/src/main/resources/templates/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercise/exercise_1_update_blog/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/exercise_1_update_blog/src/main/resources/templates/list.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1uQN0BAtuLvPt5zG2kMD2sn7Mda" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../8_validate/practice/practice_1_form_input" />
+  </component>
+  <component name="RunManager">
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.practice_1.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fdd497df-b984-4b10-a3ad-1859329e8137" name="Default Changelist" comment="" />
+      <created>1624593627701</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624593627701</updated>
+      <workItem from="1624593634506" duration="678000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2660" y="295" key="FileChooserDialogImpl" timestamp="1624594312229">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2660" y="295" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1624594312229" />
+  </component>
+</project>

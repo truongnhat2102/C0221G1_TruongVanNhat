@@ -7,6 +7,8 @@ import com.blog.model.repository.IBlogRepository;
 import com.blog.model.repository.ICategoryRepository;
 import com.blog.model.service.IBlogService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -17,6 +19,11 @@ public class BlogService implements IBlogService {
     @Autowired
     IBlogRepository iBlogRepository;
     ICategoryRepository iCategoryRepository;
+
+    @Override
+    public Page<Blog> findAll(Pageable pageable) {
+        return iBlogRepository.findAll(pageable);
+    }
 
     @Override
     public List<Blog> findAll() {
@@ -35,6 +42,11 @@ public class BlogService implements IBlogService {
     }
 
     @Override
+    public Page<Blog> findByName(Pageable pageable, String name) {
+        return null;
+    }
+
+    @Override
     public Blog findById(long id) {
         return iBlogRepository.findById(id).orElse(null);
     }
@@ -49,15 +61,15 @@ public class BlogService implements IBlogService {
         iBlogRepository.deleteById(id);
     }
 
-    @Override
-    public List<Category> findAllCategory() {
-        return (List<Category>) iCategoryRepository.findAll();
-    }
-
-    @Override
-    public Category findByIdCategory(long id) {
-        return iCategoryRepository.findById(id).orElse(null);
-    }
+//    @Override
+//    public List<Category> findAllCategory() {
+//        return (List<Category>) iCategoryRepository.findAll();
+//    }
+//
+//    @Override
+//    public Category findByIdCategory(long id) {
+//        return iCategoryRepository.findById(id).orElse(null);
+//    }
 
 
 }
