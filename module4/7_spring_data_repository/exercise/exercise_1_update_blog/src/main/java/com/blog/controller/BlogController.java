@@ -2,6 +2,7 @@ package com.blog.controller;
 
 
 import com.blog.model.entity.Blog;
+import com.blog.model.entity.Category;
 import com.blog.model.service.IBlogService;
 import com.blog.model.service.ICategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +28,7 @@ public class BlogController {
         return "/list";
     }
 
-    // create
+    // create blog
     @GetMapping(value = "/create-blog")
     public String showFormCreate(Model model){
         model.addAttribute("blog", new Blog());
@@ -41,7 +42,20 @@ public class BlogController {
         return "/create";
     }
 
-    // edit
+    // create category
+    @GetMapping(value = "/create-category")
+    public String showFormCreateCategory(Model model){
+        model.addAttribute("category", new Category());
+        return "/create_category";
+    }
+
+    @PostMapping(value = "/create")
+    public String createCategory(@ModelAttribute(name = "category") Category category){
+        iCategoryService.save(category);
+        return "/create_category";
+    }
+
+    // edit blog
     @GetMapping(value = "/edit/{id}")
     public String showFormEdit(@PathVariable(name = "id") long id,
                        Model model){
@@ -63,7 +77,7 @@ public class BlogController {
         return "/views";
     }
 
-    //delete
+    //delete blog
     @PostMapping(value = "/delete")
     public String delete(@ModelAttribute(value = "blog") Blog blog){
         iBlogService.delete(blog.getId());
@@ -75,6 +89,20 @@ public class BlogController {
                                  Model model){
         model.addAttribute("blog", iBlogService.findById(id));
         return "/delete";
+    }
+
+    //delete category
+    @PostMapping(value = "/delete-category")
+    public String deleteCategory(@ModelAttribute(value = "category") Category category){
+        iCategoryService.delete(category.getIdCategory());
+        return "/list";
+    }
+
+    @GetMapping(value = "/delete/{id}")
+    public String showFormDeleteCategory(@PathVariable(value = "id") long id,
+                                 Model model){
+        model.addAttribute("category", iCategoryService.findByIdCategory(id));
+        return "/delete_category";
     }
 
     //find by name

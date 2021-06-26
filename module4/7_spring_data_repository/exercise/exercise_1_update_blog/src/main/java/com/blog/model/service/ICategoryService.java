@@ -10,4 +10,8 @@ public interface ICategoryService {
     List<Category> findByName(String name);
 
     Category findByIdCategory(long id);
+
+    void save(Category category);
+
+    void delete(long id);
 }

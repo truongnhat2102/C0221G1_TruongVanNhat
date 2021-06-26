@@ -28,4 +28,14 @@ public class CategoryService implements ICategoryService {
     public Category findByIdCategory(long id) {
         return this.iCategoryRepository.findById(id).orElse(null);
     }
+
+    @Override
+    public void save(Category category) {
+        iCategoryRepository.save(category);
+    }
+
+    @Override
+    public void delete(long id) {
+        iCategoryRepository.deleteById(id);
+    }
 }

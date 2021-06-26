@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>create</title>
+</head>
+<body>
+<h2>CREATE PRODUCT</h2>
+<form th:action="@{/delete}" th:method="post" th:object="${product}">
+    <p>Name product:</p>
+    <p th:text="${product.nameProduct}"></p>
+    <p>category product:</p>
+    <p th:text="${product.categoryProduct.getNameCategoryProduct()}"></p>
+    <p>Price product:</p>
+    <input th:text="${product.price}">
+    <button type="submit">delete</button>
+</form>
+</body>
+</html>

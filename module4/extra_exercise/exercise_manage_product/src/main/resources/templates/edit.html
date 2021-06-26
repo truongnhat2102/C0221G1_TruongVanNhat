@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>create</title>
+</head>
+<body>
+<h2>EDIT PRODUCT</h2>
+<form th:action="@{/edit}" th:method="post" th:object="${product}">
+    <p>Name product</p>
+    <input type="text" th:field="*{nameProduct}" th:text="${product.nameProduct}">
+    <p>category product</p>
+    <select th:field="*{categoryProduct}">
+        <option selected th:value="${product.categoryProduct.getIdCategoryProduct()}" th:text="${product.categoryProduct.nameCategoryProduct}"></option>
+        <option th:each="category : ${categoryList}" th:value="${category.getIdCategoryProduct()}" th:text="${category.getNameCategoryProduct()}"></option>
+    </select>
+    <p>Price product</p>
+    <input type="text" th:field="*{price}" th:text="${product.price}">
+    <p hiden th:field="*{dateToEnter}" th:value="${#dates.format(#dates.createNow(), 'dd MMM yyyy HH:mm')}"></p>
+    <button type="submit">edit</button>
+</form>
+</body>
+</html>

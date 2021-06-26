@@ -57,4 +57,19 @@ public class ProductController {
         iProduct1.save(product);
         return "/edit";
     }
+
+    // delete product
+    @GetMapping(value = "/delete/{id}")
+    public String showFormDelete(@PathVariable(value = "id") long id,
+                               Model model){
+        model.addAttribute("product", iProduct1.findById(id));
+//        model.addAttribute("categoryList", iProduct2.findAll());
+        return "/delete";
+    }
+
+    @PostMapping(value = "/delete")
+    public String delete(@ModelAttribute(value = "product") Product product){
+        iProduct1.remove(product.getIdProduct());
+        return "/list";
+    }
 }
