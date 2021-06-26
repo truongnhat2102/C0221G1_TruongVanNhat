@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>list</title>
+</head>
+<body>
+<h2>List Product</h2>
+<div>
+    <a th:href="@{/create}">add product</a>
+</div>
+<div>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>category</th>
+            <th>price</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tr th:each="product, row : ${productList}">
+            <td th:text="${row.count}"></td>
+            <td th:text="${product.getNameProduct()}"></td>
+            <td th:text="${product.getCategoryProduct().getNameCategoryProduct()}"></td>
+            <td th:text="${product.getPrice()}"></td>
+            <td><button th:href="@{edit/__${product.getIdProduct()}__}">Edit</button></td>
+            <td><button th:href="@{delete/__${product.getIdProduct()}__}">delete</button></td>
+        </tr>
+        <tr>
+            <div>
+                <a th:href="@{/list/__${productList.number - 1}__}" th:if="${productList.hasPrevious()}">Previous</a>
+                <span th:text="${productList.number + 1}"></span>/<span th:text="${productList.totalPages}"></span>
+                <a th:href="@{/list/__${productList.number + 1}__}" th:if="${productList.hasNext()}">Next</a>
+            </div>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
