@@ -1,5 +1,6 @@
 package com.library.controller;
 
+import com.library.aop.BookException;
 import com.library.model.entity.Book;
 import com.library.model.service.IBookService;
 import com.library.model.service.ICustomerService;
@@ -7,10 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class LibraryController {
@@ -21,7 +19,10 @@ public class LibraryController {
 
     //list book
     @GetMapping(value = "/home")
-    public String showList(Model model){
+    public String showList(Model model) throws BookException {
+        if (iBookService.findAllBook().isEmpty()){
+            throw new BookException();
+        }
         model.addAttribute("bookList", iBookService.findAllBook());
         return "/home";
     }
@@ -35,10 +36,10 @@ public class LibraryController {
     }
 
     @PostMapping(value = "/borrow")
-    public String borrowBook(@ModelAttribute("book") Book book, BindingResult bindingResult){
-//        if (book.getQuantity() == 0){
-//            throw BookException();
-//        }
+    public String borrowBook(@ModelAttribute("book") Book book, BindingResult bindingResult) throws BookException {
+        if (book.getQuantity() == 0){
+            throw new BookException();
+        }
         iBookService.borrowedBook(book);
         return "/view_book";
     }
@@ -52,5 +53,11 @@ public class LibraryController {
     @PostMapping(value = "/bring_back/{find}")
     public String bringBack(@PathVariable(value = "find") long id){
         return "/home";
+    }
+
+    // exception
+    @ExceptionHandler(BookException.class)
+    public String handleBookException(){
+        return "error_library_exception";
     }
 }
