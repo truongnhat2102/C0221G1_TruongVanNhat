@@ -1,6 +1,6 @@
 package com.library.controller;
 
-import com.library.aop.BookException;
+import com.library.exception.BookException;
 import com.library.model.entity.Book;
 import com.library.model.service.IBookService;
 import com.library.model.service.ICustomerService;

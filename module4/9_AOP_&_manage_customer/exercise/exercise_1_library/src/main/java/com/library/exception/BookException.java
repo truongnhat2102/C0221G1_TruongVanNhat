@@ -1,4 +1,4 @@
-package com.library.aop;
+package com.library.exception;
 
 public class BookException extends Exception{
 }

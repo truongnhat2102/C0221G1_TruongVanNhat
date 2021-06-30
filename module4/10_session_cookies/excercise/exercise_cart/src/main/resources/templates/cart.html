@@ -82,7 +82,7 @@
         <div class="card-header bg-dark text-light">
             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
             Shipping cart
-            <a th:href="@{/shop}" class="btn btn-outline-info btn-sm pull-right">Continiu shopping</a>
+            <a th:href="@{/shop}" class="btn btn-outline-info btn-sm pull-right">Continue shopping</a>
             <div class="clearfix"></div>
         </div>
         <div class="card-body">
@@ -103,26 +103,27 @@
                     </div>
                     <div class="col-4 col-sm-4 col-md-4">
                         <div class="quantity">
-                            <input type="button" value="+" class="plus">
-                            <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty"
+                            <input type="button" th:value="+" class="plus">
+                            <input type="number" step="1" max="99" min="1" th:value="${cart.}" title="Qty" class="qty"
                                    size="4">
-                            <input type="button" value="-" class="minus">
+                            <input type="button" th:value="-" class="minus">
                         </div>
                     </div>
                     <div class="col-2 col-sm-2 col-md-2 text-right">
-                        <button type="button" class="btn btn-outline-danger btn-xs" th:href="@{/delete/__${product.getKey().id}__}">
-                            <i class="fa fa-trash" aria-hidden="true"></i>
+                        <button type="button" class="btn btn-outline-danger btn-xs" >
+                            <a th:href="@{/delete/__${product.getKey().id}__}" class="fa fa-trash" aria-hidden="true"></a>
                         </button>
                     </div>
                 </div>
+                <hr>
             </div>
-            <hr>
+
             <!-- END PRODUCT -->
-            <div class="pull-right">
-                <a href="" class="btn btn-outline-secondary pull-right">
-                    Update shopping cart
-                </a>
-            </div>
+<!--            <div class="pull-right">-->
+<!--                <a href="" class="btn btn-outline-secondary pull-right">-->
+<!--                    Update shopping cart-->
+<!--                </a>-->
+<!--            </div>-->
         </div>
         <div class="card-footer">
             <div class="coupon col-md-5 col-sm-5 no-padding-left pull-left">
@@ -138,7 +139,7 @@
             <div class="pull-right" style="margin: 10px">
                 <a href="" class="btn btn-success pull-right">Checkout</a>
                 <div class="pull-right" style="margin: 5px">
-                    Total price: <b>50.00€</b>
+                    Total price: <b th:text="${cart.countTotalPayment()}"></b>
                 </div>
             </div>
         </div>

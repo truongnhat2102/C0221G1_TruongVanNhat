@@ -28,7 +28,7 @@ public class ProductController {
     }
 
     @GetMapping("/add/{id}")
-    public String addToCart(@PathVariable Long id, @ModelAttribute Cart cart) {
+    public String addToCart(@PathVariable(value = "id") long id, @ModelAttribute Cart cart) {
         Optional<Product> productOptional = Optional.ofNullable(productService.findById(id));
         if (!productOptional.isPresent()) {
             return "/error.404";
@@ -37,7 +37,7 @@ public class ProductController {
 //            cart.addProduct(productOptional.get());
 //            return "redirect:/shopping-cart";
 //        }
-        cart.addProduct(productOptional.get(id));
+        cart.addProduct(productService.findById(id));
         return "redirect:/shop";
     }
 
