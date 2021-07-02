@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/mdb.min.css">
+</head>
+<body>
+<div class="container mt-4">
+    <div class="row w-50 mx-auto">
+        <div class="col-lg-6">
+            <h2>List Blog </h2>
+        </div>
+        <div class="col-lg-6">
+            <!-- Search form -->
+            <div class="md-form mt-0">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search" id="nameSearch">
+                <button id="btnSearch" style="float: right">search</button>
+            </div>
+        </div>
+    </div>
+    <div class="row w-50 mx-auto">
+        <div class="col-lg-12">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Category</th>
+                </tr>
+                </thead>
+                <tbody id="tableBlogList">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/mdb.min.js"></script>
+<script>
+    $.ajax({
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+        },
+        type: "GET",
+        url: "http://localhost:8080/blog",
+        success: function (resultSuccess) {
+            console.log("Success");
+            let list = resultSuccess
+            let resultHTML = "";
+            for (let i = 0; i < 2; i++) {
+                resultHTML += "<tr>";
+                resultHTML += "<th scope='row'>" + (i + 1) + "</th>";
+                resultHTML += "<td>" + list[i].1 + "</td>";
+                resultHTML += "<td>" + list[i].tittle + "</td>";
+                resultHTML += "<td>" + list[i].category.nameCategory + "</td>";
+                resultHTML += "</tr>";
+            }
+
+            console.log(resultHTML);
+            // innerHTML
+            $("#tableBlogList").html(resultHTML);
+        },
+        error: function (resultError) {
+            console.log("Error: ");
+            console.log(resultError);
+        }
+    });
+
+    // search
+
+    // $("#btnSearch").click(function(){
+    //     let search = $("#nameSearch").val();
+    //     let resultHTML = "";
+    //     for (let i = 0; i < 2; i++) {
+    //         resultHTML += "<tr>";
+    //         resultHTML += "<th scope='row'>" + (i + 1) + "</th>";
+    //         resultHTML += "<td>" + resultSuccess[i].author + "</td>";
+    //         resultHTML += "<td>" + resultSuccess[i].tittle + "</td>";
+    //         resultHTML += "<td>" + resultSuccess[i].category.nameCategory + "</td>";
+    //         resultHTML += "</tr>";
+    //     }
+    //     console.log(resultHTML);
+    //     // innerHTML
+    //     $("#tableBlogList").html(resultHTML);
+    //     error: function (resultError) {
+    //     console.log("Error: ");
+    //     console.log(resultError);
+    // }
+</script>
+</body>
+</html>

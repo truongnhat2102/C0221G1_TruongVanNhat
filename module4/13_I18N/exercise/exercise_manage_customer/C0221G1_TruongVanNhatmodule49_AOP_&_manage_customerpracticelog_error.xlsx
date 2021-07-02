@@ -1,0 +1,275 @@
+2021-07-02 14:56:32.177  INFO 13224 --- [main] com.manage_customer.DemoApplication      : Starting DemoApplication using Java 1.8.0_251 on DESKTOP-MN4L983 with PID 13224 (D:\C0221G1_TruongVanNhat\module4\13_I18N\exercise\exercise_manage_customer\build\classes\java\main started by Techcare in D:\C0221G1_TruongVanNhat\module4\13_I18N\exercise\exercise_manage_customer)
+2021-07-02 14:56:32.187  INFO 13224 --- [main] com.manage_customer.DemoApplication      : No active profile set, falling back to default profiles: default
+2021-07-02 14:56:33.614  INFO 13224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-02 14:56:33.731  INFO 13224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2021-07-02 14:56:34.243  INFO 13224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-02 14:56:34.252  INFO 13224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-02 14:56:34.252  INFO 13224 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-02 14:56:34.385  INFO 13224 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-02 14:56:34.386  INFO 13224 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2024 ms
+2021-07-02 14:56:34.507  INFO 13224 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-02 14:56:34.549  INFO 13224 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-02 14:56:34.722  INFO 13224 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-02 14:56:34.815  INFO 13224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-02 14:56:35.310  INFO 13224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-02 14:56:35.333  INFO 13224 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-02 14:56:36.012  INFO 13224 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-02 14:56:36.026  INFO 13224 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-02 14:56:36.319  WARN 13224 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-02 14:56:36.691  INFO 13224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-02 14:56:36.704  INFO 13224 --- [main] com.manage_customer.DemoApplication      : Started DemoApplication in 5.358 seconds (JVM running for 6.99)
+2021-07-02 14:57:46.789  INFO 14380 --- [main] com.manage_customer.DemoApplication      : Starting DemoApplication using Java 1.8.0_251 on DESKTOP-MN4L983 with PID 14380 (D:\C0221G1_TruongVanNhat\module4\13_I18N\exercise\exercise_manage_customer\build\classes\java\main started by Techcare in D:\C0221G1_TruongVanNhat\module4\13_I18N\exercise\exercise_manage_customer)
+2021-07-02 14:57:46.795  INFO 14380 --- [main] com.manage_customer.DemoApplication      : No active profile set, falling back to default profiles: default
+2021-07-02 14:57:47.685  INFO 14380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-02 14:57:47.757  INFO 14380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interfaces.
+2021-07-02 14:57:48.402  INFO 14380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-02 14:57:48.415  INFO 14380 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-02 14:57:48.416  INFO 14380 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-02 14:57:48.682  INFO 14380 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-02 14:57:48.683  INFO 14380 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1816 ms
+2021-07-02 14:57:48.908  INFO 14380 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-02 14:57:48.955  INFO 14380 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-02 14:57:49.189  INFO 14380 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-02 14:57:49.282  INFO 14380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-02 14:57:49.894  INFO 14380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-02 14:57:49.914  INFO 14380 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-02 14:57:50.667  INFO 14380 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-02 14:57:50.680  INFO 14380 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-02 14:57:51.065  WARN 14380 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-02 14:57:51.420  INFO 14380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-02 14:57:51.431  INFO 14380 --- [main] com.manage_customer.DemoApplication      : Started DemoApplication in 5.718 seconds (JVM running for 7.265)
+2021-07-02 14:57:54.005  INFO 14380 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-02 14:57:54.005  INFO 14380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-02 14:57:54.008  INFO 14380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-07-02 14:58:26.873  WARN 14380 --- [http-nio-8080-exec-9] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:58:26.960  WARN 14380 --- [http-nio-8080-exec-9] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:58:26.978  WARN 14380 --- [http-nio-8080-exec-9] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:58:26.989  WARN 14380 --- [http-nio-8080-exec-9] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:58:26.990  WARN 14380 --- [http-nio-8080-exec-9] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:58:54.925  WARN 14380 --- [http-nio-8080-exec-10] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:58:54.925  WARN 14380 --- [http-nio-8080-exec-10] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:58:54.926  WARN 14380 --- [http-nio-8080-exec-10] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:58:54.927  WARN 14380 --- [http-nio-8080-exec-10] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:58:54.928  WARN 14380 --- [http-nio-8080-exec-10] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:02.617  INFO 13964 --- [main] com.manage_customer.DemoApplication      : Starting DemoApplication using Java 1.8.0_251 on DESKTOP-MN4L983 with PID 13964 (D:\C0221G1_TruongVanNhat\module4\13_I18N\exercise\exercise_manage_customer\build\classes\java\main started by Techcare in D:\C0221G1_TruongVanNhat\module4\13_I18N\exercise\exercise_manage_customer)
+2021-07-02 14:59:02.621  INFO 13964 --- [main] com.manage_customer.DemoApplication      : No active profile set, falling back to default profiles: default
+2021-07-02 14:59:03.370  INFO 13964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-02 14:59:03.440  INFO 13964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interfaces.
+2021-07-02 14:59:04.196  INFO 13964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-02 14:59:04.204  INFO 13964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-02 14:59:04.204  INFO 13964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-02 14:59:04.364  INFO 13964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-02 14:59:04.365  INFO 13964 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1692 ms
+2021-07-02 14:59:04.512  INFO 13964 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-02 14:59:04.575  INFO 13964 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-02 14:59:04.805  INFO 13964 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-02 14:59:04.927  INFO 13964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-02 14:59:05.521  INFO 13964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-02 14:59:05.542  INFO 13964 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-02 14:59:06.204  INFO 13964 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-02 14:59:06.213  INFO 13964 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-02 14:59:06.507  WARN 13964 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-02 14:59:06.862  INFO 13964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-02 14:59:06.875  INFO 13964 --- [main] com.manage_customer.DemoApplication      : Started DemoApplication in 4.675 seconds (JVM running for 5.604)
+2021-07-02 14:59:10.201  INFO 13964 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-02 14:59:10.201  INFO 13964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-02 14:59:10.202  INFO 13964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-07-02 14:59:10.425  WARN 13964 --- [http-nio-8080-exec-1] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:10.525  WARN 13964 --- [http-nio-8080-exec-1] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:10.544  WARN 13964 --- [http-nio-8080-exec-1] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:10.764  WARN 13964 --- [http-nio-8080-exec-1] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:10.765  WARN 13964 --- [http-nio-8080-exec-1] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:11.853  WARN 13964 --- [http-nio-8080-exec-2] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:11.854  WARN 13964 --- [http-nio-8080-exec-2] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:11.854  WARN 13964 --- [http-nio-8080-exec-2] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:11.855  WARN 13964 --- [http-nio-8080-exec-2] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:11.856  WARN 13964 --- [http-nio-8080-exec-2] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:12.858  WARN 13964 --- [http-nio-8080-exec-3] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 14:59:12.859  WARN 13964 --- [http-nio-8080-exec-3] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 14:59:12.860  WARN 13964 --- [http-nio-8080-exec-3] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 14:59:12.861  WARN 13964 --- [http-nio-8080-exec-3] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 14:59:12.862  WARN 13964 --- [http-nio-8080-exec-3] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 14:59:13.414  WARN 13964 --- [http-nio-8080-exec-4] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:13.415  WARN 13964 --- [http-nio-8080-exec-4] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:13.415  WARN 13964 --- [http-nio-8080-exec-4] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:13.416  WARN 13964 --- [http-nio-8080-exec-4] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:13.416  WARN 13964 --- [http-nio-8080-exec-4] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:13.873  WARN 13964 --- [http-nio-8080-exec-5] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 14:59:13.874  WARN 13964 --- [http-nio-8080-exec-5] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 14:59:13.874  WARN 13964 --- [http-nio-8080-exec-5] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 14:59:13.875  WARN 13964 --- [http-nio-8080-exec-5] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 14:59:13.875  WARN 13964 --- [http-nio-8080-exec-5] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 14:59:14.181  WARN 13964 --- [http-nio-8080-exec-6] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:14.181  WARN 13964 --- [http-nio-8080-exec-6] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:14.181  WARN 13964 --- [http-nio-8080-exec-6] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:14.182  WARN 13964 --- [http-nio-8080-exec-6] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:14.182  WARN 13964 --- [http-nio-8080-exec-6] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:14.507  WARN 13964 --- [http-nio-8080-exec-7] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 14:59:14.508  WARN 13964 --- [http-nio-8080-exec-7] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 14:59:14.508  WARN 13964 --- [http-nio-8080-exec-7] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 14:59:14.510  WARN 13964 --- [http-nio-8080-exec-7] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 14:59:14.512  WARN 13964 --- [http-nio-8080-exec-7] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 14:59:14.796  WARN 13964 --- [http-nio-8080-exec-8] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:14.797  WARN 13964 --- [http-nio-8080-exec-8] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:14.797  WARN 13964 --- [http-nio-8080-exec-8] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:14.798  WARN 13964 --- [http-nio-8080-exec-8] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:14.799  WARN 13964 --- [http-nio-8080-exec-8] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:15.068  WARN 13964 --- [http-nio-8080-exec-9] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 14:59:15.068  WARN 13964 --- [http-nio-8080-exec-9] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 14:59:15.069  WARN 13964 --- [http-nio-8080-exec-9] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 14:59:15.069  WARN 13964 --- [http-nio-8080-exec-9] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 14:59:15.070  WARN 13964 --- [http-nio-8080-exec-9] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 14:59:15.372  WARN 13964 --- [http-nio-8080-exec-10] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:15.372  WARN 13964 --- [http-nio-8080-exec-10] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:15.373  WARN 13964 --- [http-nio-8080-exec-10] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:15.373  WARN 13964 --- [http-nio-8080-exec-10] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 14:59:15.373  WARN 13964 --- [http-nio-8080-exec-10] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:03.343  INFO 7368 --- [main] com.manage_customer.DemoApplication      : Starting DemoApplication using Java 1.8.0_251 on DESKTOP-MN4L983 with PID 7368 (D:\C0221G1_TruongVanNhat\module4\13_I18N\exercise\exercise_manage_customer\build\classes\java\main started by Techcare in D:\C0221G1_TruongVanNhat\module4\13_I18N\exercise\exercise_manage_customer)
+2021-07-02 15:03:03.346  INFO 7368 --- [main] com.manage_customer.DemoApplication      : No active profile set, falling back to default profiles: default
+2021-07-02 15:03:03.970  INFO 7368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-02 15:03:04.024  INFO 7368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2021-07-02 15:03:04.451  INFO 7368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-02 15:03:04.460  INFO 7368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-02 15:03:04.461  INFO 7368 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-02 15:03:04.582  INFO 7368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-02 15:03:04.582  INFO 7368 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1192 ms
+2021-07-02 15:03:04.697  INFO 7368 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-02 15:03:04.734  INFO 7368 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-02 15:03:04.917  INFO 7368 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-02 15:03:05.007  INFO 7368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-02 15:03:05.483  INFO 7368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-02 15:03:05.500  INFO 7368 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-02 15:03:06.083  INFO 7368 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-02 15:03:06.093  INFO 7368 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-02 15:03:06.352  WARN 7368 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-02 15:03:06.700  INFO 7368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-02 15:03:06.710  INFO 7368 --- [main] com.manage_customer.DemoApplication      : Started DemoApplication in 3.773 seconds (JVM running for 5.166)
+2021-07-02 15:03:40.606  INFO 12004 --- [main] com.manage_customer.DemoApplication      : Starting DemoApplication using Java 1.8.0_251 on DESKTOP-MN4L983 with PID 12004 (D:\C0221G1_TruongVanNhat\module4\13_I18N\exercise\exercise_manage_customer\build\classes\java\main started by Techcare in D:\C0221G1_TruongVanNhat\module4\13_I18N\exercise\exercise_manage_customer)
+2021-07-02 15:03:40.612  INFO 12004 --- [main] com.manage_customer.DemoApplication      : No active profile set, falling back to default profiles: default
+2021-07-02 15:03:41.278  INFO 12004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-02 15:03:41.328  INFO 12004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2021-07-02 15:03:41.763  INFO 12004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-02 15:03:41.771  INFO 12004 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-02 15:03:41.771  INFO 12004 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-02 15:03:41.887  INFO 12004 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-02 15:03:41.888  INFO 12004 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1219 ms
+2021-07-02 15:03:41.999  INFO 12004 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-02 15:03:42.037  INFO 12004 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-02 15:03:42.203  INFO 12004 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-02 15:03:42.287  INFO 12004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-02 15:03:42.730  INFO 12004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-02 15:03:42.747  INFO 12004 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-02 15:03:43.274  INFO 12004 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-02 15:03:43.283  INFO 12004 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-02 15:03:43.541  WARN 12004 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-02 15:03:43.843  INFO 12004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-02 15:03:43.853  INFO 12004 --- [main] com.manage_customer.DemoApplication      : Started DemoApplication in 3.7 seconds (JVM running for 4.454)
+2021-07-02 15:03:48.032  INFO 12004 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-02 15:03:48.032  INFO 12004 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-02 15:03:48.034  INFO 12004 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-07-02 15:03:48.265  WARN 12004 --- [http-nio-8080-exec-1] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:48.378  WARN 12004 --- [http-nio-8080-exec-1] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:48.553  WARN 12004 --- [http-nio-8080-exec-1] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:48.565  WARN 12004 --- [http-nio-8080-exec-1] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:48.566  WARN 12004 --- [http-nio-8080-exec-1] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:52.883  WARN 12004 --- [http-nio-8080-exec-4] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:52.883  WARN 12004 --- [http-nio-8080-exec-4] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:52.884  WARN 12004 --- [http-nio-8080-exec-4] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:52.885  WARN 12004 --- [http-nio-8080-exec-4] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:52.886  WARN 12004 --- [http-nio-8080-exec-4] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:53.490  WARN 12004 --- [http-nio-8080-exec-5] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 15:03:53.491  WARN 12004 --- [http-nio-8080-exec-5] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 15:03:53.491  WARN 12004 --- [http-nio-8080-exec-5] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 15:03:53.492  WARN 12004 --- [http-nio-8080-exec-5] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 15:03:53.493  WARN 12004 --- [http-nio-8080-exec-5] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 15:03:54.094  WARN 12004 --- [http-nio-8080-exec-6] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:54.095  WARN 12004 --- [http-nio-8080-exec-6] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:54.096  WARN 12004 --- [http-nio-8080-exec-6] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:54.096  WARN 12004 --- [http-nio-8080-exec-6] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:54.097  WARN 12004 --- [http-nio-8080-exec-6] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:54.470  WARN 12004 --- [http-nio-8080-exec-7] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 15:03:54.470  WARN 12004 --- [http-nio-8080-exec-7] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 15:03:54.470  WARN 12004 --- [http-nio-8080-exec-7] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 15:03:54.471  WARN 12004 --- [http-nio-8080-exec-7] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 15:03:54.471  WARN 12004 --- [http-nio-8080-exec-7] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 15:03:54.751  WARN 12004 --- [http-nio-8080-exec-8] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:54.751  WARN 12004 --- [http-nio-8080-exec-8] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:54.752  WARN 12004 --- [http-nio-8080-exec-8] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:54.752  WARN 12004 --- [http-nio-8080-exec-8] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:54.753  WARN 12004 --- [http-nio-8080-exec-8] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:55.017  WARN 12004 --- [http-nio-8080-exec-9] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 15:03:55.017  WARN 12004 --- [http-nio-8080-exec-9] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 15:03:55.018  WARN 12004 --- [http-nio-8080-exec-9] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 15:03:55.019  WARN 12004 --- [http-nio-8080-exec-9] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 15:03:55.019  WARN 12004 --- [http-nio-8080-exec-9] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 15:03:55.270  WARN 12004 --- [http-nio-8080-exec-10] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:55.270  WARN 12004 --- [http-nio-8080-exec-10] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:55.271  WARN 12004 --- [http-nio-8080-exec-10] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:55.272  WARN 12004 --- [http-nio-8080-exec-10] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:03:55.272  WARN 12004 --- [http-nio-8080-exec-10] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:20:22.746  INFO 7604 --- [main] com.manage_customer.DemoApplication      : Starting DemoApplication using Java 1.8.0_251 on DESKTOP-MN4L983 with PID 7604 (D:\C0221G1_TruongVanNhat\module4\13_I18N\exercise\exercise_manage_customer\build\classes\java\main started by Techcare in D:\C0221G1_TruongVanNhat\module4\13_I18N\exercise\exercise_manage_customer)
+2021-07-02 15:20:22.787  INFO 7604 --- [main] com.manage_customer.DemoApplication      : No active profile set, falling back to default profiles: default
+2021-07-02 15:20:23.646  INFO 7604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-02 15:20:23.709  INFO 7604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+2021-07-02 15:20:24.351  INFO 7604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-02 15:20:24.359  INFO 7604 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-02 15:20:24.360  INFO 7604 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-02 15:20:24.509  INFO 7604 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-02 15:20:24.509  INFO 7604 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1665 ms
+2021-07-02 15:20:24.723  INFO 7604 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-02 15:20:24.775  INFO 7604 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-02 15:20:24.989  INFO 7604 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-02 15:20:25.109  INFO 7604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-02 15:20:25.921  INFO 7604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-02 15:20:25.950  INFO 7604 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-02 15:20:27.042  INFO 7604 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-02 15:20:27.053  INFO 7604 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-02 15:20:27.518  WARN 7604 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-02 15:20:27.983  INFO 7604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-02 15:20:28.008  INFO 7604 --- [main] com.manage_customer.DemoApplication      : Started DemoApplication in 5.794 seconds (JVM running for 7.167)
+2021-07-02 15:20:36.200  INFO 7604 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-02 15:20:36.200  INFO 7604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-02 15:20:36.202  INFO 7604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-07-02 15:20:36.547  WARN 7604 --- [http-nio-8080-exec-1] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:20:36.649  WARN 7604 --- [http-nio-8080-exec-1] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:20:36.670  WARN 7604 --- [http-nio-8080-exec-1] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:20:36.930  WARN 7604 --- [http-nio-8080-exec-1] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:20:36.932  WARN 7604 --- [http-nio-8080-exec-1] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:20:42.980  WARN 7604 --- [http-nio-8080-exec-4] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:20:42.981  WARN 7604 --- [http-nio-8080-exec-4] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:20:42.981  WARN 7604 --- [http-nio-8080-exec-4] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:20:42.982  WARN 7604 --- [http-nio-8080-exec-4] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:20:42.983  WARN 7604 --- [http-nio-8080-exec-4] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:20:46.165  WARN 7604 --- [http-nio-8080-exec-7] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:20:46.165  WARN 7604 --- [http-nio-8080-exec-7] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:20:46.166  WARN 7604 --- [http-nio-8080-exec-7] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:20:46.167  WARN 7604 --- [http-nio-8080-exec-7] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:20:46.168  WARN 7604 --- [http-nio-8080-exec-7] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale vi
+2021-07-02 15:20:49.460  WARN 7604 --- [http-nio-8080-exec-8] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 15:20:49.461  WARN 7604 --- [http-nio-8080-exec-8] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 15:20:49.462  WARN 7604 --- [http-nio-8080-exec-8] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 15:20:49.463  WARN 7604 --- [http-nio-8080-exec-8] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 15:20:49.464  WARN 7604 --- [http-nio-8080-exec-8] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [msg/i18n] not found for MessageSource: Can't find bundle for base name msg/i18n, locale en
+2021-07-02 15:21:53.072  INFO 13956 --- [main] com.manage_customer.DemoApplication      : Starting DemoApplication using Java 1.8.0_251 on DESKTOP-MN4L983 with PID 13956 (D:\C0221G1_TruongVanNhat\module4\13_I18N\exercise\exercise_manage_customer\build\classes\java\main started by Techcare in D:\C0221G1_TruongVanNhat\module4\13_I18N\exercise\exercise_manage_customer)
+2021-07-02 15:21:53.076  INFO 13956 --- [main] com.manage_customer.DemoApplication      : No active profile set, falling back to default profiles: default
+2021-07-02 15:21:53.978  INFO 13956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-02 15:21:54.045  INFO 13956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2021-07-02 15:21:54.680  INFO 13956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-02 15:21:54.691  INFO 13956 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-02 15:21:54.692  INFO 13956 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-02 15:21:54.873  INFO 13956 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-02 15:21:54.874  INFO 13956 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1729 ms
+2021-07-02 15:21:55.067  INFO 13956 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-02 15:21:55.110  INFO 13956 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-02 15:21:55.246  INFO 13956 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-02 15:21:55.435  INFO 13956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-02 15:21:56.028  INFO 13956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-02 15:21:56.051  INFO 13956 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-02 15:21:56.778  INFO 13956 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-02 15:21:56.801  INFO 13956 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-02 15:21:57.154  WARN 13956 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-02 15:21:57.554  INFO 13956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-02 15:21:57.577  INFO 13956 --- [main] com.manage_customer.DemoApplication      : Started DemoApplication in 5.133 seconds (JVM running for 6.157)
+2021-07-02 15:22:02.492  INFO 13956 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-02 15:22:02.492  INFO 13956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-02 15:22:02.493  INFO 13956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
