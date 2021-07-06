@@ -1,4 +1,4 @@
-package com.furama_resort.model.repository;
+package com.furama_resort.model.repository.customer_repository;
 
 import com.furama_resort.model.entity.customer.Customer;
 import org.springframework.data.repository.PagingAndSortingRepository;

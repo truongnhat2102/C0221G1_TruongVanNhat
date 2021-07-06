@@ -28,7 +28,7 @@ public class EmployeeController {
     public String showEmployee(@PathVariable(value = "id") long id,
                                Model model){
         model.addAttribute("employee", iEmployee.findEmployeeById(id));
-        return "/view_employee";
+        return "/employee/view_employee";
     }
 
     // add
@@ -63,7 +63,7 @@ public class EmployeeController {
         return "/employee/edit_employee";
     }
 
-    @PostMapping(value = "/edit-employee")
+    @PatchMapping(value = "/edit-employee")
     public String editEmployee(@Validated @ModelAttribute(value = "employee") Employee employee, BindingResult bindingResult){
         new EmployeeValidate().validate(employee, bindingResult);
         if (bindingResult.hasFieldErrors()) {
@@ -75,7 +75,7 @@ public class EmployeeController {
     }
 
     // delete
-    @PostMapping(value = "/delete-employee/{id}")
+    @DeleteMapping(value = "/delete-employee/{id}")
     public String deleteEmployee(@PathVariable(value = "id") long id,
                                  Model model){
         model.addAttribute("employee",iEmployee.findEmployeeById(id));
@@ -88,6 +88,6 @@ public class EmployeeController {
     public String showFindByName(@PathVariable(value = "name") String name,
                                Model model){
         model.addAttribute("employeeList", iEmployee.findEmployeeByName(name));
-        return "/find_employee";
+        return "/employee/list_employee";
     }
 }

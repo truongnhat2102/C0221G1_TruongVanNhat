@@ -1,7 +1,9 @@
 package com.furama_resort.model.service.impl;
 
 import com.furama_resort.model.entity.customer.Customer;
-import com.furama_resort.model.repository.CustomerRepository;
+import com.furama_resort.model.entity.customer.CustomerType;
+import com.furama_resort.model.repository.customer_repository.CustomerRepository;
+import com.furama_resort.model.repository.customer_repository.TypeCustomerRepository;
 import com.furama_resort.model.service.ICustomer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,6 +15,8 @@ import java.util.List;
 public class CustomerService implements ICustomer {
     @Autowired
     CustomerRepository customerRepository;
+    @Autowired
+    TypeCustomerRepository typeCustomerRepository;
 
     @Override
     public List<Customer> findAllCustomer() {
@@ -43,5 +47,15 @@ public class CustomerService implements ICustomer {
     @Override
     public void remove(long id) {
         this.customerRepository.deleteById(id);
+    }
+
+    @Override
+    public List<CustomerType> findAllType() {
+        return (List<CustomerType>) typeCustomerRepository.findAll();
+    }
+
+    @Override
+    public CustomerType findTypeById(long id) {
+        return typeCustomerRepository.findById(id).orElse(null);
     }
 }
