@@ -1,10 +1,15 @@
 package com.furama_resort.model.service.impl;
 
+import com.furama_resort.model.entity.employee.Division;
+import com.furama_resort.model.entity.employee.EducationDegree;
 import com.furama_resort.model.entity.employee.Employee;
-import com.furama_resort.model.repository.EmployeeRepository;
+import com.furama_resort.model.entity.employee.Position;
+import com.furama_resort.model.repository.employee_repository.DivisionRepository;
+import com.furama_resort.model.repository.employee_repository.EducationDegreeRepository;
+import com.furama_resort.model.repository.employee_repository.EmployeeRepository;
+import com.furama_resort.model.repository.employee_repository.PositionRepository;
 import com.furama_resort.model.service.IEmployee;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -15,6 +20,12 @@ public class EmployeeService implements IEmployee {
 
     @Autowired
     EmployeeRepository employeeRepository;
+    @Autowired
+    DivisionRepository divisionRepository;
+    @Autowired
+    PositionRepository positionRepository;
+    @Autowired
+    EducationDegreeRepository educationDegreeRepository;
 
     @Override
     public List<Employee> findAllEmployee() {
@@ -45,5 +56,35 @@ public class EmployeeService implements IEmployee {
     @Override
     public void remove(long id) {
         this.employeeRepository.deleteById(id);
+    }
+
+    @Override
+    public List<Division> findAllDivision() {
+        return (List<Division>) divisionRepository.findAll();
+    }
+
+    @Override
+    public Division findDivisionById(long id) {
+        return divisionRepository.findById(id).orElse(null);
+    }
+
+    @Override
+    public List<Position> findAllPosition() {
+        return (List<Position>) positionRepository.findAll();
+    }
+
+    @Override
+    public Position findPositionById(long id) {
+        return positionRepository.findById(id).orElse(null);
+    }
+
+    @Override
+    public List<EducationDegree> findAllEducationDegree() {
+        return (List<EducationDegree>) educationDegreeRepository.findAll();
+    }
+
+    @Override
+    public EducationDegree findEducationDegreeById(long id) {
+        return educationDegreeRepository.findById(id).orElse(null);
     }
 }

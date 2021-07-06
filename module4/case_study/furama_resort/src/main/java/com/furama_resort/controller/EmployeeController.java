@@ -11,7 +11,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping("/employee")
+@RequestMapping({"/","/employee"})
 public class EmployeeController {
     @Autowired
     IEmployee iEmployee;
@@ -20,7 +20,7 @@ public class EmployeeController {
     @GetMapping("/list-employee")
     public String showList(Model model){
         model.addAttribute("employeeList", iEmployee.findAllEmployee());
-        return "/list_employee";
+        return "/employee/list_employee";
     }
 
     // view
@@ -32,39 +32,45 @@ public class EmployeeController {
     }
 
     // add
-    @GetMapping(value = "/addEmployee")
+    @GetMapping(value = "/add-employee")
     public String showFormAdd(Model model){
         model.addAttribute("employee",new Employee());
-        return "/add_employee";
+        model.addAttribute("positionList",iEmployee.findAllPosition());
+        model.addAttribute("divisionList",iEmployee.findAllDivision());
+        model.addAttribute("educationDegreeList",iEmployee.findAllEducationDegree());
+        return "/employee/add_employee";
     }
 
-    @PostMapping(value = "/addEmployee")
+    @PostMapping(value = "/add-employee")
     public String addEmployee(@Validated @ModelAttribute(value = "employee") Employee employee, BindingResult bindingResult){
         new EmployeeValidate().validate(employee, bindingResult);
         if (bindingResult.hasFieldErrors()) {
-            return "/addEmployee";
+            return "/employee/add_employee";
         } else {
             iEmployee.save(employee);
-            return "/add_employee";
+            return "/employee/add_employee";
         }
     }
 
-    // add
+    // edit
     @GetMapping(value = "/edit-employee/{id}")
     public String showFormEdit(@PathVariable(value = "id") long id,
                                Model model){
         model.addAttribute("employee", iEmployee.findEmployeeById(id));
-        return "/edit_employee";
+        model.addAttribute("positionList",iEmployee.findAllPosition());
+        model.addAttribute("divisionList",iEmployee.findAllDivision());
+        model.addAttribute("educationDegreeList",iEmployee.findAllEducationDegree());
+        return "/employee/edit_employee";
     }
 
-    @PostMapping(value = "/edit-Employee/{id}")
+    @PostMapping(value = "/edit-employee")
     public String editEmployee(@Validated @ModelAttribute(value = "employee") Employee employee, BindingResult bindingResult){
         new EmployeeValidate().validate(employee, bindingResult);
         if (bindingResult.hasFieldErrors()) {
-            return "/edit_employee";
+            return "/employee/edit_employee";
         } else {
             iEmployee.save(employee);
-            return "/edit_employee";
+            return "/employee/edit_employee";
         }
     }
 
@@ -77,5 +83,11 @@ public class EmployeeController {
         return "/list_employee";
     }
 
-    //
+    // find by name
+    @GetMapping(value = "/find-employee/{name}")
+    public String showFindByName(@PathVariable(value = "name") String name,
+                               Model model){
+        model.addAttribute("employeeList", iEmployee.findEmployeeByName(name));
+        return "/find_employee";
+    }
 }

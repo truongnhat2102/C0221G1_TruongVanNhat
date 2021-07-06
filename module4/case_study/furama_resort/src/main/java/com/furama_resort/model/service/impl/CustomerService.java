@@ -1,9 +1,7 @@
 package com.furama_resort.model.service.impl;
 
 import com.furama_resort.model.entity.customer.Customer;
-import com.furama_resort.model.entity.employee.Employee;
 import com.furama_resort.model.repository.CustomerRepository;
-import com.furama_resort.model.repository.EmployeeRepository;
 import com.furama_resort.model.service.ICustomer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

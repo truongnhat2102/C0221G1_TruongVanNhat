@@ -1,6 +1,9 @@
 package com.furama_resort.model.service;
 
+import com.furama_resort.model.entity.employee.EducationDegree;
 import com.furama_resort.model.entity.employee.Employee;
+import com.furama_resort.model.entity.employee.Division;
+import com.furama_resort.model.entity.employee.Position;
 import org.springframework.data.domain.Pageable;
 
 import java.util.List;
@@ -15,4 +18,16 @@ public interface IEmployee {
     void save(Employee employee);
 
     void remove(long id);
+
+    List<Division> findAllDivision();
+
+    Division findDivisionById(long id);
+
+    List<Position> findAllPosition();
+
+    Position findPositionById(long id);
+
+    List<EducationDegree> findAllEducationDegree();
+
+    EducationDegree findEducationDegreeById(long id);
 }
