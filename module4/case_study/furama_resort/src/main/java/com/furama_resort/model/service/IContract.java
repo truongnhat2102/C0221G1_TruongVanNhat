@@ -8,5 +8,10 @@ import com.furama_resort.model.entity.service.Service;
 import java.util.List;
 
 public interface IContract {
+
+    List<Contract> findAllContract();
+
+    Contract findContractById(long id);
+
     void save(Contract contract);
 }

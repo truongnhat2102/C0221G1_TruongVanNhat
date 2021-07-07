@@ -23,6 +23,7 @@ public class CustomerController {
     @GetMapping("/list-customer")
     public String showListCustomer(Model model){
         model.addAttribute("customerList", iCustomer.findAllCustomer());
+        model.addAttribute("message","");
         return "/customer/list_customer";
     }
 
@@ -71,5 +72,13 @@ public class CustomerController {
         model.addAttribute("customerDelete", iCustomer.findCustomerById(id));
         iCustomer.remove(id);
         return "/customer/delte_customer";
+    }
+
+    // find customer is active
+    @GetMapping("/active-customer")
+    public String showFormActiveCustomer(Model model){
+        model.addAttribute("customerList", iCustomer.findActiveCustomer());
+        model.addAttribute("message", "Active Customer");
+        return "/customer/list_customer";
     }
 }

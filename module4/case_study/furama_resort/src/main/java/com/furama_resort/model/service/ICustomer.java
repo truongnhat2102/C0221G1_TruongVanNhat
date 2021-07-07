@@ -20,4 +20,6 @@ public interface ICustomer {
     List<CustomerType> findAllType();
 
     CustomerType findTypeById(long id);
+
+    List<Customer> findActiveCustomer();
 }
