@@ -37,13 +37,15 @@ public class CustomerController {
 
     @PostMapping("/add-customer")
     public String addCustomer(@ModelAttribute("customer") Customer customer, BindingResult bindingResult){
-        new CustomerValidate().validate(customer, bindingResult);
-        if (bindingResult.hasFieldErrors()) {
-            return "/customer/add_customer";
-        } else {
-            iCustomer.save(customer);
-            return "/customer/add_customer";
-        }
+//        new CustomerValidate().validate(customer, bindingResult);
+//        if (bindingResult.hasFieldErrors()) {
+//            return "/customer/add_customer";
+//        } else {
+//            iCustomer.save(customer);
+//            return "/customer/add_customer";
+//        }
+        iCustomer.save(customer);
+        return "/customer/add_customer";
     }
 
     // edit
@@ -57,28 +59,30 @@ public class CustomerController {
 
     @PatchMapping("/edit-customer")
     public String editCustomer(@ModelAttribute("customer") Customer customer, BindingResult bindingResult){
-        new CustomerValidate().validate(customer, bindingResult);
-        if (bindingResult.hasFieldErrors()) {
-            return "/customer/edit_customer";
-        } else {
-            iCustomer.save(customer);
-            return "/customer/edit_customer";
-        }
+//        new CustomerValidate().validate(customer, bindingResult);
+//        if (bindingResult.hasFieldErrors()) {
+//            return "/customer/edit_customer";
+//        } else {
+//            iCustomer.save(customer);
+//            return "/customer/edit_customer";
+//        }
+        iCustomer.save(customer);
+        return "/customer/edit_customer";
     }
 
     // delete
-    @DeleteMapping("/delete/{id}")
-    public String deleteCustomer(@PathVariable("id") long id, Model model){
+    @PostMapping("/delete-customer")
+    public String deleteCustomer(@RequestParam("idName") long id, Model model){
         model.addAttribute("customerDelete", iCustomer.findCustomerById(id));
         iCustomer.remove(id);
-        return "/customer/delte_customer";
+        return "/customer/list_customer";
     }
 
     // find customer is active
     @GetMapping("/active-customer")
     public String showFormActiveCustomer(Model model){
         model.addAttribute("customerList", iCustomer.findActiveCustomer());
-        model.addAttribute("message", "Active Customer");
+        model.addAttribute("message", "Active");
         return "/customer/list_customer";
     }
 }

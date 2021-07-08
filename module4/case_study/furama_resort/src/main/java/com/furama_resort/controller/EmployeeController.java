@@ -42,14 +42,20 @@ public class EmployeeController {
     }
 
     @PostMapping(value = "/add-employee")
-    public String addEmployee(@Validated @ModelAttribute(value = "employee") Employee employee, BindingResult bindingResult){
-        new EmployeeValidate().validate(employee, bindingResult);
-        if (bindingResult.hasFieldErrors()) {
-            return "/employee/add_employee";
-        } else {
-            iEmployee.save(employee);
-            return "/employee/add_employee";
-        }
+    public String addEmployee(@Validated @ModelAttribute(value = "employee") Employee employee, BindingResult bindingResult,
+                              Model model){
+//        new EmployeeValidate().validate(employee, bindingResult);
+//        if (bindingResult.hasFieldErrors()) {
+//            return "/employee/add_employee";
+//        } else {
+//            iEmployee.save(employee);
+//            return "/employee/add_employee";
+//        }
+        iEmployee.save(employee);
+        model.addAttribute("positionList",iEmployee.findAllPosition());
+        model.addAttribute("divisionList",iEmployee.findAllDivision());
+        model.addAttribute("educationDegreeList",iEmployee.findAllEducationDegree());
+        return "/employee/add_employee";
     }
 
     // edit
@@ -65,22 +71,24 @@ public class EmployeeController {
 
     @PatchMapping(value = "/edit-employee")
     public String editEmployee(@Validated @ModelAttribute(value = "employee") Employee employee, BindingResult bindingResult){
-        new EmployeeValidate().validate(employee, bindingResult);
-        if (bindingResult.hasFieldErrors()) {
-            return "/employee/edit_employee";
-        } else {
-            iEmployee.save(employee);
-            return "/employee/edit_employee";
-        }
+//        new EmployeeValidate().validate(employee, bindingResult);
+//        if (bindingResult.hasFieldErrors()) {
+//            return "/employee/edit_employee";
+//        } else {
+//            iEmployee.save(employee);
+//            return "/employee/edit_employee";
+//        }
+        iEmployee.save(employee);
+        return "/employee/edit_employee";
     }
 
     // delete
-    @DeleteMapping(value = "/delete-employee/{id}")
-    public String deleteEmployee(@PathVariable(value = "id") long id,
+    @PostMapping(value = "/delete-employee")
+    public String deleteEmployee(@RequestParam(value = "idName") long id,
                                  Model model){
-        model.addAttribute("employee",iEmployee.findEmployeeById(id));
+        model.addAttribute("employList", iEmployee.findAllEmployee());
         iEmployee.remove(id);
-        return "/list_employee";
+        return "/employee/list_employee";
     }
 
     // find by name
