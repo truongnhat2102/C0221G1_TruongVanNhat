@@ -38,7 +38,7 @@ public class LoginController {
 
             // create cookie and set it in response
             Cookie cookie = new Cookie("setUser", setUser);
-            cookie.setMaxAge(24 * 60 * 60);
+            cookie.setMaxAge(5);
             response.addCookie(cookie);
 
             //get all cookies

@@ -125,6 +125,10 @@
         <h2>EDIT</h2>
         <p class="hint-text">Eidt a new customer</p>
         <div class="form-group">
+            <input type="hidden" class="form-control" th:field="*{employeeId}" th:value="${employee.employeeId}">
+            <!--            <p>${msgName}</p>-->
+        </div>
+        <div class="form-group">
             <input class="form-control" th:field="*{employeeName}" th:value="${employee.employeeName}">
             <!--            <p>${msgName}</p>-->
         </div>

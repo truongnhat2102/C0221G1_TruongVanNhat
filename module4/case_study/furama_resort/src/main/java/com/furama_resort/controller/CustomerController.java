@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping({"/","/customer"})
+@SessionAttributes("employee")
 public class CustomerController {
     @Autowired
     ICustomer iCustomer;
@@ -57,7 +58,7 @@ public class CustomerController {
         return "/customer/edit_customer";
     }
 
-    @PatchMapping("/edit-customer")
+    @PostMapping("/edit-customer")
     public String editCustomer(@ModelAttribute("customer") Customer customer, BindingResult bindingResult){
 //        new CustomerValidate().validate(customer, bindingResult);
 //        if (bindingResult.hasFieldErrors()) {
@@ -73,8 +74,9 @@ public class CustomerController {
     // delete
     @PostMapping("/delete-customer")
     public String deleteCustomer(@RequestParam("idName") long id, Model model){
-        model.addAttribute("customerDelete", iCustomer.findCustomerById(id));
         iCustomer.remove(id);
+        model.addAttribute("customerDelete", iCustomer.findCustomerById(id));
+        model.addAttribute("customerList", iCustomer.findAllCustomer());
         return "/customer/list_customer";
     }
 

@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping({"/","/employee"})
+@SessionAttributes("employee")
 public class EmployeeController {
     @Autowired
     IEmployee iEmployee;
@@ -69,8 +70,9 @@ public class EmployeeController {
         return "/employee/edit_employee";
     }
 
-    @PatchMapping(value = "/edit-employee")
-    public String editEmployee(@Validated @ModelAttribute(value = "employee") Employee employee, BindingResult bindingResult){
+    @PostMapping(value = "/edit-employee")
+    public String editEmployee(@Validated @ModelAttribute(value = "employee") Employee employee, BindingResult bindingResult,
+                               Model model){
 //        new EmployeeValidate().validate(employee, bindingResult);
 //        if (bindingResult.hasFieldErrors()) {
 //            return "/employee/edit_employee";
@@ -79,6 +81,10 @@ public class EmployeeController {
 //            return "/employee/edit_employee";
 //        }
         iEmployee.save(employee);
+        model.addAttribute("employee", iEmployee.findEmployeeById(employee.getEmployeeId()));
+        model.addAttribute("positionList",iEmployee.findAllPosition());
+        model.addAttribute("divisionList",iEmployee.findAllDivision());
+        model.addAttribute("educationDegreeList",iEmployee.findAllEducationDegree());
         return "/employee/edit_employee";
     }
 
@@ -86,8 +92,8 @@ public class EmployeeController {
     @PostMapping(value = "/delete-employee")
     public String deleteEmployee(@RequestParam(value = "idName") long id,
                                  Model model){
-        model.addAttribute("employList", iEmployee.findAllEmployee());
         iEmployee.remove(id);
+        model.addAttribute("employeeList", iEmployee.findAllEmployee());
         return "/employee/list_employee";
     }
 

@@ -87,4 +87,19 @@ public class EmployeeService implements IEmployee {
     public EducationDegree findEducationDegreeById(long id) {
         return educationDegreeRepository.findById(id).orElse(null);
     }
+
+    @Override
+    public Employee findEmployeeByUsername(String username, String password) {
+        Employee employee = null;
+        for (int i = 0; i < findAllEmployee().size(); i++) {
+            if (findAllEmployee().get(i).getUser().getUsername().equals(username)){
+                if (findAllEmployee().get(i).getUser().getPassword().equals(password)){
+                    employee = findAllEmployee().get(i);
+                    break;
+                }
+                break;
+            }
+        }
+        return employee;
+    }
 }

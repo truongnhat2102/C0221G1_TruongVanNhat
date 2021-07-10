@@ -175,7 +175,9 @@
                         </ul>
                     </li>
                     <li><a th:href="@{/customer/active-customer}">Customer Active</a></li>
-                    <li style="margin-right: 0px"><a th:href="@{/login}">Login</a></li>
+                    <li style="margin-right: 0px" th:if="${employee == null}" ><a th:href="@{/login}">Login</a></li>
+                    <li style="margin-right: 0px" th:if="${employee != null}" ><a th:href="@{/logout}">Logout</a></li>
+                    <li style="margin-right: 0px" th:if="${employee != null}" ><a th:href="@{/view/__${employee.employeeId}__}" th:text="${employee.employeeName}"></a></li>
                 </ul>
             </div>
         </nav>

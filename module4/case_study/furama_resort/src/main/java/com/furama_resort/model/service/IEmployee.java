@@ -30,4 +30,6 @@ public interface IEmployee {
     List<EducationDegree> findAllEducationDegree();
 
     EducationDegree findEducationDegreeById(long id);
+
+    Employee findEmployeeByUsername(String username, String password);
 }

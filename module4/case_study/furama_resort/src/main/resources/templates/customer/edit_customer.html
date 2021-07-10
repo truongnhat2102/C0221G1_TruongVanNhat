@@ -121,9 +121,13 @@
 <body>
 <div th:insert="header :: header"></div>1
 <div class="signup-form">
-    <form th:action="@{/add-customer}" th:method="post" th:object="${customer}">
+    <form th:action="@{/edit-customer}" th:method="post" th:object="${customer}">
         <h2>ADD</h2>
         <p class="hint-text">Add a new customer</p>
+        <div class="form-group">
+            <input type="hidden" class="form-control" th:field="*{customerId}" th:value="${customer.customerId}">
+            <!--            <p>${msgName}</p>-->
+        </div>
         <div class="form-group">
             <input class="form-control" th:field="*{customerName}" th:value="${customer.customerName}">
             <!--            <p>${msgName}</p>-->
