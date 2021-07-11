@@ -217,7 +217,8 @@
 </head>
 <body>
 <div th:insert="header :: header"></div>
-<form th:action="@{/list-employee}">
+<span th:utext="${#request.userPrincipal.name}"></span>
+<form th:action="@{/list-employee}" th:if="${userInfo != null}" th:utext="${userInfo}" >
     <div class="container">
         <div class="table-responsive">
             <div class="table-wrapper">

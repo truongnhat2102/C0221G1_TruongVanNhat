@@ -7,11 +7,16 @@ import com.furama_resort.model.repository.customer_repository.CustomerRepository
 import com.furama_resort.model.repository.customer_repository.TypeCustomerRepository;
 import com.furama_resort.model.service.ICustomer;
 import com.furama_resort.model.service.impl.CustomerService;
+import com.furama_resort.utils.WebUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+
+import java.security.Principal;
 
 @Controller
 @RequestMapping({"/","/customer"})
@@ -20,9 +25,28 @@ public class CustomerController {
     @Autowired
     ICustomer iCustomer;
 
+    @RequestMapping(value = "/403", method = RequestMethod.GET)
+    public String accessDenied(Model model, Principal principal) {
+
+        if (principal != null) {
+            User loginedUser = (User) ((Authentication) principal).getPrincipal();
+
+            String userInfo = WebUtils.toString(loginedUser);
+
+            model.addAttribute("userInfo", userInfo);
+
+            String message = "Hi " + principal.getName() //
+                    + "<br> You do not have permission to access this page!";
+            model.addAttribute("message", message);
+
+        }
+
+        return "403Page";
+    }
+
     // list
     @GetMapping("/list-customer")
-    public String showListCustomer(Model model){
+    public String showListCustomer(Model model, Principal principal){
         model.addAttribute("customerList", iCustomer.findAllCustomer());
         model.addAttribute("message","");
         return "/customer/list_customer";

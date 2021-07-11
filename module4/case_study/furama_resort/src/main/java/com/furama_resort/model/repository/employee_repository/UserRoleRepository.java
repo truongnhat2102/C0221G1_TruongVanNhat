@@ -1,12 +1,13 @@
 package com.furama_resort.model.repository.employee_repository;
 
 import com.furama_resort.model.entity.employee.User;
+import com.furama_resort.model.entity.employee.UserRole;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 @Repository
-@Transactional
-public interface UserRepository extends JpaRepository<User, Long> {
-    User findByUsername(String Name);
+public interface UserRoleRepository extends JpaRepository<UserRole, Long> {
+    List<UserRole> findByUser(User user);
 }

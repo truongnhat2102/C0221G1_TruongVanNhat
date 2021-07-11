@@ -102,6 +102,16 @@
 </head>
 <body>
 <div th:insert="header :: header"></div>
+<div th:if="${#request.getParameter('error') == 'true'}"
+     style="color:red;margin:10px 0px;">
+    Login Failed!!!<br />
+    Reason :
+    <span th:if="${#session!= null and #session.getAttribute('SPRING_SECURITY_LAST_EXCEPTION') != null}"
+          th:utext="${#session.getAttribute('SPRING_SECURITY_LAST_EXCEPTION').message}">
+                Static summary
+         </span>
+
+</div>
 <div class="login-page">
     <div class="form">
 <!--        <form class="register-form" >-->
@@ -111,10 +121,10 @@
 <!--            <button>create</button>-->
 <!--            <p class="message">Already registered? <a href="#">Sign In</a></p>-->
 <!--        </form>-->
-        <form class="login-form" th:action="@{/login}" th:object="${user}" th:method="post">
-            <input type="text" placeholder="Username" th:field="*{username}" th:value="${setUsernameValue}"/>
-            <input type="password" placeholder="Password" th:field="*{password}" th:value="${setPasswordValue}"/>
-            <input type="checkbox" th:name="remember" th:checked="${booleanVariable}"> remember me</input>
+        <form class="login-form" th:action="@{/j_spring_security_check}" th:method="post">
+            <input type="text" placeholder="Username" name="username"/>
+            <input type="password" placeholder="Password" name="password"/>
+            <input type="checkbox" name="remember"> remember me</input>
             <button type="submit">login</button>
             <p class="message">Not registered? <a href="#">Create an account</a></p>
         </form>

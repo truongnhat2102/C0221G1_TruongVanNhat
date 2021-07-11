@@ -1,14 +1,18 @@
 package com.furama_resort.controller;
 
-import com.furama_resort.dto.EmployeeValidate;
 import com.furama_resort.model.entity.employee.Employee;
 import com.furama_resort.model.service.IEmployee;
+import com.furama_resort.utils.WebUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
+import java.security.Principal;
 
 @Controller
 @RequestMapping({"/","/employee"})
@@ -19,14 +23,38 @@ public class EmployeeController {
 
     // list
     @GetMapping("/list-employee")
-    public String showList(Model model){
+    public String showList(Model model, Principal principal){
+        User loginedUser = (User) ((Authentication) principal).getPrincipal();
+        String userInfo = WebUtils.toString(loginedUser);
+        model.addAttribute("userInfo", userInfo);
         model.addAttribute("employeeList", iEmployee.findAllEmployee());
         return "/employee/list_employee";
+    }
+
+    //403
+    @RequestMapping(value = "/403", method = RequestMethod.GET)
+    public String accessDenied(Model model, Principal principal) {
+
+        if (principal != null) {
+            User loginedUser = (User) ((Authentication) principal).getPrincipal();
+
+            String userInfo = WebUtils.toString(loginedUser);
+
+            model.addAttribute("userInfo", userInfo);
+
+            String message = "Hi " + principal.getName() //
+                    + "<br> You do not have permission to access this page!";
+            model.addAttribute("message", message);
+
+        }
+
+        return "403Page";
     }
 
     // view
     @GetMapping("/view-employee/{id}")
     public String showEmployee(@PathVariable(value = "id") long id,
+                               Principal principal,
                                Model model){
         model.addAttribute("employee", iEmployee.findEmployeeById(id));
         return "/employee/view_employee";
