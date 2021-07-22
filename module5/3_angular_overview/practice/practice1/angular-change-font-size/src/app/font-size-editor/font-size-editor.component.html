@@ -1,1 +1,20 @@
-<p>font-size-editor works!</p>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h2>Font size editor</h2>
+
+<div>
+  <label>Enter font size (px):</label>
+  <input #element type="range" min="9" max="72" value="18" (change)="changeFontSizeValue(element.value)">
+</div>
+
+<p class="output" [style.fontSize.px]="fontSize">
+  This is a paragraph.
+</p>
+</body>
+</html>

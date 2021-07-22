@@ -13,4 +13,9 @@ export class FontSizeEditorComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  changeFontSizeValue(fontSize) {
+    this.fontSize = fontSize;
+  }
 }
+
