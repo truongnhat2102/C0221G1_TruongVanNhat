@@ -1,0 +1,16 @@
+<h2>Rating Bar</h2>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-1" *ngFor="let item of items">
+      <div *ngIf="checkButton(item)">
+        <button class="btn-success">{{item}}</button>
+      </div>
+      <div *ngIf="!checkButton(item)">
+        <button class="btn-dark">{{item}}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
