@@ -33,4 +33,21 @@ export class DictionaryService {
     return result;
   }
 
+  getAll(): Dictionary[] {
+    return this.dictionary;
+  }
+
+  findById(id: number): Dictionary{
+    let result: Dictionary;
+    for (let i = 0; i < this.dictionary.length; i++) {
+      if (i == id ){
+        result = this.dictionary[i];
+      }
+    }
+    return result;
+  }
+
+  open(content: any, param2: {ariaLabelledBy: string}) {
+
+  }
 }
