@@ -1,97 +1,60 @@
-<div class="container">
-  <div class="col-5">
-    <form #createUserNg = "ngForm" (ngSubmit)="createUser(createUserNg)">
-      <h2>register-form</h2>
-      <hr>
-      <!--id-->
-      <div class="form-group">
-        <label for="userId">user Id</label>
-        <input [(ngModel)]=user.id name="userId" #id="ngModel" required minlength="6" type="text" class="form-control" id="userId" >
-        <div class="text-danger" *ngIf="!id.valid && id.touched">
-          <p>id of user is false</p>
-        </div>
-      </div>
+<h2>REGISTER FORM</h2>
 
-      <!--email-->
-      <div class="form-group">
-        <label for="userEmail">user email</label>
-        <input [(ngModel)]=user.email name="userEmail" #email="ngModel" type="email" required="required"
-               class="form-control" id="userEmail">
-        <div class="text-danger" *ngIf="!email.valid && email.touched">
-          <p>email of user is false</p>
-        </div>
-      </div>
-
-      <!--password-->
-      <div class="form-group">
-        <label for="userPassword">user password</label>
-        <input [(ngModel)]=user.password name="userPassword" #password="ngModel" type="password" minlength="8"
-               class="form-control" id="userPassword">
-        <label for="userPassword">confirm password</label>
-        <input name="userPassword2" #password2 type="password" required="required" class="form-control"
-               id="userPassword2">
-        <div class="text-danger" *ngIf="!password.valid && password.touched">
-          <p>password of user is false</p>
-        </div>
-        <div class="text-danger" *ngIf="password != password2.value">
-          <p>enter password2 like password</p>
-        </div>
-      </div>
-
-      <!--country-->
-      <div class="form-group">
-        <label for="userCountry">user country</label>
-        <select [(ngModel)]=user.country name="userCountry" #country="ngModel" required="required" class="form-control"
-                id="userCountry">
-          <option value="vietnam">Viet Nam</option>
-          <option value="japan">Japan</option>
-          <option value="USA">USA</option>
-          <option value="Korea">Korea</option>
-        </select>
-        <div class="text-danger" *ngIf="!country.valid && country.touched">
-          <p>country of user is false</p>
-        </div>
-      </div>
-
-      <!--Age-->
-      <div class="form-group">
-        <label for="userAge">user age</label>
-        <input [(ngModel)]=user.age name="userAge" #age="ngModel" required type="date" class="form-control" id="userAge"
-               aria-describedby="emailHelp">
-        <div class="text-danger" *ngIf="!age.valid && age.touched">
-          <p>age of user is false</p>
-        </div>
-      </div>
-
-      <!--gender-->
-      <div class="form-group">
-        <label for="userGender">user gender</label>
-        <div [(ngModel)]=user.gender name="userGender" #gender="ngModel" required="required" id="userGender">
-          <div>
-            <input type="radio" value="male"><a>Male</a>
-          </div>
-          <div>
-            <input type="radio" value="female"><a>Female</a>
-          </div>
-          <div>
-            <input type="radio" value="other"><a>other</a>
-          </div>
-        </div>
-      </div>
-
-      <!--phone-->
-      <div class="form-group">
-        <label for="userPhone">user phone</label>
-        <input [(ngModel)]=user.phone name="userPhone" #phone="ngModel" required type="text" minlength="10"
-               class="form-control" id="userPhone">
-        <div class="text-danger" *ngIf="!phone.valid && phone.touched">
-          <p>phone of user is false</p>
-        </div>
-      </div>
-      <hr>
-      <div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
-    </form>
+<form [formGroup]="user" (ngSubmit)="createUser()">
+<!--  id-->
+  <div>
+    <p>ID</p>
+    <input type="text" name="id" id="id" formControlName="id">
   </div>
-</div>
+
+<!--  email-->
+  <div>
+    <p>EMAIL</p>
+    <input type="text" name="email" id="email" formControlName="email">
+    <div *ngIf="!user.controls.email?.valid">
+      <p style="color: red">Enter email example: abcd1234@gmail.com</p>
+    </div>
+  </div>
+
+<!--  password-->
+  <div>
+    <p>PASSWORD</p>
+    <input type="password" name="password" id="password" formControlName="password" >
+  </div>
+
+<!--  country-->
+  <div>
+    <p>COUNTRY</p>
+    <select name="country" id="country" formControlName="country">
+      <option value="vietnam">VIETNAM</option>
+      <option value="usa">USA</option>
+      <option value="japan">JAPAN</option>
+    </select>
+  </div>
+
+<!--  age-->
+  <div>
+    <p>AGE</p>
+    <input type="date" name="age" id="age" formControlName="age">
+  </div>
+
+<!--  gender-->
+  <div>
+    <p>GENDER</p>
+    <mat-radio-group name="gender" id="gender" formControlName="gender">
+      <mat-radio-button value="male">MALE</mat-radio-button>
+      <mat-radio-button value="female">FEMALE</mat-radio-button>
+      <mat-radio-button value="other">OTHER</mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+<!--  phone-->
+  <div>
+    <p>PHONE</p>
+    <input type="text" name="phone" id="phone" formControlName="phone">
+  </div>
+
+  <hr>
+
+  <button type="submit" [disabled]="!user.valid">REGISTER</button>
+</form>
