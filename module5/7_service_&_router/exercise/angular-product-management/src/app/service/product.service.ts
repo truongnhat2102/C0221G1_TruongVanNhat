@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {Product} from "../model/product";
+import {FormControl, FormGroup} from "@angular/forms";
 
 @Injectable({
   providedIn: 'root'
@@ -32,6 +33,8 @@ export class ProductService {
     description: 'Like new'
   }];
 
+  productService: Product;
+
   constructor() { }
 
   getAll() {
@@ -42,6 +45,23 @@ export class ProductService {
     this.products.push(product);
   }
 
+  getProduct(id: number) {
+    for (let i = 0; i < this.products.length; i++) {
+      if (i == id){
+        this.productService = this.products[i];
+      }
+    }
+  }
 
+  editProduct(id: number) {
+    this.getProduct(id);
+    let editionForm:FormGroup = new FormGroup({
+        id: new FormControl(),
+        name: new FormControl(),
+        price: new FormControl(),
+        description: new FormControl()
+      });
+    this.products[id] = editionForm.value;
+    }
 
 }

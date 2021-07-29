@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>EDIT</h1>
+<div mat-dialog-content>
+  <form  [formGroup]="productForm" (ngSubmit)="editProduct()">-->
+    <table>
+      <tr>
+        <td>Mã sản phẩm:</td>
+        <td><input type="number" formControlName="id" [value]="product.id"></td>
+      </tr>
+      <tr>
+        <td>Tên sản phẩm:</td>
+        <td><input type="text" formControlName="name" value="{{product.name}}"></td>
+      </tr>
+      <tr>
+        <td>Giá sản phẩm</td>
+        <td><input type="number" formControlName="price" value="{{product.price}}"></td>
+      </tr>
+      <tr>
+        <td>Mô tả về sản phẩm</td>
+        <td><input type="text" formControlName="description" value="{{product.description}}"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button type="submit">Chinh Sua</button></td>
+      </tr>
+    </table>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+<!--  <button mat-button [mat-dialog-close]="data.product" cdkFocusInitial>Ok</button>-->
+</div>

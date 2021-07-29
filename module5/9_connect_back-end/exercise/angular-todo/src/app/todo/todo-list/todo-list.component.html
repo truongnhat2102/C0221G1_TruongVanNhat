@@ -1,0 +1,23 @@
+HTML
+TS
+<table mdbTable>
+  <thead class="black white-text">
+  <tr>
+    <th>#</th>
+    <th>title</th>
+    <th>note</th>
+    <th>action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr mdbTableCol *ngFor="let todo of todos, index as i">
+    <th scope="row">{{i + 1}}</th>
+    <th>{{todo.title}}</th>
+    <th><input type="text"></th>
+    <th>
+      <button routerLink="/todo/edit/:{{todo.id}}" class="btn-info">edit</button>
+      <button class="btn-danger">delete</button>
+    </th>
+  </tr>
+  </tbody>
+</table>
