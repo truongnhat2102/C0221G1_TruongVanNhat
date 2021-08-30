@@ -1,4 +1,9 @@
 package com.example.demo.model.repository;
 
-public interface QuestionTypeRepository {
+import com.example.demo.model.entity.QuestionType;
+import org.springframework.stereotype.Repository;
+import org.springframework.data.repository.PagingAndSortingRepository;
+
+@Repository
+public interface QuestionTypeRepository extends PagingAndSortingRepository<QuestionType, Long> {
 }

@@ -24,10 +24,13 @@ public class EmployeeController {
     // list
     @GetMapping("/list-employee")
     public String showList(Model model, Principal principal){
-        User loginedUser = (User) ((Authentication) principal).getPrincipal();
-        String userInfo = WebUtils.toString(loginedUser);
-        model.addAttribute("userInfo", userInfo);
+//        User loginedUser = (User) ((Authentication) principal).getPrincipal();
+//        String userInfo = WebUtils.toString(loginedUser);
+//        model.addAttribute("userInfo", userInfo);
         model.addAttribute("employeeList", iEmployee.findAllEmployee());
+        model.addAttribute("positionList",iEmployee.findAllPosition());
+        model.addAttribute("divisionList",iEmployee.findAllDivision());
+        model.addAttribute("educationDegreeList",iEmployee.findAllEducationDegree());
         return "/employee/list_employee";
     }
 
@@ -131,5 +134,16 @@ public class EmployeeController {
                                Model model){
         model.addAttribute("employeeList", iEmployee.findEmployeeByName(name));
         return "/employee/list_employee";
+    }
+
+    // find by field
+    @GetMapping(value = "/find-employee/field")
+    public String findByField(@RequestParam(value = "field1") String field1,
+                              @RequestParam(value = "field2") String field2,
+                              @RequestParam(value = "field3") String field3,
+                              Model model){
+        String[] fields = {field1, field2, field3};
+        model.addAttribute("employeeList", iEmployee.findEmployeeByField(fields));
+        return "employee/list_employee";
     }
 }

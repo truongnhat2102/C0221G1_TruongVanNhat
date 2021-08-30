@@ -42,7 +42,7 @@ export class TodoEditComponent implements OnInit {
       alert('success');
     }, e => {
       console.log(e);
-    })
+    });
   }
 
 }

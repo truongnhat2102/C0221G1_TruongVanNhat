@@ -217,8 +217,9 @@
 </head>
 <body>
 <div th:insert="header :: header"></div>
-<span th:utext="${#request.userPrincipal.name}"></span>
-<form th:action="@{/list-employee}" th:if="${userInfo != null}" th:utext="${userInfo}" >
+<!--<span th:utext="${#request.userPrincipal.name}"></span>-->
+
+<form th:action="@{/list-employee}" >
     <div class="container">
         <div class="table-responsive">
             <div class="table-wrapper">
@@ -226,6 +227,9 @@
                     <div class="row">
                         <div class="col-xs-5">
                             <h2>Employee <b>Management</b></h2>
+                        </div>
+                        <div class="col-xs-5">
+
                         </div>
                         <div class="col-xs-7">
                             <a th:href="@{/add-employee}" class="btn btn-primary"><i
@@ -262,7 +266,6 @@
                                 <a><i style="color: white" class="material-icons">&#xE5C9;</i></a>
                             </button>
                         </td>
-                        <!--                            <td><a id="myModal" data-toggle="modal" data-target="#exampleModal" th:onclick="'javascript:Values('+${employee.employeeId}+')'">evaluation service</a></td>-->
                     </tr>
                     </tbody>
                 </table>
@@ -282,7 +285,27 @@
         </div>
     </div>
 </form>
-
+<form th:action="@{/find-employee/field}">
+    <div class="form-group">
+        <select name="position">
+            <option selected th:value="0">Position</option>
+            <option th:each="position : ${positionList}" th:value="${position.getPositionId()}" th:text="${position.positionName}"></option>
+        </select>
+    </div>
+    <div class="form-group">
+        <select name="division">
+            <option selected th:value="0">Division</option>
+            <option th:each="division : ${divisionList}" th:value="${division.getDivisionId()}" th:text="${division.divisionName}"></option>
+        </select>
+    </div>
+    <div class="form-group">
+        <select name="educationDegree" >
+            <option selected th:value="0">Education Degree</option>
+            <option th:each="educationDegree : ${educationDegreeList}" th:value="${educationDegree.getEducationDegreeId()}" th:text="${educationDegree.educationDegreeName}"></option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+</form>
 <form th:action="@{/delete-employee}" method="post">
     <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
          aria-hidden="true">

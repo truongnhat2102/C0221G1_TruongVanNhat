@@ -1,0 +1,44 @@
+<h2 mat-dialog-title>UPDATE</h2>
+
+<ng-form [formGroup]="recordForm">
+  <div>
+    <input hidden type="text" formControlName="id">
+  </div>
+  <div>
+    <p>ID Case Record</p>
+    <input readonly type="text" formControlName="idCaseRecord">
+  </div>
+  <div>
+    <p>ID Patient</p>
+    <input readonly type="text" formControlName="idPatient">
+  </div>
+  <div>
+    <p>Name Patient</p>
+    <input type="text" formControlName="namePatient">
+  </div>
+  <div>
+    <p>Date Of Admit</p>
+    <input type="date" formControlName="dateOfAdmit">
+  </div>
+  <div>
+    <p>Date Of Discharged</p>
+    <input type="date" formControlName="dateOfDischarge">
+  </div>
+  <div>
+    <p>Reason Of Admit</p>
+    <input type="text" formControlName="reason">
+  </div>
+  <div>
+    <p>Method Of Treatment</p>
+    <input type="text" formControlName="methodOfTreatment">
+  </div>
+  <div>
+    <p>Name Doctor</p>
+    <input type="text" formControlName="doctor">
+  </div>
+
+</ng-form>
+<mat-dialog-actions>
+  <button class="mat-raised-button" (click)="close()">Close</button>
+  <button class="mat-raised-button mat-primary" (click)="update()">Save</button>
+</mat-dialog-actions>

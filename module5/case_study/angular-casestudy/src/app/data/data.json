@@ -1,0 +1,72 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "name": "abcd efgh",
+      "email": "abcd@gmail.com",
+      "phone": "0905811684",
+      "dateOfBirth": "2000-02-20",
+      "idCard": "202111111",
+      "gender": "female",
+      "idTypeCustomer": "2"
+    },
+    {
+      "name": "Trương Văn Nhật",
+      "email": "asdasd",
+      "phone": "0905811684",
+      "dateOfBirth": "2021-07-12",
+      "idCard": "1234566",
+      "gender": "male",
+      "idTypeCustomer": "3",
+      "id": 3
+    },
+    {
+      "name": "Trương Văn Nhật",
+      "email": "asdas",
+      "phone": "0905811684",
+      "dateOfBirth": "2021-08-10",
+      "idCard": "asdasd",
+      "gender": "asdasd",
+      "idTypeCustomer": "3",
+      "id": 4
+    },
+    {
+      "name": "Trương Văn Nhật",
+      "email": "asda",
+      "phone": "0905811684",
+      "dateOfBirth": "2021-08-18",
+      "idCard": "123",
+      "gender": "asdasd",
+      "idTypeCustomer": "3",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "name": "Trương Văn Nhật",
+      "email": "asdasd",
+      "phone": "0905811684",
+      "dateOfBirth": "2021-08-26",
+      "idCard": "123123",
+      "gender": "asdad",
+      "idTypeCustomer": "1"
+    }
+  ],
+  "typeCustomer": [
+    {
+      "id": 1,
+      "name": "member"
+    },
+    {
+      "id": 2,
+      "name": "gold"
+    },
+    {
+      "id": 3,
+      "name": "diamond"
+    },
+    {
+      "id": 4,
+      "name": "VIP"
+    }
+  ]
+}

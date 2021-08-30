@@ -3,6 +3,9 @@ TS
 <table mdbTable>
   <thead class="black white-text">
   <tr>
+    <button routerLink="/todoes/create" class="btn-success">create</button>
+  </tr>
+  <tr>
     <th>#</th>
     <th>title</th>
     <th>note</th>
@@ -15,8 +18,9 @@ TS
     <th>{{todo.title}}</th>
     <th><input type="text"></th>
     <th>
-      <button routerLink="/todo/edit/:{{todo.id}}" class="btn-info">edit</button>
-      <button class="btn-danger">delete</button>
+<!--      <button [routerLink]="['/todoes/edit/', todo.id]" class="btn-info">edit</button>-->
+      <button routerLink="/todoes/edit/{{todo.id}}" class="btn-info">edit</button>
+      <button routerLink="/todoes/delete/{{todo.id}}" class="btn-danger">delete</button>
     </th>
   </tr>
   </tbody>

@@ -251,7 +251,7 @@
                     </thead>
                     <tbody th:each="question, status : ${questionList}">
                     <tr>
-                        <td th:text="${status.count}"></td>
+                        <td th:text="${status.count + (questionList.number*2)}"></td>
                         <td><a th:href="@{/view/__${question.questionId}__}" th:text="${question.title}"></a></td>
                         <td th:text="${question.questionType.questionTypedName}"></td>
                         <td th:text="${question.dateCreate}"></td>
@@ -271,7 +271,7 @@
                     </tbody>
                 </table>
                 <div class="clearfix">
-                    <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+                    <div class="hint-text">Showing <b>2</b> out of <b th:text="${questionList.numberOfElements}"></b> entries</div>
                     <ul class="pagination">
                         <li class="page-item"><a th:href="@{'/list/'(page=${questionList.number - 1})}" th:if="${questionList.hasPrevious()}">Previous</a></li>
                         <li class="page-item"><a th:text="${questionList.number + 1}" class="page-link">1</a><a>/</a><a th:text="${questionList.totalPages}" class="page-link"></a></li>

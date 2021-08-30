@@ -1,0 +1,39 @@
+<h2>CASE RECORD LIST</h2>
+<table mdbTable>
+  <thead class="black white-text">
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">ID CASE </th>
+    <th scope="col">ID PATIENT </th>
+    <th scope="col">NAME PATIENT </th>
+    <th scope="col">DATE OF ADMIT</th>
+    <th scope="col">DATE OF DISCHARGE</th>
+    <th scope="col">REASON</th>
+    <th scope="col">METHOD TREATMENT</th>
+    <th scope="col">DOCTOR</th>
+    <th scope="col">ACTION</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr mdbTableCol *ngFor="let record of recordList , index as i">
+    <th scope="row">{{i + 1}}</th>
+    <td>{{record.idCaseRecord}}</td>
+    <td>{{record.idPatient}}</td>
+    <td>{{record.namePatient}}</td>
+    <td>{{record.dateOfAdmit}}</td>
+    <td>{{record.dateOfDischarge}}</td>
+    <td>{{record.reason}}</td>
+    <td>{{record.methodOfTreatment}}</td>
+    <td>{{record.doctor}}</td>
+    <th>
+      <button mat-mini-fab (click)="openDialogEdit(record.id)">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-mini-fab (click)="openDialogDelete(record.id)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </th>
+  </tr>
+  </tbody>
+</table>

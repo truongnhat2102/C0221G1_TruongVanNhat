@@ -30,7 +30,7 @@ public interface IEmployee {
 
     Employee findEmployeeByUsername(String username, String password);
 
-
+    List<Employee> findEmployeeByField(String[] fields);
 
 
 }

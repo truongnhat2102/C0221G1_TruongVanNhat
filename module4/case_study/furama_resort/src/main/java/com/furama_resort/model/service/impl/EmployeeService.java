@@ -102,4 +102,30 @@ public class EmployeeService implements IEmployee {
         }
         return employee;
     }
+
+    @Override
+    public List<Employee> findEmployeeByField(String[] fields) {
+        List<Employee> employeeList = new ArrayList<>();
+        for (int i = 0; i < findAllEmployee().size(); i++) {
+            Employee employee = findAllEmployee().get(i);
+            long positionId = employee.getPosition().getPositionId();
+            long divisionId = employee.getDivision().getDivisionId();
+            long educationDegreeId = employee.getEducationDegree().getEducationDegreeId();
+            if (positionId == Integer.parseInt(fields[0]) && divisionId == Integer.parseInt(fields[1]) && educationDegreeId == Integer.parseInt(fields[2])){
+                employeeList.add(employee);
+            } else if (positionId == Integer.parseInt(fields[0]) && divisionId == Integer.parseInt(fields[1])){
+                employeeList.add(employee);
+            } else if (positionId == Integer.parseInt(fields[0]) && educationDegreeId == Integer.parseInt(fields[2])) {
+                employeeList.add(employee);
+            } else if (educationDegreeId == Integer.parseInt(fields[2]) && divisionId == Integer.parseInt(fields[1])) {
+                employeeList.add(employee);
+            } else if (positionId == Integer.parseInt(fields[0]) || divisionId == Integer.parseInt(fields[1]) || educationDegreeId == Integer.parseInt(fields[2])){
+                employeeList.add(employee);
+            }
+        }
+        if (employeeList.isEmpty()){
+            return findAllEmployee();
+        }
+        return employeeList;
+    }
 }

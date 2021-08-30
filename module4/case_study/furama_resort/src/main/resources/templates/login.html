@@ -114,13 +114,6 @@
 </div>
 <div class="login-page">
     <div class="form">
-<!--        <form class="register-form" >-->
-<!--            <input type="text" placeholder="Username" />-->
-<!--            <input type="password" placeholder="Password" />-->
-<!--            <input type="text" placeholder="email address"/>-->
-<!--            <button>create</button>-->
-<!--            <p class="message">Already registered? <a href="#">Sign In</a></p>-->
-<!--        </form>-->
         <form class="login-form" th:action="@{/j_spring_security_check}" th:method="post">
             <input type="text" placeholder="Username" name="username"/>
             <input type="password" placeholder="Password" name="password"/>

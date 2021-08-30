@@ -1,0 +1,38 @@
+<h2 mat-dialog-title>EDIT</h2>
+
+<ng-form [formGroup]="customerForm">
+  <div>
+    <input type="text" placeholder="id" formControlName="id" hidden>
+  </div>
+  <div>
+    <input type="text" placeholder="Name" formControlName="name">
+  </div>
+  <div>
+    <input type="text" placeholder="Email" formControlName="email">
+  </div>
+  <div>
+    <input type="text" placeholder="Phone" formControlName="phone">
+  </div>
+  <div>
+    <input type="text" placeholder="Date Of Birth" formControlName="dateOfBirth" type="date">
+  </div>
+  <div>
+    <input type="text" placeholder="ID Card" formControlName="idCard">
+  </div>
+  <div>
+    <input type="text" placeholder="Gender" formControlName="gender">
+  </div>
+  <div>
+    <select placeholder="Type Customer" formControlName="idTypeCustomer">
+      <option value="1">Member</option>
+      <option value="2">Gold</option>
+      <option value="3">Diamond</option>
+      <option value="4">VIP</option>
+    </select>
+  </div>
+</ng-form>
+
+<mat-dialog-actions>
+  <button class="mat-raised-button" (click)="close()">Close</button>
+  <button class="mat-raised-button mat-primary" (click)="update()">Save</button>
+</mat-dialog-actions>

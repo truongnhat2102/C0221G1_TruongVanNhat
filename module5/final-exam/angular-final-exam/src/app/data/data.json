@@ -1,0 +1,26 @@
+{
+  "case-record": [
+    {
+      "idCaseRecord": "BA-001",
+      "idPatient": "BA-435",
+      "namePatient": "Nguyễn Văn A",
+      "dateOfAdmit": "2016-07-08",
+      "dateOfDischarge": "2019-08-08",
+      "reason": "Ung thư gan giai đoạn cuối",
+      "methodOfTreatment": "Mổ",
+      "doctor": "Lê ",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "idCaseRecord": "BA-112",
+      "idPatient": "BA-123",
+      "namePatient": "Nguyễn Văn A",
+      "dateOfAdmit": "2016-07-08",
+      "dateOfDischarge": "2019-08-08",
+      "reason": "Ung thư gan giai đoạn cuối",
+      "methodOfTreatment": "Mổ",
+      "doctor": "Lê Văn B"
+    }
+  ]
+}

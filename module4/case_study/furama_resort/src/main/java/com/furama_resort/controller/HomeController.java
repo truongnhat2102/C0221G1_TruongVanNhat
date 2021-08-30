@@ -33,47 +33,48 @@ public class HomeController {
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String showFormLogin(Model model){
+        model.addAttribute("user", new User());
         return "/login";
     }
+    @PostMapping(value = "/login")
+    public String loginWithSession(@ModelAttribute(value = "user") User user, BindingResult bindingResult,
+                                   @RequestParam(value = "remember",required = false) boolean check,
+                                   Model model,
+                                   @CookieValue(value = "setUsername", defaultValue = "") String setUsername,
+                                   @CookieValue(value = "setPassword", defaultValue = "") String setPassword,
+                                   HttpServletResponse response, HttpServletRequest request){
+        model.addAttribute("booleanVariable", true);
+        Employee employee = iLogin.doLogin(user);
+        if (check){
+            if (employee != null){
+                setUsername = user.getUsername();
+                setPassword = user.getPassword();
+                Cookie cookieUsername = new Cookie("setUsername", setUsername);
+                Cookie cookiePassword = new Cookie("setPassword", setPassword);
+                cookieUsername.setMaxAge(365*24*60*60);
+                cookiePassword.setMaxAge(365*24*60*60);
+                response.addCookie(cookieUsername);
+                response.addCookie(cookiePassword);
 
-//    @PostMapping(value = "/login")
-//    public String loginWithSession(@ModelAttribute(value = "user") User user, BindingResult bindingResult,
-//                                   @RequestParam(value = "remember",required = false) boolean check,
-//                                   Model model,
-//                                   @CookieValue(value = "setUsername", defaultValue = "") String setUsername,
-//                                   @CookieValue(value = "setPassword", defaultValue = "") String setPassword,
-//                                   HttpServletResponse response, HttpServletRequest request){
-//        model.addAttribute("booleanVariable", true);
-//        Employee employee = iLogin.doLogin(user);
-//        if (check){
-//            if (employee != null){
-//                setUsername = user.getUsername();
-//                setPassword = user.getPassword();
-//                Cookie cookieUsername = new Cookie("setUsername", setUsername);
-//                Cookie cookiePassword = new Cookie("setPassword", setPassword);
-//                cookieUsername.setMaxAge(365*24*60*60);
-//                cookiePassword.setMaxAge(365*24*60*60);
-//                response.addCookie(cookieUsername);
-//                response.addCookie(cookiePassword);
-//
-//                Cookie[] cookies = request.getCookies();
-//
-//                model.addAttribute("setUsernameValue", cookies[0]);
-//                model.addAttribute("setPasswordValue", cookies[1]);
-//                return "/home";
-//            } else {
-//                model.addAttribute("message", "login failed");
-//                return "/login";
-//            }
-//        } else {
-//            if (employee != null){
-//                model.addAttribute("employee", employee);
-//                return "/home";
-//            } else {
-//                model.addAttribute("message", "login failed");
-//                return "/login";
-//            }
-//        }
-//
-//    }
+                Cookie[] cookies = request.getCookies();
+
+                model.addAttribute("setUsernameValue", cookies[0]);
+                model.addAttribute("setPasswordValue", cookies[1]);
+                return "/home";
+            } else {
+                model.addAttribute("message", "login failed");
+                return "/login";
+            }
+        } else {
+            if (employee != null){
+                model.addAttribute("employee", employee);
+                return "/home";
+            } else {
+                model.addAttribute("message", "login failed");
+                return "/login";
+            }
+        }
+
+    }
 }
+

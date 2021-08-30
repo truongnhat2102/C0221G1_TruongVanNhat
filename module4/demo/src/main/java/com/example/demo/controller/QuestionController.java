@@ -18,7 +18,7 @@ public class QuestionController {
 
     // list
     @GetMapping(value = "/list")
-    public ModelAndView showList(@PageableDefault(size = 5) Pageable pageable){
+    public ModelAndView showList(@PageableDefault(size = 2) Pageable pageable){
         ModelAndView modelAndView = new ModelAndView("/list");
         modelAndView.addObject("questionList", this.iQuestionService.findAllQuestion(pageable));
         return modelAndView;
@@ -42,7 +42,6 @@ public class QuestionController {
     // edit
     @GetMapping(value = "/edit/{id}")
     public ModelAndView showFormEdit(@PathVariable(value = "id") long id){
-
         ModelAndView modelAndView = new ModelAndView("/edit");
         modelAndView.addObject("question", this.iQuestionService.findQuestionById(id));
         modelAndView.addObject("questionTypeList", this.iQuestionService.findAllQuestionType());

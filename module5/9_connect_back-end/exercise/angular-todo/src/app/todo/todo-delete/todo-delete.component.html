@@ -1,1 +1,17 @@
-<p>todo-delete works!</p>
+<form class="text-center border border-light p-5" [formGroup]="todoForm" (ngSubmit)="delete(id)">
+
+  <p class="h4 mb-4">DELETE</p>
+
+  <!-- id -->
+  <input id="id" class="form-control mb-4" placeholder="id" formControlName="id">
+
+  <!-- title -->
+  <input id="title" class="form-control mb-4" placeholder="title" formControlName="title">
+
+  <!-- content -->
+  <textarea id="content" rows="5" class="mb-4" placeholder="content" formControlName="content"></textarea>
+
+  <!-- button to submit -->
+  <button class="btn-outline-info" type="submit">DELETE</button>
+
+</form>

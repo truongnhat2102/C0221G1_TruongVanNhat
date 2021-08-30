@@ -9,19 +9,7 @@ import {TodoService} from "../../service/todo.service";
 })
 export class TodoListComponent implements OnInit {
 
-  todos: Todo[] = [{
-    id: '1',
-    title: 'blabla',
-    content: 'ahihi'
-  }, {
-    id: '2',
-    title: 'bleble',
-    content: 'ahoho'
-  }, {
-    id: '1',
-    title: 'blibli',
-    content: 'ahaha'
-  }];
+  todos: Todo[] = [];
 
   constructor(private todoService: TodoService) { }
 
